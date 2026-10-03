@@ -1,0 +1,7 @@
+{
+  "county": "San Francisco",
+  "retrieved_at": "2026-09-30",
+  "jurisdictions": [
+    {"slug": "san-francisco", "name": "San Francisco", "type": "city_and_county", "aliases": ["SF", "San Fran"], "building_dept_url": "https://www.sf.gov/departments--department-building-inspection", "permit_portal_url": "https://sanfranciscoca.portal.opengov.com/", "phone": "(628) 652-3200", "adu_page_url": "https://www.sf.gov/topics--accessory-dwelling-unit-adu", "parcel_lookup_url": null, "source_url": "https://www.sf.gov/departments--department-building-inspection", "notes": "Department of Building Inspection (DBI). Phone is labeled 'DBI Customer Service'. sfdbi.org redirects to the sf.gov DBI page. Portal is PermitSF on OpenGov. Single city and county with no unincorporated area."}
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "solar",
+  "summary": "In San Jose, solar panels and home batteries need a building permit; qualifying rooftop systems on houses, duplexes, and townhouses can get it online.",
+  "outcomes": [
+    {
+      "when": {
+        "param": "battery_storage",
+        "op": "eq",
+        "value": true
+      },
+      "verdict": "REQUIRED",
+      "explanation": "A home battery needs a building permit. It qualifies for the online permit only with a City-approved anchorage detail or a City-approved master file, and the bracket anchorage must be inspected, typically before the battery is installed.",
+      "citations": [
+        "sj_solar_page",
+        "sj_solar_battery",
+        "sj_online_solar"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "A building permit is required before installing solar panels in San Jose. A rooftop system on a single-family home, duplex, or townhouse can be permitted online if it meets the city's weight, point-load, and height limits and is not ballasted; other systems go through the Standard Plan Review Service.",
+  "default_citations": [
+    "sj_solar_page",
+    "sj_solar_online",
+    "sj_solar_nonq"
+  ],
+  "permit_types": [
+    "Building permit"
+  ],
+  "fee_note": "San Jose's FY 2025-26 fee schedule bills electrical inspection for a single-family photovoltaic system at a minimum of $315 per hour with a 60-minute minimum, in addition to the permit issuance fee.",
+  "docs_required": [],
+  "inspections": [
+    "Bracket anchorage inspection for a battery, typically before the battery is installed"
+  ],
+  "notes": [
+    {
+      "text": "To use the online permit, the system must be a rooftop installation on a single-family home, duplex, or townhouse, with panels under 5 pounds per square foot, less than 40 pounds at each support point, no more than 18 inches above the roof, and no ballast.",
+      "citations": [
+        "sj_solar_online"
+      ]
+    },
+    {
+      "text": "The city's installation requirements cover rooftop systems on single-family homes, duplexes, and townhomes no more than three stories above grade.",
+      "citations": [
+        "sj_solar_r3"
+      ]
+    },
+    {
+      "text": "Energy storage systems are not covered by the city's low-voltage electrical exemption.",
+      "citations": [
+        "sj_150_12"
+      ]
+    },
+    {
+      "text": "State law limits the city's review of a solar application to health and safety requirements, and the city cannot make approval depend on a homeowners association.",
+      "citations": [
+        "g5_b",
+        "g5_i"
+      ]
+    },
+    {
+      "text": "Fees: electrical inspection for a single-family photovoltaic system is a minimum of $315 per hour with a 60-minute minimum, plus a permit issuance fee.",
+      "citations": [
+        "fee_elec",
+        "fee_pv",
+        "fee_issue"
+      ]
+    },
+    {
+      "text": "Online permits can be pulled only by the property owner or a qualified contractor. The city recommends that a licensed contractor pull the permit; an owner-builder must also submit the Owner Acknowledgement and Information Verification Form, show ID at issuance, and be the owner of record.",
+      "citations": [
+        "sj_online_intro",
+        "sj_who_ob"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "sj_solar_page",
+      "code_section": "San Jose Permit Center, Solar & Storage Battery Projects (updated 04/15/2026)",
+      "source_url": "https://web.archive.org/web/20260513124521id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/solar-storage-battery-projects",
+      "quote": "A building permit is required before installing solar photovoltaic (PV) panels and/or energy storage batteries. For qualifying projects, it is easy to get the permit online."
+    },
+    {
+      "id": "sj_solar_battery",
+      "code_section": "San Jose Permit Center, Solar & Storage Battery Projects (updated 04/15/2026), Projects Qualifying to Use SJPermits",
+      "source_url": "https://web.archive.org/web/20260513124521id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/solar-storage-battery-projects",
+      "quote": "Battery projects must meet all criteria: Use a City-approved anchorage detail, see illustrations below, OR use a City-approved Master file from the Building Division for bracket anchorage. Provide the construction documents matching the Master file to the City Inspector at the time of inspection. Inspection of the bracket anchorage is required, typically before the battery is installed."
+    },
+    {
+      "id": "sj_online_solar",
+      "code_section": "San Jose, Online Building Permits at SJPermits.org, Building-Structural Permit table",
+      "source_url": "https://web.archive.org/web/20260801184719id_/https://www.sanjoseca.gov/business/development-services-permit-center/online-permits-at-sjpermits-org/building-online-permits",
+      "quote": "Stationary Storage Battery System Limited No No Solar Photovoltaic System Yes No No"
+    },
+    {
+      "id": "sj_solar_online",
+      "code_section": "San Jose Permit Center, Solar & Storage Battery Projects (updated 04/15/2026), Projects Qualifying to Use SJPermits",
+      "source_url": "https://web.archive.org/web/20260513124521id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/solar-storage-battery-projects",
+      "quote": "Solar projects must meet all criteria: Must be a rooftop installation on a single-family, duplex, or townhouse property Total panel weight including frame is less than 5 pounds per sq. ft. Maximum concentrated load at each point of support is less than 40 pounds Maximum height above the roof surface is 18 inches PV panels are not ballasted"
+    },
+    {
+      "id": "sj_solar_nonq",
+      "code_section": "San Jose Permit Center, Solar & Storage Battery Projects (updated 04/15/2026), How to Apply",
+      "source_url": "https://web.archive.org/web/20260513124521id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/solar-storage-battery-projects",
+      "quote": "Qualifying projects - Use SJPermits and download the permit. Nonqualifying projects - Use the Standard Plan Review Service."
+    },
+    {
+      "id": "sj_solar_r3",
+      "code_section": "San Jose Permit Center, Solar & Storage Battery Projects (updated 04/15/2026), Requirements for Solar/Battery Installations",
+      "source_url": "https://web.archive.org/web/20260513124521id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/solar-storage-battery-projects",
+      "quote": "The PV system is a rooftop installation on R-3 occupancies (single-family, duplex, or townhome) that are not more than three stories above grade plane and constructed in accordance with the California Residential Code."
+    },
+    {
+      "id": "sj_150_12",
+      "code_section": "SJMC §24.02.150(12) (Ord. No. 31256)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37111/file",
+      "quote": "12. Electrical wiring, devices, appliances, apparatus or equipment operating at less than twenty-five (25) volts and not capable of supplying more than fifty (50) watts of energy, except in hazardous (classified) locations, emergency systems, standby systems, energy storage systems, and energy management systems"
+    },
+    {
+      "id": "g5_b",
+      "code_section": "Cal. Gov. Code §65850.5(b)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.5.",
+      "quote": "A city or county shall administratively approve applications to install solar energy systems through the issuance of a building permit or similar nondiscretionary permit. Review of the application to install a solar energy system shall be limited to the building official’s review of whether it meets all health and safety requirements of local, state, and federal law."
+    },
+    {
+      "id": "g5_i",
+      "code_section": "Cal. Gov. Code §65850.5(i)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.5.",
+      "quote": "A city, county, or city and county shall not condition approval for any solar energy system permit on the approval of a solar energy system by an association, as that term is defined in Section 4080 of the Civil Code."
+    },
+    {
+      "id": "fee_elec",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective August 11, 2025), Residential Sub-Trade Permits, Electrical Permits, p. 5",
+      "source_url": "https://web.archive.org/web/20251207120823id_/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Electrical Permit Fees (site construction and other miscellaneous electrical permits) not involving the addition of new building footage shall be the greater of (a) a minimum of $315 per hour of required inspection time, or (b) calculated on an itemized basis as listed below. These Permit Fees are in addition to the Permit Issuance Fees. All items default to a minimum time allocation of 30 minutes of inspection time (20 minutes minimum per unit if more than 1) except for the following:"
+    },
+    {
+      "id": "fee_pv",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective August 11, 2025), Fixture-Based Time Assessments - Electrical, p. 5",
+      "source_url": "https://web.archive.org/web/20251207120823id_/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Electrical Fixture Minimum (min.) Time (min.)/Unit ... Photovoltaic System (Single Family) 60 50"
+    },
+    {
+      "id": "fee_issue",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective August 11, 2025), Building Residential Fees, p. 3",
+      "source_url": "https://web.archive.org/web/20251207120823id_/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Permit Issuance Fees shall be $227 per hour for processing and coordination time expended or the amounts set forth below, whichever is greater. Minimum permit issuance fee for all permits using Online Permits service is 50% of the specified processing fee."
+    },
+    {
+      "id": "sj_online_intro",
+      "code_section": "San Jose, Online Building Permits at SJPermits.org",
+      "source_url": "https://web.archive.org/web/20260801184719id_/https://www.sanjoseca.gov/business/development-services-permit-center/online-permits-at-sjpermits-org/building-online-permits",
+      "quote": "You can download a building permit for 56 types of simple projects at SJPermits.org. ... Only property owners and qualified contractors may apply for an online building permit."
+    },
+    {
+      "id": "sj_who_ob",
+      "code_section": "San Jose Permit Center, Who Can Apply for a Building Permit? (updated 01-13-2026)",
+      "source_url": "https://web.archive.org/web/20260517000302id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/who-can-apply-for-a-permit",
+      "quote": "We highly recommend that the licensed contractor rather than the property owner pull the permit. ... If you wish to proceed as an Owner-Builder, your permit application package will need to include: Owner-Builder Requirements to Sign a Permit Owner Acknowledgement and Information Verification Form - In addition to submitting a building permit application, you must complete and submit this form. At time of permit issuance, be ready to provide a Driver’s License or other proof of identification. You must be the Property Owner as recorded by the County Tax Assessor."
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Access: every live sanjoseca.gov URL tried, robots.txt included, returned HTTP 403 'Access Denied' (Akamai) to curl and to WebFetch. City pages were read from raw Internet Archive captures (id_ mode, fetched with curl, tags stripped with python3, the fee schedule PDF read with pdftotext). source_url is the capture URL; the official sanjoseca.gov URL is the part after the timestamp. The captured robots.txt (https://web.archive.org/web/20260501010517/https://www.sanjoseca.gov/robots.txt) disallows only /scripts, /admin and *.asmx for all agents. The city's E-Government Policy (sanjoseca.gov/home/showdocument?id=17869, capture 20260904222013) has no rule against copying or automated access. Internet Archive terms say access 'is granted for scholarship and research purposes only'. Re-check each city quote on the live page before marking a rule verified. Quote format: list items and paragraph breaks are joined with single spaces and bullet characters are left out; ' ... ' marks omitted text; the words are verbatim. sjpermits.org robots.txt is 'User-agent: * / Disallow: /', so the SJPermits portal was not fetched; online-permit availability comes from the city's Online Building Permits page. Municode (host of the San Jose Municipal Code) was not fetched. Its archived terms (https://web.archive.org/web/20190411032708/https://www.municode.com/terms-of-use/) say: 'You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.' The current terms page could not be loaded. SJMC text: quotes marked 'Ord. No. 31256' come from the council-agenda redline of that ordinance (draft dated 10/16/2025, Council Agenda 10/28/2025 Item 8.2(a), file 25-1131), downloaded through the Legistar Web API (webapi.legistar.com); sanjose.granicus.com robots.txt has 'User-agent: * / Disallow: /'. Each such quote is the enacted wording: struck-through text removed and underlined additions kept, checked against the rendered PDF page. Legistar matter 25-1187 (Final Adoption of Ordinances, dated 2025-10-30) lists 'Ordinance No. 31256' as passed for publication on 10/28/2025; the signed ordinance and the final vote were not retrieved. Code edition: San Jose adopted the 2025 California codes (not 2022) for permit applications made on or after January 1, 2026. SJMC 24.09.110(A)(6) does not adopt CRC Chapter 1, Division II, so CRC §R105.2 does not apply in San Jose; the city's exemption lists are SJMC 24.02.120 to 24.02.150. Section numbering: the When Is a Building Permit Required? page (updated 06/12/2025) cites 'Section 24.02.110' for the exempt list, but Ord. No. 31256 amends the exemption lists as 24.02.120 (building), 24.02.130 (plumbing), 24.02.140 (mechanical) and 24.02.150 (electrical). Fees: the fee schedule capture is the FY 2025-26 schedule ('Effective August 11, 2025', document 26047 version 637922894017900000, captured 2025-12-07). The Building Permit Fees page captured 2026-08-01 still says the schedule shows fees in effect as of August 11, 2025, but links a newer upload (version 639180865996470000) with no capture, so the current PDF could not be compared. A draft FY 2026-27 fee resolution (Council Agenda 06-09-2026 Item 3.4(b), Legistar file 26-683) sets different amounts ('Water Heater Replacement – Permit Center 0.25 x # of units $52'); its adoption was not confirmed, so it is not cited. Params: system_size_kw does not change the San Jose verdict or the online path; the city's online criteria are weight, point load, height, and ballast, which are not params. SolarAPP+: Gov. Code §65850.52 requires cities over 50,000 residents to offer an automated platform such as SolarAPP+ for systems up to 38.4 kW AC (see ca-baseline/solar.json). The captured Solar & Storage page does not mention SolarAPP+; whether SJPermits meets §65850.52 was not confirmed. Battery: the Online Building Permits table lists 'Stationary Storage Battery System' as 'Limited' for single-family/duplex; the city does not define 'Limited' beyond the anchorage criteria quoted. docs_required is empty because the Solar & Storage page lists documents only for the plan review path."
+}

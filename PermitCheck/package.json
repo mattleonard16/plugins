@@ -1,0 +1,24 @@
+{
+  "name": "permit-check",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.1.2",
+  "scripts": {
+    "test": "pnpm -r test",
+    "typecheck": "tsc --noEmit -p tsconfig.json && pnpm -r typecheck",
+    "validate-data": "tsx scripts/validate-data.ts",
+    "seed-sql": "tsx scripts/build-seed-sql.ts",
+    "review-sheets": "tsx scripts/build-review-sheets.ts",
+    "verify-rule": "tsx scripts/verify-rule.ts",
+    "preview": "tsx scripts/preview.ts"
+  },
+  "dependencies": {
+    "@permit-check/core": "workspace:*",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15",
+    "@types/node": "^24",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "shed",
+  "summary": "In San Jose a shed or other accessory building of 120 square feet or less needs no permit unless it has electricity or plumbing; anything larger, wired, or plumbed needs a building permit.",
+  "outcomes": [
+    {
+      "when": {
+        "all": [
+          {
+            "param": "floor_area_sqft",
+            "op": "lte",
+            "value": 120
+          },
+          {
+            "param": "has_electrical",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "param": "has_plumbing",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "verdict": "NOT_REQUIRED",
+      "explanation": "A shed or other accessory building of 120 square feet or less, measured from the exterior walls, with no electricity and no plumbing does not need a permit.",
+      "citations": [
+        "c1",
+        "c2"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "A building permit is required if the shed is over 120 square feet (measured from the exterior walls) or has any electricity or plumbing, whatever its size. Over 650 square feet also needs a Special Use Permit from Planning.",
+  "default_citations": [
+    "c1"
+  ],
+  "permit_types": [
+    "Building permit",
+    "Special Use Permit (Planning), if over 650 sq ft"
+  ],
+  "fee_note": "San Jose's FY 2025-26 Building Division fee schedule (effective August 11, 2025) charges residential exterior or site alterations, including decks and accessory structures such as sheds, a base permit issuance fee of $227 and a base plan review fee of $325. The base inspection fee is $367 when only a building permit is needed, or $682 total when a plumbing, mechanical or electrical permit is also needed. The Building Official may adjust fees to fit the scope. This is the latest archived copy; a FY 2026-27 schedule may now apply, so check sanjoseca.gov/buildingfees.",
+  "docs_required": [
+    "Project plans (site plan, foundation plan, floor plan, framing plan, and elevations per the city's accessory building plan instructions)",
+    "Building Permit Application",
+    "Single-Family & Duplex Projects Submittal Checklist (under Project Scope, check \"Other\" and enter \"Accessory Building\" or \"Accessory Structure\")"
+  ],
+  "inspections": [],
+  "notes": [
+    {
+      "text": "Zoning limits apply even without a permit: one story, 650 sq ft maximum unless a special use permit allows more, at most 2 plumbing fixtures, and 12 ft maximum height (on a pitched roof, 12 ft at the midpoint of the slope and 16 ft at the peak).",
+      "citations": [
+        "c4"
+      ]
+    },
+    {
+      "text": "Keep at least 6 ft from any other building, measured wall to wall. The shed cannot contain living or sleeping space and cannot be air-conditioned.",
+      "citations": [
+        "c5"
+      ]
+    },
+    {
+      "text": "Rear yard coverage: accessory buildings and structures may cover at most 60% of the rear yard if there is a built-in pool, otherwise 40%, of which accessory buildings may not exceed 30%. Eaves up to 2 ft do not count.",
+      "citations": [
+        "c6"
+      ]
+    },
+    {
+      "text": "Minimum setbacks: 60 ft from the front property line (45 ft for a detached garage). Side and rear setbacks are 0 ft, except 10 ft on the street side of a corner lot and 4 ft on a key lot or a corner lot next to a residential key lot.",
+      "citations": [
+        "c7"
+      ]
+    },
+    {
+      "text": "No windows, doors, or vents within 3 ft of a property line, and openings may be at most 25% of the wall area between 3 and 5 ft. Over 120 sq ft, overhangs must stay 2 ft from the property line.",
+      "citations": [
+        "c8"
+      ]
+    },
+    {
+      "text": "A shed under 120 sq ft that is at least 6 ft from other structures may sit on the property line without fire walls. Over 120 sq ft and less than 5 ft from a property line, the walls parallel to that line need 1-hour fire protection.",
+      "citations": [
+        "c9"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "c1",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "If the accessory building or structure is 120 sq. ft. or less, no permit is required unless it includes electricity or plumbing. A building permit is required: If the size is greater than 120 sq. ft. (as measured from exterior walls). If it includes electricity or plumbing, no matter the size. If over 650 sq. ft., both a building permit and special use permit are required."
+    },
+    {
+      "id": "c2",
+      "code_section": "San Jose Permit Center, When Is a Building Permit Required? (updated 06/12/2025), summarizing SJMC §24.02.110",
+      "source_url": "https://web.archive.org/web/20260813091205/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/when-is-a-building-permit-required",
+      "quote": "Accessory buildings or structures of 120 square feet or less and that will not be electrically wired."
+    },
+    {
+      "id": "c3",
+      "code_section": "San Jose Building Bulletin #201, When Is a Building Permit Required? (06/12/2025), summarizing SJMC §24.02.110",
+      "source_url": "https://web.archive.org/web/20260106113350/https://www.sanjoseca.gov/home/showpublisheddocument/25897/638853215612230000",
+      "quote": "1. Accessory structures of 120 square feet or less and that will not be electrically wired."
+    },
+    {
+      "id": "c4",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "Maximum stories: 1 Maximum size: 650 sq. ft. unless an approved special use permit allows greater Maximum plumbing fixtures: 2 Maximum height: 12 feet If the roof is pitched, the maximum height halfway up any slope is 12 feet and the roof peak maximum is 16 feet."
+    },
+    {
+      "id": "c5",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "Minimum distance to any other building: 6 feet (measured wall to wall; eaves may be closer than 6 feet but must meet applicable building codes) Cannot contain any living or sleeping spaces Cannot be air-conditioned"
+    },
+    {
+      "id": "c6",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "Maximum coverage of rear yard including a built-in pool: 60% Maximum coverage of rear yard without a built-in pool: 40% of which accessory buildings may not exceed 30% Eave projections of up to 2 feet will not count toward rear yard coverage"
+    },
+    {
+      "id": "c7",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "Front Setback: 60 feet Exception, detached garage: 45 feet Side Setback: 0 feet unless: Corner lot: 10 feet from the side that is adjacent to a street Corner lot abutting a residential key lot: 4 feet Key lot: 4 feet Rear Setback: 0 feet unless: Corner lot: 10 feet where side is adjacent to a street Corner lot abutting a residential key lot: 4 feet Key lot: 4 feet"
+    },
+    {
+      "id": "c8",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "For accessories buildings and structures over 120 sq. ft., overhangs cannot be closer than 2 feet to the property line. Within 3 feet of the property line, openings are not allowed. Between 3-5 feet of the property line, openings may not exceed 25% of the wall area."
+    },
+    {
+      "id": "c9",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "Is less than 120 sq. ft. and is at least 6 feet from other structures, then the project may be built on the property line without firewalls. Exceeds 120 sq. ft. and is less than 5 feet from the property line, then the walls parallel to the property line must be built with a 1-hour fire protection."
+    },
+    {
+      "id": "c10",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "Accessory buildings are defined in the Municipal Code as non-livable and enclosed, including: sheds, playhouses, and detached garages. Does not include livable accessory dwelling units (ADUs). Accessory structures have open-air construction, including: gazebos, trellises, and pools, spas and hot tubs."
+    },
+    {
+      "id": "c11",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "> Project Plans - Follow above plan instructions. > Building Permit Application - See instructions. > Single-Family & Duplex Projects Submittal Checklist - Under Project Scope: - Check \"Other\" - Enter \"Accessory Building\" or \"Accessory Structure\""
+    },
+    {
+      "id": "c12",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective 08/11/2025), Building Residential Fees, p. 4",
+      "source_url": "https://web.archive.org/web/20251207120823/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Exterior and/or site alterations, such (but not limited to) an accessory structure (shed, etc.), balconies and decks, porches, windows, pools, etc. will be charged a base permit issuance fee of $227 and a base plan review fee of $325. Exterior and/or site alterations that only require a building permit will be charged a base Inspection fee of $367. If a plumbing, mechanical, or electrical permit is also required, the total base inspection fee will be $682."
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Sources agree on the 120 sq ft threshold. The Accessory Buildings & Structures page (c1, updated 04/14/2026) adds plumbing as a trigger, while the exemption list (c2) and Bulletin #201 item 1 (c3) mention only electrical wiring. This record follows c1. c1 says 'no permit is required' at 120 sq ft or less, so 'under 120' and '120 or less' do not conflict here. San Jose's permit text has no story limit. The param stories is not used in outcomes; the zoning limit of 1 story is a note (c4). The CRC baseline exemption is limited to one-story structures. c10 defines accessory buildings as 'non-livable and enclosed' (sheds, playhouses, detached garages). docs_required comes from c11 and the plan instructions on the same page. fee_note comes from c12. No inspection list is published, so inspections is empty. Zoning notes are the city's summary of SJMC §20.30.500. I did not read the code section itself (Municode terms). Access: sanjoseca.gov returned HTTP 403 (Akamai 'Access Denied') to curl and to WebFetch from this machine, robots.txt included. I read robots.txt from a Wayback snapshot (https://web.archive.org/web/20260501010517/https://www.sanjoseca.gov/robots.txt). It disallows only /scripts, /admin and *.asmx for all agents, so content pages are allowed. The city's E-Government Policy (sanjoseca.gov/home/showdocument?id=17869, read from a Wayback snapshot) has no rule against copying or automated access. Every San Jose quote comes from a raw Internet Archive snapshot of the official page (id_ mode, fetched with curl, tags stripped with python3, PDFs read with pdftotext). source_url is that snapshot URL, and the official sanjoseca.gov URL is the part after the timestamp. Internet Archive terms say access 'is granted for scholarship and research purposes only'. Re-check each quote on the live sanjoseca.gov page before marking the rule verified. Quote format: list items and paragraph breaks are joined with single spaces and bullet characters are left out; the words are verbatim. Municode (library.municode.com), host of SJMC Titles 20 and 24, was not fetched. Its archived terms (https://web.archive.org/web/20190411032708/https://www.municode.com/terms-of-use/) say: 'You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.' I could not load the current terms (the page is rendered by JavaScript and municode.com redirects to civicplus.com, which returns 403). So SJMC §24.02.110 (the exempt-work list) and §20.30.500 were not read directly. The city pages are the only source. The city pages cite 'Section 24.02.110', but the Municode link on the When Is a Building Permit Required? page points to node 24.02.120 (BUPEEX). The correct section number is unconfirmed. Code edition: the Adopted Building Codes page (https://web.archive.org/web/20260318183710/https://www.sanjoseca.gov/your-government/departments-offices/planning-building-code-enforcement/building-division/adopted-building-codes) says 'Effective Jan. 1, 2026, the 2025 state building codes have replaced the 2022 codes.' Its 'amended ordinance' link still opens Ordinance No. 30837 (the 2022 adoption, which does not amend Chapter 24.02). The October 28, 2025 Council presentation on adopting the 2025 codes (https://sanjose.legistar.com/View.ashx?M=F&ID=14894029&GUID=229C001D-2EEC-4071-83AE-F1034F198173&G=920296E4-80BE-4CA2-A78F-32C5EFCF78AF) lists the retained Title 24 amendments as 'Special Testing and Inspections', 'Gypsum board shear walls' and 'Braced wall panels', and says 'No (0) additional amendments to 2025 California Building Codes'. That suggests the 2025 adoption left the exempt-work list alone, but I did not read the adopted ordinance. Bulletin #201 and the When Is a Building Permit Required? page are both dated 06/12/2025, before the 2025 codes took effect."
+}

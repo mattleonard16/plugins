@@ -1,0 +1,115 @@
+{
+  "jurisdiction": "ca",
+  "project": "shed",
+  "summary": "Under the 2025 California Residential Code, a one-story detached shed of 120 square feet or less is exempt from a building permit; larger or multi-story sheds need one, and your city may set stricter rules.",
+  "outcomes": [
+    {
+      "when": {
+        "all": [
+          {
+            "param": "floor_area_sqft",
+            "op": "lte",
+            "value": 120
+          },
+          {
+            "param": "stories",
+            "op": "lte",
+            "value": 1
+          },
+          {
+            "param": "has_electrical",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "param": "has_plumbing",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "verdict": "NOT_REQUIRED",
+      "explanation": "A one-story detached accessory structure (other than a storm shelter) with a floor area of 120 square feet or less is exempt from a building permit under the state code.",
+      "citations": [
+        "c1",
+        "c2"
+      ]
+    },
+    {
+      "when": {
+        "all": [
+          {
+            "param": "floor_area_sqft",
+            "op": "lte",
+            "value": 120
+          },
+          {
+            "param": "stories",
+            "op": "lte",
+            "value": 1
+          }
+        ]
+      },
+      "verdict": "DEPENDS",
+      "explanation": "The structure itself is exempt from a building permit, but the exemption covers the building only. Electrical or plumbing work in it is governed by separate rules that this record has not sourced, so ask the local building department.",
+      "citations": [
+        "c1",
+        "c2"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "A shed over 120 square feet or more than one story falls outside the state's only exemption for detached accessory structures, so it needs a building permit.",
+  "default_citations": [
+    "c1",
+    "c2"
+  ],
+  "permit_types": [
+    "Building permit"
+  ],
+  "fee_note": null,
+  "docs_required": [],
+  "inspections": [],
+  "notes": [
+    {
+      "text": "Being exempt from a permit does not allow work that breaks the code or other local laws.",
+      "citations": [
+        "c1"
+      ]
+    },
+    {
+      "text": "In wildland-urban interface (fire hazard) areas, a small shed exempt from a permit may still have to meet the California Wildland-Urban Interface Code (Title 24, Part 7).",
+      "citations": [
+        "c4"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "c1",
+      "code_section": "2025 CRC §R105.2 (preamble), as printed in the SFM 05/24 Final Express Terms for the 2025 CRC, BSC Commission meeting 2025-02-26",
+      "source_url": "https://www.dgs.ca.gov/-/media/Divisions/BSC/03-Rulemaking/2024-Triennial-Cycle/Commission-Meetings/2025-02-26/SFM-05-24-FET-PT2_5.docx",
+      "quote": "R105.2 Work exempt from permit. Exemption from permit requirements of this code shall not be deemed to grant authorization for any work to be done in any manner in violation of the provisions of this code or any other laws or ordinances of this jurisdiction. Permits shall not be required for the following:"
+    },
+    {
+      "id": "c2",
+      "code_section": "2025 CRC §R105.2 Building item 1, as printed in the SFM 05/24 Final Express Terms for the 2025 CRC, BSC Commission meeting 2025-02-26",
+      "source_url": "https://www.dgs.ca.gov/-/media/Divisions/BSC/03-Rulemaking/2024-Triennial-Cycle/Commission-Meetings/2025-02-26/SFM-05-24-FET-PT2_5.docx",
+      "quote": "1. Other than storm shelters, one-story detached accessory structures, provided that the floor area does not exceed 120 square feet (11.15 m2)."
+    },
+    {
+      "id": "c3",
+      "code_section": "HCD 07/24 Final Express Terms for the 2025 CRC, Item 2 (adoption scope of §R105.2)",
+      "source_url": "https://www.dgs.ca.gov/-/media/Divisions/BSC/03-Rulemaking/2024-Triennial-Cycle/Commission-Meetings/2025-02-26/HCD-07-24-FET-PT2_5.docx",
+      "quote": "HCD proposes to adopt Chapter 1, Division II, Sections R101.2, R105.2 (Building: 1 – 10 only), R106.1, R106.1.1, R106.1.3, R106.1.4, R106.1.5, R106.2, R109.1, R109.1.1, R109.1.1.1, R109.1.3, R109.1.4, R109.1.4.1, R109.1.4.2, R109.1.5, R109.1.5.1, R109.1.5.2, R109.1.5.3, R109.1.6, R109.1.6.1, and R109.1.6.2 only from the 2024 International Residential Code (IRC) into the 2025 CRC and bring forward existing California amendments from the 2022 CRC into the 2025 CRC without modification."
+    },
+    {
+      "id": "c4",
+      "code_section": "BSC 2025 Summary of California Code Changes (07/2025), CRC Part 2.5 Chapter 1, State Fire Marshal entry for §R105.2",
+      "source_url": "https://www.dgs.ca.gov/-/media/Divisions/BSC/05-Resources/Guidebooks/2025-Title-24-CA-Code-Changes---New-07-25.pdf",
+      "quote": "R105.2 Work exempt from permit Updated the pointer to the new CWUIC that is applicable even if the project is exempt from permits."
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Edition: 2025 CRC (Title 24 Part 2.5), effective January 1, 2026. San Jose cites the 2025 codes as of Jan. 1, 2026. Source limits: the published 2025 CRC and CBC text is on the ICC viewer (codes.iccsafe.org), which I did not fetch. ICC Terms of Use (https://www.iccsafe.org/about/terms-of-use/) exclude 'use of data mining, robots, or similar data gathering and extraction tools with any Service or E-Content', and say no part of a Service may be reproduced 'on a third-party or government website' without consent. The BSC errata and supplements are also hosted on iccsafe.org, so I skipped them too. Instead, c1 and c2 are quoted from the State Fire Marshal's Final Express Terms on dgs.ca.gov (robots.txt: 'Allow: /'). In that document's legend, upright text is model code and italic text is an existing California amendment. '120 square feet (11.15 m2)' is italic, so it is the California amendment. HCD's 2018 Initial Express Terms (https://www.dgs.ca.gov/-/media/Divisions/BSC/03-Rulemaking/2018-Triennial-Cycle/2018-CAC-Review/BFO/HCD/HCD0418IETPt25.pdf) show it replacing the 2018 IRC's 200 sq ft. I did not check the 2024 IRC model value. The '2' in 'm2' is a superscript in the source. In the same item, 'Section 710A' is struck through and replaced with 'Part 7 California Wildland Urban-Interface Code'. I did not quote that sentence because plain-text extraction mixes the struck and inserted words. Note 2 relies on the BSC summary (c4) instead. c3 (HCD's Final Express Terms) confirms HCD adopted R105.2 Building items 1-10 from the 2024 IRC and carried existing California amendments forward 'without modification'. These are rulemaking documents approved at the BSC meeting of February 26, 2025. I could not compare them with the printed 2025 CRC because the ICC text was not fetched. Not sourced: R105.1 (the general requirement for a permit), so the REQUIRED default rests on R105.2 being the list of exemptions. Also not sourced: the R105.2 Electrical and Plumbing exemption lists, hence the DEPENDS outcome for wired or plumbed sheds. CBC §105.2 (for buildings outside the CRC's scope) was not sourced: HCD's Part 2 Final Express Terms adopt 105.2 Building items 1-13 but do not reprint the text. Local amendments: per docs/DESIGN.md, a state_only answer must turn NOT_REQUIRED into DEPENDS. Cities may tighten this exemption. San Jose, for example, also requires a permit for any electricity or plumbing."
+}

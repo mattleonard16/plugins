@@ -1,0 +1,233 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "hvac",
+  "summary": "In San Jose, installing or replacing a furnace, air conditioner, heat pump, or ductwork needs an electrical permit and usually a mechanical permit; plug-in window units and portable fans and heaters are exempt.",
+  "outcomes": [
+    {
+      "when": {
+        "param": "adds_or_changes_ductwork",
+        "op": "eq",
+        "value": true
+      },
+      "verdict": "REQUIRED",
+      "explanation": "Installing, altering, or replacing ductwork needs a mechanical permit, and a HERS rater must verify the ducts are sealed. The equipment itself also needs an electrical permit.",
+      "citations": [
+        "sj_ac_duct",
+        "sj_ac_page"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "Installing or replacing heating and cooling equipment needs an electrical permit and may also need a mechanical or plumbing permit, depending on the equipment. Air conditioners, furnaces, heat pumps, and ductless mini-splits are on the city's list of systems that need a permit.",
+  "default_citations": [
+    "sj_ac_page",
+    "sj_ac_list",
+    "sj_140"
+  ],
+  "permit_types": [
+    "Electrical permit",
+    "Mechanical permit",
+    "Plumbing permit (some systems)"
+  ],
+  "fee_note": "San Jose's FY 2025-26 fee schedule bills mechanical permit inspection at a minimum of $315 per hour, with a 30-minute default minimum per item and a 50-minute minimum for a single-family furnace replacement, in addition to the permit issuance fee. Electrical inspection is billed separately.",
+  "docs_required": [],
+  "inspections": [],
+  "notes": [
+    {
+      "text": "Plug-in window air conditioners and portable fans and heaters do not need a permit, but a new outlet or receptacle needs an electrical permit.",
+      "citations": [
+        "sj_ac_portable",
+        "sj_140"
+      ]
+    },
+    {
+      "text": "For a single-family home or duplex, the common heating and cooling projects can be permitted online at SJPermits.org, including air conditioning, furnace replacement, duct alterations, and heat pumps.",
+      "citations": [
+        "sj_ac_online",
+        "sj_online_mech"
+      ]
+    },
+    {
+      "text": "An air conditioner needs a mechanical permit for work involving ducts, ventilation, or major HVAC components, and an electrical permit for new wiring, dedicated circuits, or panel changes.",
+      "citations": [
+        "sj_ac_ac"
+      ]
+    },
+    {
+      "text": "A furnace replacement generally needs three permits, all available in one SJPermits application.",
+      "citations": [
+        "sj_ac_furnace"
+      ]
+    },
+    {
+      "text": "The online heat pump permit covers the mechanical and electrical permits; some systems also need a plumbing permit added to the application.",
+      "citations": [
+        "sj_ac_hp"
+      ]
+    },
+    {
+      "text": "Have the plans, the HERS report, and any manufacturer's instructions available at inspection.",
+      "citations": [
+        "sj_ac_hers"
+      ]
+    },
+    {
+      "text": "Fees: mechanical inspection is a minimum of $315 per hour with a 50-minute minimum for a single-family furnace replacement, plus a permit issuance fee.",
+      "citations": [
+        "fee_mech",
+        "fee_issue"
+      ]
+    },
+    {
+      "text": "Online permits can be pulled only by the property owner or a qualified contractor. The city recommends that a licensed contractor pull the permit; an owner-builder must also submit the Owner Acknowledgement and Information Verification Form, show ID at issuance, and be the owner of record.",
+      "citations": [
+        "sj_online_intro",
+        "sj_who_ob"
+      ]
+    },
+    {
+      "text": "San Jose adopted the 2025 California Mechanical Code; the 2025 codes apply to permit applications made on or after January 1, 2026.",
+      "citations": [
+        "sj_cmc",
+        "sj_eff"
+      ]
+    },
+    {
+      "text": "With the 2025 code adoption, San Jose repealed its earlier local reach code amendments to the Energy Code and green building code.",
+      "citations": [
+        "sj_repeal",
+        "sj_reach_memo"
+      ]
+    },
+    {
+      "text": "A July 2025 city staff memo says Bay Area Air District rules will require new furnaces to meet zero-NOx standards beginning in 2029. Confirm the dates with the Air District.",
+      "citations": [
+        "sj_nox"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "sj_ac_duct",
+      "code_section": "San Jose Permit Center, Air Conditioning, Heating & Fireplaces (updated 04/07/2026), Duct Installations or Replacements",
+      "source_url": "https://web.archive.org/web/20260514015326id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/air-conditioning-heating-fireplaces",
+      "quote": "A mechanical permit is required for installing, altering, or replacing ductwork, especially when changing HVAC equipment capacity, extending lines, or penetrating the building envelope. ... Duct Sealing & Testing: Systems must be sealed to reduce leakage and must be verified by a HERS (Home Energy Rating System) rater to meet standards."
+    },
+    {
+      "id": "sj_ac_page",
+      "code_section": "San Jose Permit Center, Air Conditioning, Heating & Fireplaces (updated 04/07/2026)",
+      "source_url": "https://web.archive.org/web/20260514015326id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/air-conditioning-heating-fireplaces",
+      "quote": "Installing or replacing heating and cooling equipment requires an electrical permit and may also require a mechanical or plumbing permit, depending upon the type of equipment."
+    },
+    {
+      "id": "sj_ac_list",
+      "code_section": "San Jose Permit Center, Air Conditioning, Heating & Fireplaces (updated 04/07/2026)",
+      "source_url": "https://web.archive.org/web/20260514015326id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/air-conditioning-heating-fireplaces",
+      "quote": "Systems that require a permit include: Air conditioning systems Any gas-powered heater or gas-powered fireplace insert Duct installations and replacements Ductless mini-split systems ... Furnaces Heat pumps"
+    },
+    {
+      "id": "sj_140",
+      "code_section": "SJMC §24.02.140 (Ord. No. 31256)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37111/file",
+      "quote": "A mechanical permit shall not be required for the following: 1. A portable heating appliance. 2. Portable ventilating equipment. 3. A portable cooling unit. 4. A portable evaporative cooler. ... 6. Replacement of any component part of assembly of an appliance which does not alter its original approval and complies with other applicable requirements of the technical codes."
+    },
+    {
+      "id": "sj_ac_portable",
+      "code_section": "San Jose Permit Center, Air Conditioning, Heating & Fireplaces (updated 04/07/2026)",
+      "source_url": "https://web.archive.org/web/20260514015326id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/air-conditioning-heating-fireplaces",
+      "quote": "Plug-in window air conditioners, portable fans and heaters, and electric logs do not require a permit. ... You must obtain an electrical permit for any new outlet, receptacle, or other electrical work."
+    },
+    {
+      "id": "sj_ac_online",
+      "code_section": "San Jose Permit Center, Air Conditioning, Heating & Fireplaces (updated 04/07/2026)",
+      "source_url": "https://web.archive.org/web/20260514015326id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/air-conditioning-heating-fireplaces",
+      "quote": "For single-family/duplex properties, an online permit is available for all of the common projects listed below."
+    },
+    {
+      "id": "sj_online_mech",
+      "code_section": "San Jose, Online Building Permits at SJPermits.org, Mechanical Permit table",
+      "source_url": "https://web.archive.org/web/20260801184719id_/https://www.sanjoseca.gov/business/development-services-permit-center/online-permits-at-sjpermits-org/building-online-permits",
+      "quote": "Mechanical Permit Single-family / Duplex Multifamily Commercial / Industrial Air Conditioning Yes No No ... Duct/Flue Alteration Yes No No ... Furnace Replacement Yes Yes No ... Heat Pump including condensate Yes No No"
+    },
+    {
+      "id": "sj_ac_ac",
+      "code_section": "San Jose Permit Center, Air Conditioning, Heating & Fireplaces (updated 04/07/2026), Air Conditioning Systems",
+      "source_url": "https://web.archive.org/web/20260514015326id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/air-conditioning-heating-fireplaces",
+      "quote": "Mechanical Permit: Required for any installation involving air ducts, ventilation, or major HVAC components. Electrical Permit: Required if the project includes new wiring, dedicated circuits, or modifications to the electrical panel."
+    },
+    {
+      "id": "sj_ac_furnace",
+      "code_section": "San Jose Permit Center, Air Conditioning, Heating & Fireplaces (updated 04/07/2026), Furnaces",
+      "source_url": "https://web.archive.org/web/20260514015326id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/air-conditioning-heating-fireplaces",
+      "quote": "Installing or replacing a furnace generally requires three permits; these can all be obtained through one application at SJPermits.org."
+    },
+    {
+      "id": "sj_ac_hp",
+      "code_section": "San Jose Permit Center, Air Conditioning, Heating & Fireplaces (updated 04/07/2026), Heat Pumps",
+      "source_url": "https://web.archive.org/web/20260514015326id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/air-conditioning-heating-fireplaces",
+      "quote": "Permits - The online permit for a heat pump covers both a mechanical and electrical permit. Some systems may also require a plumbing permit, and you will need to add the plumbing permit to your online application."
+    },
+    {
+      "id": "sj_ac_hers",
+      "code_section": "San Jose Permit Center, Air Conditioning, Heating & Fireplaces (updated 04/07/2026), Inspections",
+      "source_url": "https://web.archive.org/web/20260514015326id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/air-conditioning-heating-fireplaces",
+      "quote": "Have plans, HERS report, and manufacturer instructions, if any, available."
+    },
+    {
+      "id": "fee_mech",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective August 11, 2025), Residential Sub-Trade Permits, Mechanical Permits, pp. 5-6",
+      "source_url": "https://web.archive.org/web/20251207120823id_/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Mechanical Permit Fees (site construction and other miscellaneous mechanical permits) not involving the addition of new building footage shall be the greater of (a) a minimum of $315 per hour of actual inspection time, or (b) calculated on an itemized basis as listed below. These Mechanical Permit Fees are in addition to the Permit Issuance Fees. All items default to a minimum time allocation of 30 minutes of inspection time (20 minutes minimum per unit if more than 1) except for the following: ... Furnace, Replacement SFR 50 40"
+    },
+    {
+      "id": "fee_issue",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective August 11, 2025), Building Residential Fees, p. 3",
+      "source_url": "https://web.archive.org/web/20251207120823id_/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Permit Issuance Fees shall be $227 per hour for processing and coordination time expended or the amounts set forth below, whichever is greater. Minimum permit issuance fee for all permits using Online Permits service is 50% of the specified processing fee."
+    },
+    {
+      "id": "sj_online_intro",
+      "code_section": "San Jose, Online Building Permits at SJPermits.org",
+      "source_url": "https://web.archive.org/web/20260801184719id_/https://www.sanjoseca.gov/business/development-services-permit-center/online-permits-at-sjpermits-org/building-online-permits",
+      "quote": "You can download a building permit for 56 types of simple projects at SJPermits.org. ... Only property owners and qualified contractors may apply for an online building permit."
+    },
+    {
+      "id": "sj_who_ob",
+      "code_section": "San Jose Permit Center, Who Can Apply for a Building Permit? (updated 01-13-2026)",
+      "source_url": "https://web.archive.org/web/20260517000302id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/who-can-apply-for-a-permit",
+      "quote": "We highly recommend that the licensed contractor rather than the property owner pull the permit. ... If you wish to proceed as an Owner-Builder, your permit application package will need to include: Owner-Builder Requirements to Sign a Permit Owner Acknowledgement and Information Verification Form - In addition to submitting a building permit application, you must complete and submit this form. At time of permit issuance, be ready to provide a Driver’s License or other proof of identification. You must be the Property Owner as recorded by the County Tax Assessor."
+    },
+    {
+      "id": "sj_cmc",
+      "code_section": "SJMC §24.05.100 (Ord. No. 31256)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37111/file",
+      "quote": "Except as otherwise provided for in this chapter, the California Mechanical Code, 2025 edition, together with those omissions, amendments, exceptions and additions thereto as amended in Title 24 of the California Code of Regulations are approved and adopted"
+    },
+    {
+      "id": "sj_eff",
+      "code_section": "San Jose staff memo, Council file 25-1131 (Oct. 6, 2025)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37104/file",
+      "quote": "The 2025 California Building Standards Code will apply to any building or structure for which an application for a building permit is made on or after January 1, 2026."
+    },
+    {
+      "id": "sj_repeal",
+      "code_section": "Ord. No. 31257, Sections 2 and 6",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37110/file",
+      "quote": "Sections 24.10.110, 24.10.120, and 24.10.130, and Parts 2 and 3 of Chapter 24.10 of Title 24 of the San José Municipal Code are hereby repealed. ... Sections 24.12.110, 24.12.120, and 24.12.130, and Parts 2 through 8 of Chapter 24.12 of Title 24 of the San José Municipal Code are hereby repealed."
+    },
+    {
+      "id": "sj_reach_memo",
+      "code_section": "San Jose staff memo, Council file 25-1131 (Oct. 6, 2025)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37104/file",
+      "quote": "However, staff proposes to remove the current reach code amendments and one currently adopted local technical amendment as those amendments are now part of the 2025 codes."
+    },
+    {
+      "id": "sj_nox",
+      "code_section": "San Jose staff memo, Council file 25-803 (July 21, 2025)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/14973/attachments/36521/file",
+      "quote": "In March 2023, the Bay Area Air District adopted rule amendments, with the goal of reducing Nitrogen Oxide (NOx) emissions, that will affect the sale and installation of water and space heating appliances in the greater San Francisco Bay Region. In a phased approach beginning in 2027, new water heaters must meet the zero-NOx standard. Beginning in 2029, new furnaces must meet the zero-NOx standards."
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Access: every live sanjoseca.gov URL tried, robots.txt included, returned HTTP 403 'Access Denied' (Akamai) to curl and to WebFetch. City pages were read from raw Internet Archive captures (id_ mode, fetched with curl, tags stripped with python3, the fee schedule PDF read with pdftotext). source_url is the capture URL; the official sanjoseca.gov URL is the part after the timestamp. The captured robots.txt (https://web.archive.org/web/20260501010517/https://www.sanjoseca.gov/robots.txt) disallows only /scripts, /admin and *.asmx for all agents. The city's E-Government Policy (sanjoseca.gov/home/showdocument?id=17869, capture 20260904222013) has no rule against copying or automated access. Internet Archive terms say access 'is granted for scholarship and research purposes only'. Re-check each city quote on the live page before marking a rule verified. Quote format: list items and paragraph breaks are joined with single spaces and bullet characters are left out; ' ... ' marks omitted text; the words are verbatim. sjpermits.org robots.txt is 'User-agent: * / Disallow: /', so the SJPermits portal was not fetched; online-permit availability comes from the city's Online Building Permits page. Municode (host of the San Jose Municipal Code) was not fetched. Its archived terms (https://web.archive.org/web/20190411032708/https://www.municode.com/terms-of-use/) say: 'You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.' The current terms page could not be loaded. SJMC text: quotes marked 'Ord. No. 31256' come from the council-agenda redline of that ordinance (draft dated 10/16/2025, Council Agenda 10/28/2025 Item 8.2(a), file 25-1131), downloaded through the Legistar Web API (webapi.legistar.com); sanjose.granicus.com robots.txt has 'User-agent: * / Disallow: /'. Each such quote is the enacted wording: struck-through text removed and underlined additions kept, checked against the rendered PDF page. Legistar matter 25-1187 (Final Adoption of Ordinances, dated 2025-10-30) lists 'Ordinance No. 31256' as passed for publication on 10/28/2025; the signed ordinance and the final vote were not retrieved. Code edition: San Jose adopted the 2025 California codes (not 2022) for permit applications made on or after January 1, 2026. SJMC 24.09.110(A)(6) does not adopt CRC Chapter 1, Division II, so CRC §R105.2 does not apply in San Jose; the city's exemption lists are SJMC 24.02.120 to 24.02.150. Section numbering: the When Is a Building Permit Required? page (updated 06/12/2025) cites 'Section 24.02.110' for the exempt list, but Ord. No. 31256 amends the exemption lists as 24.02.120 (building), 24.02.130 (plumbing), 24.02.140 (mechanical) and 24.02.150 (electrical). Fees: the fee schedule capture is the FY 2025-26 schedule ('Effective August 11, 2025', document 26047 version 637922894017900000, captured 2025-12-07). The Building Permit Fees page captured 2026-08-01 still says the schedule shows fees in effect as of August 11, 2025, but links a newer upload (version 639180865996470000) with no capture, so the current PDF could not be compared. A draft FY 2026-27 fee resolution (Council Agenda 06-09-2026 Item 3.4(b), Legistar file 26-683) sets different amounts ('Water Heater Replacement – Permit Center 0.25 x # of units $52'); its adoption was not confirmed, so it is not cited. Reach codes: Ord. No. 31257 (Council Agenda 10/28/2025 Item 8.2(b)) repealed SJMC 24.10 Parts 2 and 3 and 24.12 Parts 2 through 8, the city's earlier local green building and Energy Code amendments. A proposed Existing Single-Family Building Reach Code (Legistar files 25-803 and 25-942) would have required a heat pump when an air conditioner is replaced or added, and electric-ready wiring near gas appliances. An unofficial meeting summary (citizenportal.ai) reports 'The motion failed after a 5–4 recorded vote and did not take effect.' It is not cited, and its adoption status was not confirmed from an official record. The July 21, 2025 staff memo (file 25-803) says AB 130 prohibits new residential building standards, including reach codes, 'from October 1, 2025, through June 1, 2031.' Inferred, not quoted: no San Jose rule found requires a heat pump or all-electric replacement in an existing home. Params: like_for_like does not change the verdict; the city page does not exempt same-type replacements. adds_or_changes_ductwork only changes the explanation; both paths are REQUIRED. Discrepancy: the Air Conditioning, Heating & Fireplaces page (updated 04/07/2026) lists 'Chapter 24.12.500' Single-Family Energy Standards as a referenced code, but Ord. No. 31257 repealed Parts 2 through 8 of SJMC Chapter 24.12. The page reference looks out of date. Not modeled: SJMC 24.02.140 also exempts a unit refrigerating system as defined in the Mechanical Code and small self-contained refrigeration systems. The CMC definition could not be read, and the city page treats air conditioners and heat pumps as needing permits, so these items are left out. The fee schedule's mechanical list has a 'Furnace, Replacement SFR' line (50-minute minimum) and no separate line for an air conditioner or heat pump, which fall under the 30-minute default."
+}

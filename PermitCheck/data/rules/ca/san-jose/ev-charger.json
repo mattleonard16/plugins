@@ -1,0 +1,268 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "ev-charger",
+  "summary": "In San Jose, a Level 1 (120-volt) charger plugged into an existing outlet needs no permit; a Level 2 (240-volt) charger or any new outlet needs an electrical permit.",
+  "outcomes": [
+    {
+      "when": {
+        "all": [
+          {
+            "param": "install_type",
+            "op": "eq",
+            "value": "plug_into_existing_outlet"
+          },
+          {
+            "param": "charger_level",
+            "op": "eq",
+            "value": "level_1_120v"
+          }
+        ]
+      },
+      "verdict": "NOT_REQUIRED",
+      "explanation": "A Level 1 charger that plugs into a standard 120-volt outlet you already have needs no permit. Installing a new outlet for it needs an electrical permit.",
+      "citations": [
+        "sj_ev_page",
+        "sj_ev_levels",
+        "sj_ev_l1",
+        "sj_150_1"
+      ]
+    },
+    {
+      "when": {
+        "param": "charger_level",
+        "op": "eq",
+        "value": "level_2_240v"
+      },
+      "verdict": "REQUIRED",
+      "explanation": "A Level 2 (240-volt) charger needs an electrical permit. If the manufacturer specifies mechanical ventilation, a mechanical permit is also required.",
+      "citations": [
+        "sj_ev_page",
+        "sj_ev_levels",
+        "sj_ev_l2"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "Installing a new outlet or circuit for a charger needs an electrical permit in San Jose. State law requires the city to approve charging-station applications through a building permit or similar nondiscretionary permit.",
+  "default_citations": [
+    "sj_ev_l1",
+    "sj_ev_l2",
+    "sj_150_5",
+    "g7_b1"
+  ],
+  "permit_types": [
+    "Electrical permit",
+    "Mechanical permit (if the manufacturer specifies mechanical ventilation)"
+  ],
+  "fee_note": "San Jose's FY 2025-26 fee schedule bills electrical inspection at a minimum of $315 per hour, with a 30-minute default minimum per item, in addition to the permit issuance fee.",
+  "docs_required": [
+    "UL 2202 listing number (or another approved testing laboratory's listing) for the charging equipment, provided to the inspector",
+    "Panel rating, charging load, and circuit size",
+    "Whether a second electric meter will be installed",
+    "Location of the utility panel and the charger (EVSE)"
+  ],
+  "inspections": [],
+  "notes": [
+    {
+      "text": "For a Level 2 installation, provide the inspector with the UL 2202 listing, the panel rating, charging load and circuit size, whether a second meter will be installed, and the panel and charger locations.",
+      "citations": [
+        "sj_ev_docs"
+      ]
+    },
+    {
+      "text": "Single-family homes and duplexes can get the EV charger permit online at SJPermits.org.",
+      "citations": [
+        "sj_ev_online",
+        "sj_online_ev"
+      ]
+    },
+    {
+      "text": "DC fast chargers (Level 3) are not allowed on residential properties.",
+      "citations": [
+        "sj_ev_l3"
+      ]
+    },
+    {
+      "text": "State law limits the city's review of a charging station application to health and safety requirements.",
+      "citations": [
+        "g7_b3"
+      ]
+    },
+    {
+      "text": "State law required cities with 200,000 or more residents to adopt an expedited, checklist-based permit process for EV charging stations by September 30, 2016.",
+      "citations": [
+        "g7_g1"
+      ]
+    },
+    {
+      "text": "For 1 to 25 chargers at one site, state law deems an application complete 5 business days after submission, and approved 20 business days after it is deemed complete, when the statute's other conditions are met.",
+      "citations": [
+        "g71_b1",
+        "g71"
+      ]
+    },
+    {
+      "text": "The city cannot make permit approval depend on approval by a homeowners association.",
+      "citations": [
+        "g7_h"
+      ]
+    },
+    {
+      "text": "Fees: electrical inspection is a minimum of $315 per hour with a 30-minute default minimum per item, plus a permit issuance fee.",
+      "citations": [
+        "fee_elec",
+        "fee_issue"
+      ]
+    },
+    {
+      "text": "Online permits can be pulled only by the property owner or a qualified contractor. The city recommends that a licensed contractor pull the permit; an owner-builder must also submit the Owner Acknowledgement and Information Verification Form, show ID at issuance, and be the owner of record.",
+      "citations": [
+        "sj_online_intro",
+        "sj_who_ob"
+      ]
+    },
+    {
+      "text": "San Jose adopted the 2025 California Electrical Code; the 2025 codes apply to permit applications made on or after January 1, 2026.",
+      "citations": [
+        "sj_cec",
+        "sj_eff"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "sj_ev_page",
+      "code_section": "San Jose Permit Center, Electric Vehicle Charging Stations (updated 03/18/2026)",
+      "source_url": "https://web.archive.org/web/20260513123110id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/electric-vehicle-charging-stations",
+      "quote": "A Level 1 charging station does not require a permit. A Level 2 station requires an electrical permit; depending on the manufacturer, it may also require a mechanical permit. It is easy to get the permit/s online."
+    },
+    {
+      "id": "sj_ev_levels",
+      "code_section": "San Jose Permit Center, Electric Vehicle Charging Stations (updated 03/18/2026), Definitions",
+      "source_url": "https://web.archive.org/web/20260513123110id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/electric-vehicle-charging-stations",
+      "quote": "Level 1 - Uses a standard 120-volt outlet. Level 2 - Uses a 240-volt outlet."
+    },
+    {
+      "id": "sj_ev_l1",
+      "code_section": "San Jose Permit Center, Electric Vehicle Charging Stations (updated 03/18/2026)",
+      "source_url": "https://web.archive.org/web/20260513123110id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/electric-vehicle-charging-stations",
+      "quote": "Level 1 Charging Station Installation - No permit is required unless it entails installing a new outlet, in which case, an electrical permit is required"
+    },
+    {
+      "id": "sj_150_1",
+      "code_section": "SJMC §24.02.150(1) (Ord. No. 31256)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37111/file",
+      "quote": "An electrical permit shall not be required for the following: 1. Minor repair work, including the replacement of lamps or the connection of approved portable electrical equipment to approved permanently installed receptacles."
+    },
+    {
+      "id": "sj_ev_l2",
+      "code_section": "San Jose Permit Center, Electric Vehicle Charging Stations (updated 03/18/2026)",
+      "source_url": "https://web.archive.org/web/20260513123110id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/electric-vehicle-charging-stations",
+      "quote": "Level 2 Charging Station Installation - Requires an electrical permit. If the manufacturer specifies use of mechanical ventilation, a mechanical permit is also required."
+    },
+    {
+      "id": "sj_150_5",
+      "code_section": "SJMC §24.02.150(5) (Ord. No. 31256)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37111/file",
+      "quote": "5. Reinstallation of attachment plug receptacles, but not the outlets."
+    },
+    {
+      "id": "g7_b1",
+      "code_section": "Cal. Gov. Code §65850.7(b)(1)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.7.",
+      "quote": "A city, county, or city and county shall administratively approve an application to install electric vehicle charging stations through the issuance of a building permit or similar nondiscretionary permit."
+    },
+    {
+      "id": "sj_ev_docs",
+      "code_section": "San Jose Permit Center, Electric Vehicle Charging Stations (updated 03/18/2026), Level 2 Inspection Requirements",
+      "source_url": "https://web.archive.org/web/20260513123110id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/electric-vehicle-charging-stations",
+      "quote": "For a Level 2 installation, at the time of inspection, provide the following to the City Inspector: UL listing number or the listing number of another approved nationally recognized testing laboratory in compliance with UL2202: “Standard for Electric Vehicle Charging System Equipment.” Panel rating, charging load, and circuit size. ... 3. Second meter. Indicate if a second electric meter will be installed due to special electric utility rates available for EV charging. 4. Location of utility panel and Electric Vehicle Supply Equipment (EVSE). Show the location of the utility panel and EVSE."
+    },
+    {
+      "id": "sj_ev_online",
+      "code_section": "San Jose Permit Center, Electric Vehicle Charging Stations (updated 03/18/2026), How to Apply",
+      "source_url": "https://web.archive.org/web/20260513123110id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/electric-vehicle-charging-stations",
+      "quote": "Single-family/duplex properties - Obtain an online permit as instructed below."
+    },
+    {
+      "id": "sj_online_ev",
+      "code_section": "San Jose, Online Building Permits at SJPermits.org, Electrical Permit table",
+      "source_url": "https://web.archive.org/web/20260801184719id_/https://www.sanjoseca.gov/business/development-services-permit-center/online-permits-at-sjpermits-org/building-online-permits",
+      "quote": "Electrical Permit Single-family / Duplex Multifamily Commercial / Industrial Air Conditioning Yes No No Appliance - New Yes No No Appliance - Replacement Yes Yes No Electric Vehicle Charging Station Yes Yes Assigned Parking Only No"
+    },
+    {
+      "id": "sj_ev_l3",
+      "code_section": "San Jose Permit Center, Electric Vehicle Charging Stations (updated 03/18/2026), Definitions",
+      "source_url": "https://web.archive.org/web/20260513123110id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/electric-vehicle-charging-stations",
+      "quote": "Level 3 - Also called DC fast chargers, these use a 480-plug to provide direct current (DC) electricity to the battery. These are not allowed on residential properties."
+    },
+    {
+      "id": "g7_b3",
+      "code_section": "Cal. Gov. Code §65850.7(b)(3)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.7.",
+      "quote": "Review of an application to install an electric vehicle charging station or hydrogen-fueling station shall be limited to the building official’s review of whether it meets all health and safety requirements of local, state, and federal law."
+    },
+    {
+      "id": "g7_g1",
+      "code_section": "Cal. Gov. Code §65850.7(g)(1)(A)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.7.",
+      "quote": "On or before September 30, 2016, every city, county, or city and county with a population of 200,000 or more residents, and, on or before September 30, 2017, every city, county, or city and county with a population of less than 200,000 residents, shall, in consultation with the local fire department or district and the utility director, if the city, county, or city and county operates a utility, adopt an ordinance, consistent with the goals and intent of this section, that creates an expedited, streamlined permitting process for electric vehicle charging stations. In developing an expedited permitting process, the city, county, or city and county shall adopt a checklist of all requirements with which electric vehicle charging stations shall comply to be eligible for expedited review."
+    },
+    {
+      "id": "g71_b1",
+      "code_section": "Cal. Gov. Code §65850.71(b)(1), (c)(1)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.71.",
+      "quote": "An application to install an electric vehicle charging station submitted to the building official of a city, county, or city and county shall be deemed complete if, after the applicable time period described in paragraph (2) has elapsed, both of the following are true: ... An application to install an electric vehicle charging station shall be deemed approved if the applicable time period described in paragraph (2) has elapsed and all of the following are true:"
+    },
+    {
+      "id": "g71",
+      "code_section": "Cal. Gov. Code §65850.71(b)(2)(A), (c)(2)(A)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.71.",
+      "quote": "Five business days after submission of the application to the city, county, or city and county, if the application is for at least 1, but not more than 25 electric vehicle charging stations at a single site. ... Twenty business days after the application was deemed complete, if the application is for at least 1, but not more than 25 electric vehicle charging stations at a single site."
+    },
+    {
+      "id": "g7_h",
+      "code_section": "Cal. Gov. Code §65850.7(h)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.7.",
+      "quote": "A city, county, or city and county shall not condition approval for any electric vehicle charging station or hydrogen-fueling station permit on the approval of the station by an association, as that term is defined in Section 4080 of the Civil Code."
+    },
+    {
+      "id": "fee_elec",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective August 11, 2025), Residential Sub-Trade Permits, Electrical Permits, p. 5",
+      "source_url": "https://web.archive.org/web/20251207120823id_/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Electrical Permit Fees (site construction and other miscellaneous electrical permits) not involving the addition of new building footage shall be the greater of (a) a minimum of $315 per hour of required inspection time, or (b) calculated on an itemized basis as listed below. These Permit Fees are in addition to the Permit Issuance Fees. All items default to a minimum time allocation of 30 minutes of inspection time (20 minutes minimum per unit if more than 1) except for the following:"
+    },
+    {
+      "id": "fee_issue",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective August 11, 2025), Building Residential Fees, p. 3",
+      "source_url": "https://web.archive.org/web/20251207120823id_/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Permit Issuance Fees shall be $227 per hour for processing and coordination time expended or the amounts set forth below, whichever is greater. Minimum permit issuance fee for all permits using Online Permits service is 50% of the specified processing fee."
+    },
+    {
+      "id": "sj_online_intro",
+      "code_section": "San Jose, Online Building Permits at SJPermits.org",
+      "source_url": "https://web.archive.org/web/20260801184719id_/https://www.sanjoseca.gov/business/development-services-permit-center/online-permits-at-sjpermits-org/building-online-permits",
+      "quote": "You can download a building permit for 56 types of simple projects at SJPermits.org. ... Only property owners and qualified contractors may apply for an online building permit."
+    },
+    {
+      "id": "sj_who_ob",
+      "code_section": "San Jose Permit Center, Who Can Apply for a Building Permit? (updated 01-13-2026)",
+      "source_url": "https://web.archive.org/web/20260517000302id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/who-can-apply-for-a-permit",
+      "quote": "We highly recommend that the licensed contractor rather than the property owner pull the permit. ... If you wish to proceed as an Owner-Builder, your permit application package will need to include: Owner-Builder Requirements to Sign a Permit Owner Acknowledgement and Information Verification Form - In addition to submitting a building permit application, you must complete and submit this form. At time of permit issuance, be ready to provide a Driver’s License or other proof of identification. You must be the Property Owner as recorded by the County Tax Assessor."
+    },
+    {
+      "id": "sj_cec",
+      "code_section": "SJMC §24.06.100 (Ord. No. 31256)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37111/file",
+      "quote": "Except as otherwise provided for in this chapter, the California Electrical Code, 2025 edition, together with those omissions, amendments, exceptions and additions thereto as amended in Title 24 of the California Code of Regulations"
+    },
+    {
+      "id": "sj_eff",
+      "code_section": "San Jose staff memo, Council file 25-1131 (Oct. 6, 2025)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37104/file",
+      "quote": "The 2025 California Building Standards Code will apply to any building or structure for which an application for a building permit is made on or after January 1, 2026."
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Access: every live sanjoseca.gov URL tried, robots.txt included, returned HTTP 403 'Access Denied' (Akamai) to curl and to WebFetch. City pages were read from raw Internet Archive captures (id_ mode, fetched with curl, tags stripped with python3, the fee schedule PDF read with pdftotext). source_url is the capture URL; the official sanjoseca.gov URL is the part after the timestamp. The captured robots.txt (https://web.archive.org/web/20260501010517/https://www.sanjoseca.gov/robots.txt) disallows only /scripts, /admin and *.asmx for all agents. The city's E-Government Policy (sanjoseca.gov/home/showdocument?id=17869, capture 20260904222013) has no rule against copying or automated access. Internet Archive terms say access 'is granted for scholarship and research purposes only'. Re-check each city quote on the live page before marking a rule verified. Quote format: list items and paragraph breaks are joined with single spaces and bullet characters are left out; ' ... ' marks omitted text; the words are verbatim. sjpermits.org robots.txt is 'User-agent: * / Disallow: /', so the SJPermits portal was not fetched; online-permit availability comes from the city's Online Building Permits page. Municode (host of the San Jose Municipal Code) was not fetched. Its archived terms (https://web.archive.org/web/20190411032708/https://www.municode.com/terms-of-use/) say: 'You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.' The current terms page could not be loaded. SJMC text: quotes marked 'Ord. No. 31256' come from the council-agenda redline of that ordinance (draft dated 10/16/2025, Council Agenda 10/28/2025 Item 8.2(a), file 25-1131), downloaded through the Legistar Web API (webapi.legistar.com); sanjose.granicus.com robots.txt has 'User-agent: * / Disallow: /'. Each such quote is the enacted wording: struck-through text removed and underlined additions kept, checked against the rendered PDF page. Legistar matter 25-1187 (Final Adoption of Ordinances, dated 2025-10-30) lists 'Ordinance No. 31256' as passed for publication on 10/28/2025; the signed ordinance and the final vote were not retrieved. Code edition: San Jose adopted the 2025 California codes (not 2022) for permit applications made on or after January 1, 2026. SJMC 24.09.110(A)(6) does not adopt CRC Chapter 1, Division II, so CRC §R105.2 does not apply in San Jose; the city's exemption lists are SJMC 24.02.120 to 24.02.150. Section numbering: the When Is a Building Permit Required? page (updated 06/12/2025) cites 'Section 24.02.110' for the exempt list, but Ord. No. 31256 amends the exemption lists as 24.02.120 (building), 24.02.130 (plumbing), 24.02.140 (mechanical) and 24.02.150 (electrical). Fees: the fee schedule capture is the FY 2025-26 schedule ('Effective August 11, 2025', document 26047 version 637922894017900000, captured 2025-12-07). The Building Permit Fees page captured 2026-08-01 still says the schedule shows fees in effect as of August 11, 2025, but links a newer upload (version 639180865996470000) with no capture, so the current PDF could not be compared. A draft FY 2026-27 fee resolution (Council Agenda 06-09-2026 Item 3.4(b), Legistar file 26-683) sets different amounts ('Water Heater Replacement – Permit Center 0.25 x # of units $52'); its adoption was not confirmed, so it is not cited. New param: charger_level (enum 'level_1_120v' | 'level_2_240v'), following the city's definitions: Level 1 uses a standard 120-volt outlet, Level 2 uses a 240-volt outlet. The EV page sets the permit line by level, so install_type alone cannot decide it. charger_level is not in packages/core/src/projects.ts, so validate-data will reject this file until it is added. Conflict check: SJMC 24.02.150(1) exempts connecting approved portable electrical equipment to approved permanently installed receptacles. The city's EV page says a Level 2 station 'Requires an electrical permit' without an exception for plug-in units. This record follows the EV page, which is more specific; a plug-in Level 2 unit on an existing 240-volt receptacle is therefore REQUIRED here, and that reading should be confirmed with the city. Baseline: ca-baseline/ev-charger.json defaults to REQUIRED because state law does not address plug-in chargers; San Jose's Level 1 rule governs in San Jose. docs_required lists what the EV page says to provide at a Level 2 inspection; it does not apply to a Level 1 plug-in."
+}

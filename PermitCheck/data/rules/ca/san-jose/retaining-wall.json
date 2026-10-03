@@ -1,0 +1,120 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "retaining-wall",
+  "summary": "In San Jose a retaining wall needs no permit only if it is 2 feet or less above existing grade, under 4 feet from the bottom of the footing to the top, and holds back no surcharge; otherwise building, planning, or grading permits apply.",
+  "outcomes": [
+    {
+      "when": {
+        "all": [
+          {
+            "param": "exposed_height_ft",
+            "op": "lte",
+            "value": 2
+          },
+          {
+            "param": "height_ft",
+            "op": "lt",
+            "value": 4
+          },
+          {
+            "param": "supports_surcharge",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "verdict": "NOT_REQUIRED",
+      "explanation": "A retaining wall no more than 2 feet high above existing grade, less than 4 feet from the bottom of the footing to the top of the wall, and not supporting a surcharge (such as sloping soil, a building footing, or vehicles) does not need a permit.",
+      "citations": [
+        "c1",
+        "c2",
+        "c3"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "Over 2 feet above existing grade needs a building permit plus a Planning permit (a Special Use Permit, or a Planned Development Permit in a PD zone). A wall that supports a surcharge, or measures 4 feet or more from the bottom of the footing to the top, also needs a Grading Permit from Public Works.",
+  "default_citations": [
+    "c1",
+    "c2",
+    "c4"
+  ],
+  "permit_types": [
+    "Building permit",
+    "Special Use Permit or Planned Development Permit (Planning Division)",
+    "Grading Permit (Public Works)"
+  ],
+  "fee_note": null,
+  "docs_required": [
+    "Building Permit Application",
+    "Single-Family & Duplex Projects Submittal Checklist (under Project Scope, check \"Other\" and enter \"Fence\" or \"Retaining Wall\")",
+    "Project plans: site plan, fence or retaining wall plan, and elevations"
+  ],
+  "inspections": [],
+  "notes": [
+    {
+      "text": "A surcharge is pressure from earth or fill behind the wall with a back slope of 3:1 or steeper, for example soil sloping into the wall, building footings on the retained soil, or vehicles parked on it.",
+      "citations": [
+        "c5"
+      ]
+    },
+    {
+      "text": "The Planning permit depends on zoning: a Planned Development Permit in a planned development (PD) district, a Special Use Permit in all other districts.",
+      "citations": [
+        "c4"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "c1",
+      "code_section": "San Jose Permit Center, Fences & Retaining Walls (updated 04/15/2026), referencing CBC §105.2 and SJMC Ch. 20.30 Parts 5 and 6, Ch. 17.24",
+      "source_url": "https://web.archive.org/web/20260606170752/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/fences-retaining-walls",
+      "quote": "If the retaining wall is greater than 2 feet in height as measured from existing grade, a building permit is required and other permits are required as follows:"
+    },
+    {
+      "id": "c2",
+      "code_section": "San Jose Permit Center, Fences & Retaining Walls (updated 04/15/2026), referencing CBC §105.2 and SJMC Ch. 20.30 Parts 5 and 6, Ch. 17.24",
+      "source_url": "https://web.archive.org/web/20260606170752/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/fences-retaining-walls",
+      "quote": "If the wall supports a surcharge and/or measures 4 feet or more as measured from bottom of the footing to the top of the wall, you will need a Grading Permit from Public Works."
+    },
+    {
+      "id": "c3",
+      "code_section": "San Jose Building Bulletin #201, When Is a Building Permit Required? (06/12/2025), summarizing SJMC §24.02.110",
+      "source_url": "https://web.archive.org/web/20260106113350/https://www.sanjoseca.gov/home/showpublisheddocument/25897/638853215612230000",
+      "quote": "6. Retaining walls not higher than 4 feet as measured from the bottom of the footing to the top of the wall, and that do not support a surcharge or impounding Class I, II, or III-A liquids."
+    },
+    {
+      "id": "c4",
+      "code_section": "San Jose Permit Center, Fences & Retaining Walls (updated 04/15/2026), referencing CBC §105.2 and SJMC Ch. 20.30 Parts 5 and 6, Ch. 17.24",
+      "source_url": "https://web.archive.org/web/20260606170752/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/fences-retaining-walls",
+      "quote": "For properties in a planned development (PD) zoning district, you will need to apply for a Planned Development Permit from the Planning Division. Find your zoning on the Zoning Map. For properties in all other zoning districts, you will need to apply for a Special Use Permit from the Planning Division."
+    },
+    {
+      "id": "c5",
+      "code_section": "San Jose Permit Center, Fences & Retaining Walls (updated 04/15/2026), referencing CBC §105.2 and SJMC Ch. 20.30 Parts 5 and 6, Ch. 17.24",
+      "source_url": "https://web.archive.org/web/20260606170752/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/fences-retaining-walls",
+      "quote": "Surcharge Definition - A surcharge is the pressure from earth or fill acting upon the retaining wall with a back slope of 3:1 or greater (3’ horizontal to 1’ vertical). Examples of surcharge include soil that slopes into the retaining wall; structure footings supported by the retained soil; or adjacent vehicle loads supported by retained soil."
+    },
+    {
+      "id": "c6",
+      "code_section": "San Jose Permit Center, Fences & Retaining Walls (updated 04/15/2026), referencing CBC §105.2 and SJMC Ch. 20.30 Parts 5 and 6, Ch. 17.24",
+      "source_url": "https://web.archive.org/web/20260606170752/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/fences-retaining-walls",
+      "quote": "A building permit is not required to construct a fence or retaining wall unless the project exceeds the maximum heights set forth in the municipal code. Exceeding the height limit means the project will also require a Planning permit and, for retaining walls, an additional permit from Public Works."
+    },
+    {
+      "id": "c7",
+      "code_section": "San Jose Permit Center, When Is a Building Permit Required? (updated 06/12/2025), summarizing SJMC §24.02.110",
+      "source_url": "https://web.archive.org/web/20260813091205/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/when-is-a-building-permit-required",
+      "quote": "Retaining walls - See Fences & Retaining Walls for details on when a permit is and is not needed."
+    },
+    {
+      "id": "c8",
+      "code_section": "San Jose Permit Center, Fences & Retaining Walls (updated 04/15/2026), referencing CBC §105.2 and SJMC Ch. 20.30 Parts 5 and 6, Ch. 17.24",
+      "source_url": "https://web.archive.org/web/20260606170752/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/fences-retaining-walls",
+      "quote": "REQUIRED > Building Permit Application - See instructions. > Single-Family & Duplex Projects Submittal Checklist - Under Project Scope, check \"Other\" and enter \"Fence\" or \"Retaining Wall\""
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Conflict: Bulletin #201 item 6 (c3, 06/12/2025) exempts retaining walls 'not higher than 4 feet as measured from the bottom of the footing to the top of the wall' with no surcharge. That matches the CRC model. The Fences & Retaining Walls page (c1, updated 04/15/2026) is stricter: a building permit is needed if the wall is 'greater than 2 feet in height as measured from existing grade', and a Grading Permit is needed for a surcharge or 4 ft or more from the bottom of the footing (c2). The When Is a Building Permit Required? page defers to the Fences & Retaining Walls page (c7). This record follows the stricter, newer page. So a wall 2 to 4 ft tall from the footing with more than 2 ft exposed is REQUIRED here, though Bulletin #201 would exempt it. The NOT_REQUIRED outcome uses height_ft lt 4 because c2 triggers a Grading Permit at '4 feet or more'. For a wall 2 ft or less above grade that supports a surcharge, c2 calls for a Grading Permit, but it sits in the list under the '>2 ft' sentence. Bulletin #201 would require a building permit. Either way a permit applies, so the verdict is REQUIRED; which permit applies is unclear. New param exposed_height_ft (number, feet): wall height measured from existing grade to the top of the wall, as c1 measures it. This differs from height_ft, which is measured from the bottom of the footing. Bulletin #201 also excludes walls 'impounding Class I, II, or III-A liquids' from the exemption. That case is not modeled. The Planning thresholds come from SJMC Ch. 20.30 Part 5, which I did not read (Municode terms). docs_required comes from c8 plus the plan list on the same page. No inspection list or residential fee for retaining walls is published, so inspections is empty and fee_note is null. Access: sanjoseca.gov returned HTTP 403 (Akamai 'Access Denied') to curl and to WebFetch from this machine, robots.txt included. I read robots.txt from a Wayback snapshot (https://web.archive.org/web/20260501010517/https://www.sanjoseca.gov/robots.txt). It disallows only /scripts, /admin and *.asmx for all agents, so content pages are allowed. The city's E-Government Policy (sanjoseca.gov/home/showdocument?id=17869, read from a Wayback snapshot) has no rule against copying or automated access. Every San Jose quote comes from a raw Internet Archive snapshot of the official page (id_ mode, fetched with curl, tags stripped with python3, PDFs read with pdftotext). source_url is that snapshot URL, and the official sanjoseca.gov URL is the part after the timestamp. Internet Archive terms say access 'is granted for scholarship and research purposes only'. Re-check each quote on the live sanjoseca.gov page before marking the rule verified. Quote format: list items and paragraph breaks are joined with single spaces and bullet characters are left out; the words are verbatim. Municode (library.municode.com), host of SJMC Titles 20 and 24, was not fetched. Its archived terms (https://web.archive.org/web/20190411032708/https://www.municode.com/terms-of-use/) say: 'You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.' I could not load the current terms (the page is rendered by JavaScript and municode.com redirects to civicplus.com, which returns 403). So SJMC §24.02.110 (the exempt-work list) and §20.30.500 were not read directly. The city pages are the only source. The city pages cite 'Section 24.02.110', but the Municode link on the When Is a Building Permit Required? page points to node 24.02.120 (BUPEEX). The correct section number is unconfirmed. Code edition: the Adopted Building Codes page (https://web.archive.org/web/20260318183710/https://www.sanjoseca.gov/your-government/departments-offices/planning-building-code-enforcement/building-division/adopted-building-codes) says 'Effective Jan. 1, 2026, the 2025 state building codes have replaced the 2022 codes.' Its 'amended ordinance' link still opens Ordinance No. 30837 (the 2022 adoption, which does not amend Chapter 24.02). The October 28, 2025 Council presentation on adopting the 2025 codes (https://sanjose.legistar.com/View.ashx?M=F&ID=14894029&GUID=229C001D-2EEC-4071-83AE-F1034F198173&G=920296E4-80BE-4CA2-A78F-32C5EFCF78AF) lists the retained Title 24 amendments as 'Special Testing and Inspections', 'Gypsum board shear walls' and 'Braced wall panels', and says 'No (0) additional amendments to 2025 California Building Codes'. That suggests the 2025 adoption left the exempt-work list alone, but I did not read the adopted ordinance. Bulletin #201 and the When Is a Building Permit Required? page are both dated 06/12/2025, before the 2025 codes took effect."
+}

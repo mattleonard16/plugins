@@ -1,0 +1,322 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "window-door",
+  "summary": "In San Jose, a retrofit window set into the existing opening without touching the frame, flashing, or exterior wall finish needs no building permit, unless the home is on the Historic Resources Inventory.",
+  "outcomes": [
+    {
+      "when": {
+        "param": "historic_property",
+        "op": "eq",
+        "value": true
+      },
+      "verdict": "REQUIRED",
+      "explanation": "On a property listed on the Historic Resources Inventory, even a retrofit window needs a permit, and Planning clearance comes first.",
+      "citations": [
+        "c2",
+        "c6",
+        "c12"
+      ]
+    },
+    {
+      "when": {
+        "param": "changes_structure",
+        "op": "eq",
+        "value": true
+      },
+      "verdict": "REQUIRED",
+      "explanation": "Altering the window frame (header, studs, sill, or supports), for example to repair damage or lower the sill for egress, requires a building permit.",
+      "citations": [
+        "c3",
+        "c7"
+      ]
+    },
+    {
+      "when": {
+        "param": "same_size_opening",
+        "op": "eq",
+        "value": false
+      },
+      "verdict": "REQUIRED",
+      "explanation": "Changing the opening size alters the window frame, and only a retrofit window installed within the existing opening is exempt.",
+      "citations": [
+        "c2",
+        "c3",
+        "c7"
+      ]
+    },
+    {
+      "when": {
+        "param": "alters_flashing",
+        "op": "eq",
+        "value": true
+      },
+      "verdict": "REQUIRED",
+      "explanation": "Altering the window flashing, including removing the nailing fin, requires a building permit.",
+      "citations": [
+        "c4"
+      ]
+    },
+    {
+      "when": {
+        "param": "removes_exterior_finish",
+        "op": "eq",
+        "value": true
+      },
+      "verdict": "REQUIRED",
+      "explanation": "Removing exterior wall finish such as stucco to take out a window requires a building permit.",
+      "citations": [
+        "c5"
+      ]
+    },
+    {
+      "when": {
+        "all": [
+          {
+            "param": "same_size_opening",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "param": "changes_structure",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "param": "alters_flashing",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "param": "removes_exterior_finish",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "param": "historic_property",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "verdict": "NOT_REQUIRED",
+      "explanation": "A retrofit window installed within the existing opening, with no change to the frame, flashing, or exterior wall finish, on a property not on the Historic Resources Inventory, needs no building permit.",
+      "citations": [
+        "c1",
+        "c2",
+        "c8"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "If the window is not a pure retrofit into the existing opening, or you are unsure about the frame, flashing, exterior finish, or historic status, plan on a building permit.",
+  "default_citations": [
+    "c1",
+    "c3",
+    "c4",
+    "c5",
+    "c6"
+  ],
+  "permit_types": [
+    "Building permit (Simple Projects Service for qualifying residential properties; Standard Plan Review otherwise)"
+  ],
+  "fee_note": "The FY 2025-26 fee schedule (effective August 11, 2025) charges residential exterior alterations, windows included, a base permit issuance fee of $227 and a base plan review fee of $325. This is the latest archived copy; a FY 2026-27 schedule may now apply, so check sanjoseca.gov/buildingfees.",
+  "docs_required": [
+    "Building Permit Application",
+    "Form 311 Owner-Builder Acknowledgement and Verification of Information Form, only if the property owner is the applicant",
+    "Planning clearance or permit, for historic properties or properties in a Planned Development zone",
+    "Site plan showing existing and proposed window sizes and room type, for Standard Plan Review only"
+  ],
+  "inspections": [
+    "Required inspections are listed on the Permit Card issued with the permit"
+  ],
+  "notes": [
+    {
+      "text": "Even without a permit, the replacement window must meet current construction standards.",
+      "citations": [
+        "c11"
+      ]
+    },
+    {
+      "text": "New glazing must be safety (tempered or similar) glass when the opening is in a hazardous location under current new-construction standards.",
+      "citations": [
+        "c9"
+      ]
+    },
+    {
+      "text": "Replacement windows must meet new-construction size rules, including emergency egress; sleeping-room and basement windows need at least a 5.7 sq. ft. opening.",
+      "citations": [
+        "c10",
+        "c17"
+      ]
+    },
+    {
+      "text": "Historic properties need a Planning clearance, or possibly a Historic Preservation permit, before the building permit application.",
+      "citations": [
+        "c12"
+      ]
+    },
+    {
+      "text": "In a Planned Development zone, replacements must follow the zone architectural standards and any HOA CC&Rs.",
+      "citations": [
+        "c16"
+      ]
+    },
+    {
+      "text": "Qualifying residential projects use the Simple Projects Service, which needs no plans.",
+      "citations": [
+        "c13"
+      ]
+    },
+    {
+      "text": "Inspections are listed on the Permit Card.",
+      "citations": [
+        "c14"
+      ]
+    },
+    {
+      "text": "Fee details come from the FY 2025-26 schedule and may have changed.",
+      "citations": [
+        "c15"
+      ]
+    },
+    {
+      "text": "Bring a completed Building Permit Application, Form 311 if the owner is applying, and any required Planning clearance; Standard Plan Review also needs a site plan.",
+      "citations": [
+        "c18",
+        "c19",
+        "c20",
+        "c21"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "c1",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026)",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "If simply installing a retrofit window, a building permit is not required."
+    },
+    {
+      "id": "c2",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), Definitions",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "Retrofit window - A retrofit window is one that is installed within the existing opening with no alterations to the surrounding window frame or flashing. If the property is on the City's Historic Resources Inventory, then a retrofit window requires a permit."
+    },
+    {
+      "id": "c3",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026)",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "The window frame is altered, such as to handle damage repair or to lower the sill to comply with egress requirements."
+    },
+    {
+      "id": "c4",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026)",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "The window flashing is altered, including when removing the nailing fin."
+    },
+    {
+      "id": "c5",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026)",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "The exterior wall finish is removed, such as when removing stucco to remove a window."
+    },
+    {
+      "id": "c6",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026)",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "The property is on the City’s Historic Resources Inventory."
+    },
+    {
+      "id": "c7",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), Definitions",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "Window frame - Consists of the header, king stud, cripple stud, sill, and associated supports."
+    },
+    {
+      "id": "c8",
+      "code_section": "San Jose Permit Center, When Is a Building Permit Required? (updated 06/12/2025), Other exemptions, window bullet",
+      "source_url": "https://web.archive.org/web/20260813091205/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/when-is-a-building-permit-required",
+      "quote": "Window replacements that do not involve any kind of alteration to the framing, flashing, or exterior wall."
+    },
+    {
+      "id": "c9",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), Requirements for All Window Replacements",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "Safety glass. New glazing in existing openings must be safety glass if the opening is in a hazardous location as defined in current standards for new construction."
+    },
+    {
+      "id": "c10",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), Requirements for All Window Replacements",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "Window size. The replacement window must meet size regulations that apply to new construction, including the egress size required for emergency exit."
+    },
+    {
+      "id": "c11",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), Requirements for All Window Replacements",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "Whether or not a building permit is required, the replacement window must conform to current construction standards, including:"
+    },
+    {
+      "id": "c12",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), Window Replacements on Historic Properties",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "If yes, any kind of window replacement will require a Planning clearance or possibly a Historic Preservation permit or permit adjustment. This step must be accomplished BEFORE applying for the building permit."
+    },
+    {
+      "id": "c13",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), How to Apply",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "Residential Properties - Use the Simple Projects Service if your project meets the qualifications. No plans are required."
+    },
+    {
+      "id": "c14",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), Inspections",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "You will be issued a Permit Card that lists required inspections."
+    },
+    {
+      "id": "c15",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective 08/11/2025), Building Residential Fees, exterior and/or site alterations",
+      "source_url": "https://web.archive.org/web/20251019175438/https://www.sanjoseca.gov/home/showpublisheddocument?id=26047",
+      "quote": "Exterior and/or site alterations, such (but not limited to) an accessory structure (shed, etc.), balconies and decks, porches, windows, pools, etc. will be charged a base permit issuance fee of $227 and a base plan review fee of $325."
+    },
+    {
+      "id": "c16",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), Window Replacements in Planned Development Zones",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "If yes, you must adhere to the architectural standards of the PD Zone and any HOA CCR rules."
+    },
+    {
+      "id": "c17",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), Requirements for All Window Replacements",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "Minimum 5.7 sq. ft. opening*"
+    },
+    {
+      "id": "c18",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), Simple Projects Service, Bring",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "Form 311 Owner-Builder Acknowledgement and Verification of Information Form - Bring only if the property owner is the permit applicant."
+    },
+    {
+      "id": "c19",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), Simple Projects Service, Bring",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "If a historical property or in a Planned Development Zone, bring the required Planning clearance or permit."
+    },
+    {
+      "id": "c20",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), Standard Plan Review Service",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "Site Plan - Minimum 18” x 24” sheet. Show:"
+    },
+    {
+      "id": "c21",
+      "code_section": "San Jose Permit Center, Window Replacements (updated 04/14/2026), Simple Projects Service, Bring",
+      "source_url": "https://web.archive.org/web/20260514012915/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/window-replacements",
+      "quote": "Completed Building Permit Application - See instructions."
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Doors: no San Jose source found addresses exterior or interior door replacement. The Window Replacements page covers windows only, and door replacement is not in the SJMC 24.02.120 exemption list. This record therefore decides windows only; a door swap falls to the default (REQUIRED) without a door-specific source. Confirm with the Permit Center before relying on it for doors. Window exemption source: the window exemption appears on the city pages (c1, c8) but not in the SJMC 24.02.120 list (2025 ordinance), so it rests on Building Division guidance rather than code text. New params: alters_flashing (boolean, window flashing changed, including removing the nailing fin), removes_exterior_finish (boolean, exterior wall finish such as stucco removed to take out the window), historic_property (boolean, property is on the San Jose Historic Resources Inventory). changes_structure maps to \"window frame is altered\"; same_size_opening=false is treated as a frame alteration because the city defines the frame as the header, studs, sill, and supports around the opening. Energy: the Window Replacements page states no Title 24 energy (U-factor) requirement, so none is recorded. Fee: the exterior-alteration base fee in the FY 2025-26 schedule names windows; a newer schedule version linked from the fees page was not archived. Access: sanjoseca.gov returned HTTP 403 (Akamai \"Access Denied\") to curl and WebFetch, robots.txt included. The robots.txt read from a Wayback snapshot (20260501) disallows only /admin and *.asmx paths for User-agent *, and the City E-Government Policy (Administrative Policy 1.7.5, home/showdocument?id=17869) contains no restriction on automated access or copying. City page quotes therefore come from raw Internet Archive captures (the id_ form of each source_url, same timestamp), not from the live site. SJMC text comes from the 2025 code-adoption ordinance on sanjose.legistar.com (no robots.txt, no terms page found); Municode was not used because its Terms and Conditions of Use say: \"You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.\" Code edition: San Jose adopted the 2025 California codes effective January 1, 2026 (Adopted Building Codes page, Wayback 20260318). The ordinance PDF is the 10/16/2025 council draft with redline. Legistar shows it passed for publication 10/28/2025 as Ordinance No. 31256 and listed for final adoption on the 11/18/2025 agenda (file 25-1187); the signed final ordinance was not retrieved. Only ordinance passages with no redline marks (checked visually on rendered pages 8-12) are quoted. Section number: the When Is a Building Permit Required? page (updated 06/12/2025) says \"Municipal Code Section 24.02.110 lists all exempt projects\", but the ordinance codifies \"24.02.120 Building Permit Exemptions\"; this record cites 24.02.120. San Jose does not adopt CRC Chapter 1, Division II (SJMC 24.09.110 A.6, unchanged in the 2025 ordinance), so CRC R105.2 is not the operative exemption list in San Jose; SJMC 24.02.120-24.02.150 are."
+}

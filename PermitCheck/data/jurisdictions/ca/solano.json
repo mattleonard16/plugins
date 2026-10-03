@@ -1,0 +1,112 @@
+{
+  "county": "Solano",
+  "retrieved_at": "2026-09-30",
+  "jurisdictions": [
+    {
+      "slug": "benicia",
+      "name": "Benicia",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": null,
+      "permit_portal_url": null,
+      "phone": null,
+      "adu_page_url": null,
+      "parcel_lookup_url": null,
+      "source_url": null,
+      "notes": "Not collected. https://www.ci.benicia.ca.us/robots.txt has 'User-agent: * / Disallow: /' (only named search engines allowed), so no page was fetched or status-checked. Collect by hand in a browser."
+    },
+    {
+      "slug": "dixon",
+      "name": "Dixon",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.cityofdixonca.gov/BuildingDivision",
+      "permit_portal_url": "https://dixonca-energovweb.tylerhost.net/apps/SelfService#/home",
+      "phone": "(707) 678-7005",
+      "adu_page_url": "https://www.cityofdixonca.gov/departments/communitydevelopment/building-permit-forms-and-policies#faq3338entry",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.cityofdixonca.gov/BuildingDivision",
+      "notes": "Building Division page says to call (707) 678-7005, option 2, for permit applications or general questions; the same number is the 24-hour inspection request line. The Permits page (https://www.cityofdixonca.gov/permits) lists the Building Division as (707) 678-7000 ext. 1789. Portal is Dixon Civic Access (Tyler EnerGov); all permits must be submitted there since 2025-12-01. No standalone ADU page; adu_page_url is the 'ADU Information' section of the forms page, which links PDFs (ADU flyer, pre-approved ADU program, AB 2234 and AB 2533 handouts)."
+    },
+    {
+      "slug": "fairfield",
+      "name": "Fairfield",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": null,
+      "permit_portal_url": null,
+      "phone": null,
+      "adu_page_url": null,
+      "parcel_lookup_url": null,
+      "source_url": null,
+      "notes": "www.fairfield.ca.gov returned HTTP 403 to curl and WebFetch on 2026-09-30 (bot protection), so no page was read and no values were recorded. Collect by hand in a browser."
+    },
+    {
+      "slug": "rio-vista",
+      "name": "Rio Vista",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.riovistacity.com/building",
+      "permit_portal_url": "https://h8.maintstar.co/riovista/Portal/#/",
+      "phone": "(707) 374-6451",
+      "adu_page_url": "https://www.riovistacity.com/building/page/pre-approved-adu-plans",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.riovistacity.com/building",
+      "notes": "Building page was read once (HTTP 200) on 2026-09-30; later requests to riovistacity.com, including the status checks for building_dept_url and adu_page_url, returned HTTP 403 (bot protection). (707) 374-6451 is the City Hall main line; the Building page lists building staff at ext. 1122 (Public Works Program Manager) and ext. 1104 (Administrative Assistant) and no separate division number. Applications can also be emailed to buildingpermits@ci.rio-vista.ca.us. adu_page_url is the 'Pre-Approved ADU Plans' page linked from the Building page; its content was not read."
+    },
+    {
+      "slug": "suisun-city",
+      "name": "Suisun City",
+      "type": "city",
+      "aliases": [
+        "Suisun"
+      ],
+      "building_dept_url": "https://www.suisun.com/Departments/Development-Services/Building-Department",
+      "permit_portal_url": "https://cityofsuisuncityca-energovweb.tylerhost.net/apps/selfservice",
+      "phone": "(707) 421-7317",
+      "adu_page_url": null,
+      "parcel_lookup_url": null,
+      "source_url": "https://www.suisun.com/Departments/Development-Services/Building-Department",
+      "notes": "Read via WebFetch (curl to suisun.com robots.txt returned 403); robots.txt allows the Building-Department path but disallows /Departments/Development-Services/Planning/*, so planning pages were not read. Inspection scheduling line is 707-421-7319 (Get a Building Permit page). No ADU page found on the Building Department pages."
+    },
+    {
+      "slug": "vacaville",
+      "name": "Vacaville",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": null,
+      "permit_portal_url": null,
+      "phone": null,
+      "adu_page_url": null,
+      "parcel_lookup_url": null,
+      "source_url": null,
+      "notes": "www.cityofvacaville.gov returned HTTP 403 to curl and WebFetch on 2026-09-30 (bot protection), so no page was read and no values were recorded. Collect by hand in a browser."
+    },
+    {
+      "slug": "vallejo",
+      "name": "Vallejo",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.cityofvallejo.net/our_city/departments_divisions/planning_development_services/building_division",
+      "permit_portal_url": "https://vall-trk.aspgov.com/eTRAKiT/",
+      "phone": "(707) 648-4522",
+      "adu_page_url": "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=0wc%2fARP5",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.cityofvallejo.net/our_city/departments_divisions/planning_development_services/building_division",
+      "notes": "Portal is eTRAKiT; new users register at https://vall-trk.aspgov.com/eTRAKiT/publicUserAccount.aspx?action=npa. Inspection IVR (707) 648-4384. adu_page_url is a PDF: the Planning Division page's 'Accessory Dwelling Units (ADUs)' link points to this file (ADU/JADU guide); the older HTML ADU page URL in search results returns 404. www.vallejo.gov also exists but serves a Cloudflare challenge, so cityofvallejo.net was used."
+    },
+    {
+      "slug": "solano-county",
+      "name": "Solano County (unincorporated)",
+      "type": "county",
+      "aliases": [],
+      "building_dept_url": "https://www.solanocounty.gov/government/resource-management/building-safety-services",
+      "permit_portal_url": "https://aca-prod.accela.com/SOLANOCO/Default.aspx",
+      "phone": "(707) 784-6765",
+      "adu_page_url": "https://www.solanocounty.gov/government/resource-management/building-safety-services/adu-guide",
+      "parcel_lookup_url": "https://solanocountygis.com/portal/apps/webappviewer/index.html?id=b2a40316824143fc9f361d5d81c51a7a",
+      "source_url": "https://www.solanocounty.gov/government/resource-management/building-safety-services/about-building-safety-services",
+      "notes": "Department of Resource Management, Building & Safety Services, 675 Texas St., Suite 5500, Fairfield; building@solanocounty.gov. parcel_lookup_url is the county Tax Parcel Viewer (Solano County GIS). The county's Look Up Zoning & FAQ page (https://www.solanocounty.gov/government/resource-management/planning-services/development-planning/look-zoning-faq) says: 'To find out if your property is located in the unincorporated area, visit the Tax Parcel Viewer and enter the Assessor's Parcel Number (APN) or Address.' solanocounty.gov robots.txt disallows *.pdf, *.aspx and /sites/, so no files on those paths were read."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "patio-cover",
+  "summary": "In San Jose a freestanding pergola, trellis, or patio cover of 120 square feet or less with no electricity or plumbing needs no permit; one attached to the house, larger, wired, or plumbed needs a building permit.",
+  "outcomes": [
+    {
+      "when": {
+        "all": [
+          {
+            "param": "attached_to_dwelling",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "param": "area_sqft",
+            "op": "lte",
+            "value": 120
+          },
+          {
+            "param": "has_electrical",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "param": "has_plumbing",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "verdict": "NOT_REQUIRED",
+      "explanation": "A detached open-air structure such as a trellis, gazebo, or pergola of 120 square feet or less, with no electricity and no plumbing, does not need a permit. The same limit applies if it has walls, because enclosed accessory buildings follow the same 120 square foot rule.",
+      "citations": [
+        "c1",
+        "c2",
+        "c3"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "A building permit is required if the cover is over 120 square feet, has electricity or plumbing, or is attached to the house, because attaching it is new construction or a structural change to the dwelling.",
+  "default_citations": [
+    "c2",
+    "c4"
+  ],
+  "permit_types": [
+    "Building permit"
+  ],
+  "fee_note": null,
+  "docs_required": [],
+  "inspections": [],
+  "notes": [
+    {
+      "text": "A small awning on a single-family or duplex home is exempt if it projects no more than 54 inches and needs no additional support. Awnings that need additional support do not qualify.",
+      "citations": [
+        "c5"
+      ]
+    },
+    {
+      "text": "Detached patio covers and pergolas count as accessory structures for zoning: 60 ft minimum front setback, 0 ft side and rear setbacks (10 ft on the street side of a corner lot, 4 ft on a key lot or a corner lot next to a residential key lot).",
+      "citations": [
+        "c6"
+      ]
+    },
+    {
+      "text": "Rear yard coverage limits count accessory structures: 60% of the rear yard with a built-in pool, otherwise 40%. Eaves up to 2 ft do not count.",
+      "citations": [
+        "c7"
+      ]
+    },
+    {
+      "text": "Zoning height limit for accessory structures is 12 ft (on a pitched roof, 12 ft at the midpoint of the slope and 16 ft at the peak), one story.",
+      "citations": [
+        "c8"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "c1",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "Accessory buildings are defined in the Municipal Code as non-livable and enclosed, including: sheds, playhouses, and detached garages. Does not include livable accessory dwelling units (ADUs). Accessory structures have open-air construction, including: gazebos, trellises, and pools, spas and hot tubs."
+    },
+    {
+      "id": "c2",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "If the accessory building or structure is 120 sq. ft. or less, no permit is required unless it includes electricity or plumbing. A building permit is required: If the size is greater than 120 sq. ft. (as measured from exterior walls). If it includes electricity or plumbing, no matter the size. If over 650 sq. ft., both a building permit and special use permit are required."
+    },
+    {
+      "id": "c3",
+      "code_section": "San Jose Building Bulletin #201, When Is a Building Permit Required? (06/12/2025), summarizing SJMC §24.02.110",
+      "source_url": "https://web.archive.org/web/20260106113350/https://www.sanjoseca.gov/home/showpublisheddocument/25897/638853215612230000",
+      "quote": "1. Accessory structures of 120 square feet or less and that will not be electrically wired."
+    },
+    {
+      "id": "c4",
+      "code_section": "San Jose Permit Center, When Is a Building Permit Required? (updated 06/12/2025), summarizing SJMC §24.02.110",
+      "source_url": "https://web.archive.org/web/20260813091205/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/when-is-a-building-permit-required",
+      "quote": "You are legally required to get a building permit and/or a subtrade (plumbing, electrical or mechanical) permit for projects involving: New construction, additions, alteration of walls, or any structural change"
+    },
+    {
+      "id": "c5",
+      "code_section": "San Jose Permit Center, When Is a Building Permit Required? (updated 06/12/2025), summarizing SJMC §24.02.110",
+      "source_url": "https://web.archive.org/web/20260813091205/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/when-is-a-building-permit-required",
+      "quote": "Awnings in Group R-3 or U occupancies that do not project more than 54 inches and do not require additional support."
+    },
+    {
+      "id": "c6",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "Front Setback: 60 feet Exception, detached garage: 45 feet Side Setback: 0 feet unless: Corner lot: 10 feet from the side that is adjacent to a street Corner lot abutting a residential key lot: 4 feet Key lot: 4 feet Rear Setback: 0 feet unless: Corner lot: 10 feet where side is adjacent to a street Corner lot abutting a residential key lot: 4 feet Key lot: 4 feet"
+    },
+    {
+      "id": "c7",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "Maximum coverage of rear yard including a built-in pool: 60% Maximum coverage of rear yard without a built-in pool: 40% of which accessory buildings may not exceed 30% Eave projections of up to 2 feet will not count toward rear yard coverage"
+    },
+    {
+      "id": "c8",
+      "code_section": "San Jose Permit Center, Accessory Buildings & Structures (updated 04/14/2026), referencing SJMC §20.30.500 and §20.200.020",
+      "source_url": "https://web.archive.org/web/20260606164646/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/accessory-buildings-structures",
+      "quote": "Maximum stories: 1 Maximum size: 650 sq. ft. unless an approved special use permit allows greater Maximum plumbing fixtures: 2 Maximum height: 12 feet If the roof is pitched, the maximum height halfway up any slope is 12 feet and the roof peak maximum is 16 feet."
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "San Jose has no page specific to patio covers or pergolas. The NOT_REQUIRED outcome rests on the Accessory Buildings & Structures page. That page defines accessory structures as 'open-air construction, including: gazebos, trellises' (c1) and applies the 120 sq ft / no electricity or plumbing rule to 'the accessory building or structure' (c2). A pergola or freestanding patio cover is treated as a trellis-type open-air accessory structure. That reading is an inference; confirm with the Permit Center. The default for attached covers is also an inference. No San Jose source names attached patio covers. c4 requires a building permit for 'New construction, additions, alteration of walls, or any structural change', and the accessory-structure exemption (c2, c3) is not limited to detached structures in its wording, but the page's examples are all detached. enclosed_walls does not change the San Jose outcome: enclosed accessory buildings (c1) follow the same 120 sq ft rule. New params for this project: has_electrical (boolean) and has_plumbing (boolean), because c2 makes electricity or plumbing a permit trigger at any size. The awning exemption (c5) would need projection and support params to model. It is a note only. fee_note is null: the residential fee text names accessory structures and decks but not patio covers. 'Awnings/Trellis(s)/Patio Covers' appears only in the commercial prescriptive-items table of the FY 2025-26 schedule. docs_required and inspections are empty because no San Jose page lists them for patio covers. Access: sanjoseca.gov returned HTTP 403 (Akamai 'Access Denied') to curl and to WebFetch from this machine, robots.txt included. I read robots.txt from a Wayback snapshot (https://web.archive.org/web/20260501010517/https://www.sanjoseca.gov/robots.txt). It disallows only /scripts, /admin and *.asmx for all agents, so content pages are allowed. The city's E-Government Policy (sanjoseca.gov/home/showdocument?id=17869, read from a Wayback snapshot) has no rule against copying or automated access. Every San Jose quote comes from a raw Internet Archive snapshot of the official page (id_ mode, fetched with curl, tags stripped with python3, PDFs read with pdftotext). source_url is that snapshot URL, and the official sanjoseca.gov URL is the part after the timestamp. Internet Archive terms say access 'is granted for scholarship and research purposes only'. Re-check each quote on the live sanjoseca.gov page before marking the rule verified. Quote format: list items and paragraph breaks are joined with single spaces and bullet characters are left out; the words are verbatim. Municode (library.municode.com), host of SJMC Titles 20 and 24, was not fetched. Its archived terms (https://web.archive.org/web/20190411032708/https://www.municode.com/terms-of-use/) say: 'You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.' I could not load the current terms (the page is rendered by JavaScript and municode.com redirects to civicplus.com, which returns 403). So SJMC §24.02.110 (the exempt-work list) and §20.30.500 were not read directly. The city pages are the only source. The city pages cite 'Section 24.02.110', but the Municode link on the When Is a Building Permit Required? page points to node 24.02.120 (BUPEEX). The correct section number is unconfirmed. Code edition: the Adopted Building Codes page (https://web.archive.org/web/20260318183710/https://www.sanjoseca.gov/your-government/departments-offices/planning-building-code-enforcement/building-division/adopted-building-codes) says 'Effective Jan. 1, 2026, the 2025 state building codes have replaced the 2022 codes.' Its 'amended ordinance' link still opens Ordinance No. 30837 (the 2022 adoption, which does not amend Chapter 24.02). The October 28, 2025 Council presentation on adopting the 2025 codes (https://sanjose.legistar.com/View.ashx?M=F&ID=14894029&GUID=229C001D-2EEC-4071-83AE-F1034F198173&G=920296E4-80BE-4CA2-A78F-32C5EFCF78AF) lists the retained Title 24 amendments as 'Special Testing and Inspections', 'Gypsum board shear walls' and 'Braced wall panels', and says 'No (0) additional amendments to 2025 California Building Codes'. That suggests the 2025 adoption left the exempt-work list alone, but I did not read the adopted ordinance. Bulletin #201 and the When Is a Building Permit Required? page are both dated 06/12/2025, before the 2025 codes took effect."
+}

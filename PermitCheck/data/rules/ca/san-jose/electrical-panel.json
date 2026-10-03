@@ -1,0 +1,132 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "electrical-panel",
+  "summary": "In San Jose, upgrading or replacing the main electrical service panel needs an electrical permit; like-for-like replacements up to 400 amps can be permitted online.",
+  "outcomes": [],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "An electrical permit is required to upgrade the main electrical service panel of a home. San Jose's exemption covers only replacing a branch-circuit breaker of the required capacity in the same location in a one- or two-family home, and the city says to get a permit to replace a main disconnect.",
+  "default_citations": [
+    "sj_panel_page",
+    "sj_150_6",
+    "sj_when_breaker"
+  ],
+  "permit_types": [
+    "Electrical permit"
+  ],
+  "fee_note": "San Jose's FY 2025-26 fee schedule bills electrical inspection at a minimum of $315 per hour, with a 40-minute minimum for a service change on one meter up to 600 amps, in addition to the permit issuance fee.",
+  "docs_required": [],
+  "inspections": [],
+  "notes": [
+    {
+      "text": "The online permit at SJPermits.org covers a service change up to 400 amps only for a like-for-like replacement in the same location with no changes to exterior finishes. Other panel work needs the city's regular permit process.",
+      "citations": [
+        "sj_online_service",
+        "sj_panel_page"
+      ]
+    },
+    {
+      "text": "When service equipment serving a home is replaced, a Type 1 or Type 2 surge-protection device must be installed.",
+      "citations": [
+        "sj_panel_surge"
+      ]
+    },
+    {
+      "text": "Fees: electrical inspection is a minimum of $315 per hour with a 40-minute minimum for a service change up to 600 amps, plus a permit issuance fee.",
+      "citations": [
+        "fee_elec",
+        "fee_service",
+        "fee_issue"
+      ]
+    },
+    {
+      "text": "Online permits can be pulled only by the property owner or a qualified contractor. The city recommends that a licensed contractor pull the permit; an owner-builder must also submit the Owner Acknowledgement and Information Verification Form, show ID at issuance, and be the owner of record.",
+      "citations": [
+        "sj_online_intro",
+        "sj_who_ob"
+      ]
+    },
+    {
+      "text": "San Jose adopted the 2025 California Electrical Code; the 2025 codes apply to permit applications made on or after January 1, 2026.",
+      "citations": [
+        "sj_cec",
+        "sj_eff"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "sj_panel_page",
+      "code_section": "San Jose Permit Center, Electrical Service Panel Upgrades (updated 04/15/2026)",
+      "source_url": "https://web.archive.org/web/20260513123551id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/electrical-service-panel-upgrades",
+      "quote": "An electrical permit is required to upgrade the main electrical service panel of a residence. It is easy to get the permit online."
+    },
+    {
+      "id": "sj_150_6",
+      "code_section": "SJMC §24.02.150(6) (Ord. No. 31256)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37111/file",
+      "quote": "An electrical permit shall not be required for the following: ... 6. Replacement of any branch circuit overcurrent device of the required capacity in the same location, in one- and two-family dwellings."
+    },
+    {
+      "id": "sj_when_breaker",
+      "code_section": "San Jose Permit Center, When Is a Building Permit Required? (updated 06/12/2025)",
+      "source_url": "https://web.archive.org/web/20260813091205id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/when-is-a-building-permit-required",
+      "quote": "Replacements of electrical outlets, switches in existing boxes, circuit breakers, or fuses. Do get a permit to replace a main disconnect."
+    },
+    {
+      "id": "sj_online_service",
+      "code_section": "San Jose, Online Building Permits at SJPermits.org, Electrical Permit table",
+      "source_url": "https://web.archive.org/web/20260801184719id_/https://www.sanjoseca.gov/business/development-services-permit-center/online-permits-at-sjpermits-org/building-online-permits",
+      "quote": "Service Change/Survey up to 400 Amps Only like-for-like replacements in the same location, with no alterations to exterior finishes. Yes Yes Yes"
+    },
+    {
+      "id": "sj_panel_surge",
+      "code_section": "San Jose Permit Center, Electrical Service Panel Upgrades (updated 04/15/2026), item 9",
+      "source_url": "https://web.archive.org/web/20260513123551id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/electrical-service-panel-upgrades",
+      "quote": "Where service equipment serving dwelling units is replaced, a Type 1 or Type 2 surge-protection device shall be provided."
+    },
+    {
+      "id": "fee_elec",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective August 11, 2025), Residential Sub-Trade Permits, Electrical Permits, p. 5",
+      "source_url": "https://web.archive.org/web/20251207120823id_/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Electrical Permit Fees (site construction and other miscellaneous electrical permits) not involving the addition of new building footage shall be the greater of (a) a minimum of $315 per hour of required inspection time, or (b) calculated on an itemized basis as listed below. These Permit Fees are in addition to the Permit Issuance Fees. All items default to a minimum time allocation of 30 minutes of inspection time (20 minutes minimum per unit if more than 1) except for the following:"
+    },
+    {
+      "id": "fee_service",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective August 11, 2025), Fixture-Based Time Assessments - Electrical, p. 5",
+      "source_url": "https://web.archive.org/web/20251207120823id_/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Electrical Fixture Minimum (min.) Time (min.)/Unit ... Service/Survey 1 meter to 600A 40 30"
+    },
+    {
+      "id": "fee_issue",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective August 11, 2025), Building Residential Fees, p. 3",
+      "source_url": "https://web.archive.org/web/20251207120823id_/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Permit Issuance Fees shall be $227 per hour for processing and coordination time expended or the amounts set forth below, whichever is greater. Minimum permit issuance fee for all permits using Online Permits service is 50% of the specified processing fee."
+    },
+    {
+      "id": "sj_online_intro",
+      "code_section": "San Jose, Online Building Permits at SJPermits.org",
+      "source_url": "https://web.archive.org/web/20260801184719id_/https://www.sanjoseca.gov/business/development-services-permit-center/online-permits-at-sjpermits-org/building-online-permits",
+      "quote": "You can download a building permit for 56 types of simple projects at SJPermits.org. ... Only property owners and qualified contractors may apply for an online building permit."
+    },
+    {
+      "id": "sj_who_ob",
+      "code_section": "San Jose Permit Center, Who Can Apply for a Building Permit? (updated 01-13-2026)",
+      "source_url": "https://web.archive.org/web/20260517000302id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/who-can-apply-for-a-permit",
+      "quote": "We highly recommend that the licensed contractor rather than the property owner pull the permit. ... If you wish to proceed as an Owner-Builder, your permit application package will need to include: Owner-Builder Requirements to Sign a Permit Owner Acknowledgement and Information Verification Form - In addition to submitting a building permit application, you must complete and submit this form. At time of permit issuance, be ready to provide a Driver’s License or other proof of identification. You must be the Property Owner as recorded by the County Tax Assessor."
+    },
+    {
+      "id": "sj_cec",
+      "code_section": "SJMC §24.06.100 (Ord. No. 31256)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37111/file",
+      "quote": "Except as otherwise provided for in this chapter, the California Electrical Code, 2025 edition, together with those omissions, amendments, exceptions and additions thereto as amended in Title 24 of the California Code of Regulations"
+    },
+    {
+      "id": "sj_eff",
+      "code_section": "San Jose staff memo, Council file 25-1131 (Oct. 6, 2025)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37104/file",
+      "quote": "The 2025 California Building Standards Code will apply to any building or structure for which an application for a building permit is made on or after January 1, 2026."
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Access: every live sanjoseca.gov URL tried, robots.txt included, returned HTTP 403 'Access Denied' (Akamai) to curl and to WebFetch. City pages were read from raw Internet Archive captures (id_ mode, fetched with curl, tags stripped with python3, the fee schedule PDF read with pdftotext). source_url is the capture URL; the official sanjoseca.gov URL is the part after the timestamp. The captured robots.txt (https://web.archive.org/web/20260501010517/https://www.sanjoseca.gov/robots.txt) disallows only /scripts, /admin and *.asmx for all agents. The city's E-Government Policy (sanjoseca.gov/home/showdocument?id=17869, capture 20260904222013) has no rule against copying or automated access. Internet Archive terms say access 'is granted for scholarship and research purposes only'. Re-check each city quote on the live page before marking a rule verified. Quote format: list items and paragraph breaks are joined with single spaces and bullet characters are left out; ' ... ' marks omitted text; the words are verbatim. sjpermits.org robots.txt is 'User-agent: * / Disallow: /', so the SJPermits portal was not fetched; online-permit availability comes from the city's Online Building Permits page. Municode (host of the San Jose Municipal Code) was not fetched. Its archived terms (https://web.archive.org/web/20190411032708/https://www.municode.com/terms-of-use/) say: 'You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.' The current terms page could not be loaded. SJMC text: quotes marked 'Ord. No. 31256' come from the council-agenda redline of that ordinance (draft dated 10/16/2025, Council Agenda 10/28/2025 Item 8.2(a), file 25-1131), downloaded through the Legistar Web API (webapi.legistar.com); sanjose.granicus.com robots.txt has 'User-agent: * / Disallow: /'. Each such quote is the enacted wording: struck-through text removed and underlined additions kept, checked against the rendered PDF page. Legistar matter 25-1187 (Final Adoption of Ordinances, dated 2025-10-30) lists 'Ordinance No. 31256' as passed for publication on 10/28/2025; the signed ordinance and the final vote were not retrieved. Code edition: San Jose adopted the 2025 California codes (not 2022) for permit applications made on or after January 1, 2026. SJMC 24.09.110(A)(6) does not adopt CRC Chapter 1, Division II, so CRC §R105.2 does not apply in San Jose; the city's exemption lists are SJMC 24.02.120 to 24.02.150. Section numbering: the When Is a Building Permit Required? page (updated 06/12/2025) cites 'Section 24.02.110' for the exempt list, but Ord. No. 31256 amends the exemption lists as 24.02.120 (building), 24.02.130 (plumbing), 24.02.140 (mechanical) and 24.02.150 (electrical). Fees: the fee schedule capture is the FY 2025-26 schedule ('Effective August 11, 2025', document 26047 version 637922894017900000, captured 2025-12-07). The Building Permit Fees page captured 2026-08-01 still says the schedule shows fees in effect as of August 11, 2025, but links a newer upload (version 639180865996470000) with no capture, so the current PDF could not be compared. A draft FY 2026-27 fee resolution (Council Agenda 06-09-2026 Item 3.4(b), Legistar file 26-683) sets different amounts ('Water Heater Replacement – Permit Center 0.25 x # of units $52'); its adoption was not confirmed, so it is not cited. Redline detail: in SJMC 24.02.150 item 6, Ord. No. 31256 adds 'branch circuit' and 'in one- and two-family dwellings' and strikes 'except service equipment'. Both the old and new wording leave the service panel outside the exemption. The 400-amp online condition limits the online path, not whether a permit is needed, so it is a note rather than an outcome. docs_required is empty because the captured page lists no required documents for the online path."
+}

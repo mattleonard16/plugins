@@ -1,0 +1,256 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "bathroom-remodel",
+  "summary": "In San Jose, cosmetic bathroom work like painting, flooring, cabinets, and countertops needs no permit; replacing fixtures or appliances or doing electrical, plumbing, or fan work needs a permit (often online), and moving fixtures or changing walls or framing needs plan review.",
+  "outcomes": [
+    {
+      "when": {
+        "param": "structural_changes",
+        "op": "eq",
+        "value": true
+      },
+      "verdict": "REQUIRED",
+      "explanation": "Changing walls or windows or modifying framing is a major remodel and needs a building permit with submitted plans.",
+      "citations": [
+        "c5",
+        "c6",
+        "c13"
+      ]
+    },
+    {
+      "when": {
+        "param": "moves_or_adds_plumbing",
+        "op": "eq",
+        "value": true
+      },
+      "verdict": "REQUIRED",
+      "explanation": "Relocating or adding fixtures or appliances is a major remodel and needs a permit with plan review.",
+      "citations": [
+        "c5",
+        "c7"
+      ]
+    },
+    {
+      "when": {
+        "param": "electrical_work",
+        "op": "eq",
+        "value": true
+      },
+      "verdict": "REQUIRED",
+      "explanation": "New electrical work needs an electrical permit; a minor remodel with no relocation may qualify for an online permit.",
+      "citations": [
+        "c3",
+        "c4",
+        "c9"
+      ]
+    },
+    {
+      "when": {
+        "param": "mechanical_work",
+        "op": "eq",
+        "value": true
+      },
+      "verdict": "REQUIRED",
+      "explanation": "Installing or replacing an exhaust fan or hood is mechanical work and needs a mechanical permit; a minor remodel may qualify for an online permit.",
+      "citations": [
+        "c3",
+        "c4",
+        "c14"
+      ]
+    },
+    {
+      "when": {
+        "param": "replaces_fixtures_in_place",
+        "op": "eq",
+        "value": true
+      },
+      "verdict": "REQUIRED",
+      "explanation": "Replacing fixtures or appliances in the same locations is a minor remodel that needs a permit, often available online; only leak repairs and removing and resetting a toilet without replacing pipes, valves, or fixtures are exempt.",
+      "citations": [
+        "c4",
+        "c8",
+        "c9"
+      ]
+    },
+    {
+      "when": {
+        "param": "cosmetic_only",
+        "op": "eq",
+        "value": true
+      },
+      "verdict": "NOT_REQUIRED",
+      "explanation": "Finish work only, such as painting, tiling, flooring, cabinets, and countertops, with no fixture, appliance, electrical, plumbing, or fan work, needs no permit.",
+      "citations": [
+        "c1",
+        "c2"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "Anything beyond cosmetic finish work needs a building or trade permit; small fixture and appliance swaps may qualify for an online permit.",
+  "default_citations": [
+    "c3",
+    "c4",
+    "c7"
+  ],
+  "permit_types": [
+    "Building permit",
+    "Electrical permit",
+    "Plumbing permit",
+    "Mechanical permit"
+  ],
+  "fee_note": null,
+  "docs_required": [
+    "Affidavit of Smoke Alarm and Carbon Monoxide Alarm Installation"
+  ],
+  "inspections": [
+    "Rough inspections (for example tub and shower installations) and final inspections may be required",
+    "Required inspections are listed on the Permit Card issued with the permit"
+  ],
+  "notes": [
+    {
+      "text": "Minor remodels, meaning fixture and appliance replacements without moving them or changing their number, may qualify for an online permit at SJPermits.org.",
+      "citations": [
+        "c4",
+        "c9"
+      ]
+    },
+    {
+      "text": "Even when finish work is exempt, any plumbing, electrical, or mechanical work done with it needs its own permit.",
+      "citations": [
+        "c3"
+      ]
+    },
+    {
+      "text": "Inspections are listed on the Permit Card; plan for rough and final inspections.",
+      "citations": [
+        "c10",
+        "c11"
+      ]
+    },
+    {
+      "text": "Be ready to show smoke and carbon monoxide alarms and provide the alarm installation affidavit.",
+      "citations": [
+        "c12"
+      ]
+    },
+    {
+      "text": "A bathroom with a tub or shower needs a fan of at least 50 CFM, Energy Star, ducted outside; an openable window does not count.",
+      "citations": [
+        "c14"
+      ]
+    },
+    {
+      "text": "At least one bathroom light must have an occupant or vacancy sensor with automatic shut-off.",
+      "citations": [
+        "c15"
+      ]
+    },
+    {
+      "text": "A new shower pan must be at least 1,024 sq. in. and at least 30 inches in every direction.",
+      "citations": [
+        "c16"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "c1",
+      "code_section": "San Jose Permit Center, Kitchen & Bathroom Minor Remodels (updated 04/13/2026), Definitions",
+      "source_url": "https://web.archive.org/web/20260514003909/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/kitchen-bathroom-minor-remodels",
+      "quote": "Note that cosmetic work — such as painting, cabinet resurfacing, new flooring, and new countertops — does not require a permit."
+    },
+    {
+      "id": "c2",
+      "code_section": "SJMC Title 24 as amended by Ordinance No. 31256 (2025 codes; council draft dated 10/16/2025, Item 8.2(a), 10/28/2025), §24.02.120(A)(9)",
+      "source_url": "https://sanjose.legistar.com/View.ashx?M=F&ID=14873777&GUID=DD05D7FB-2583-4C0D-BC97-EE5FB907BE34",
+      "quote": "Painting, papering, tiling, carpeting, cabinets, counter tops and similar finish work."
+    },
+    {
+      "id": "c3",
+      "code_section": "SJMC Title 24 as amended by Ordinance No. 31256 (2025 codes; council draft dated 10/16/2025, Item 8.2(a), 10/28/2025), §24.02.120(B)",
+      "source_url": "https://sanjose.legistar.com/View.ashx?M=F&ID=14873777&GUID=DD05D7FB-2583-4C0D-BC97-EE5FB907BE34",
+      "quote": "Unless otherwise exempted by this title, separate plumbing, electrical and mechanical permits will be required for the above exempted items."
+    },
+    {
+      "id": "c4",
+      "code_section": "San Jose Permit Center, Kitchen & Bathroom Minor Remodels (updated 04/13/2026), Definitions",
+      "source_url": "https://web.archive.org/web/20260514003909/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/kitchen-bathroom-minor-remodels",
+      "quote": "A minor remodel is defined as multiple fixture and appliance replacements that involve new electrical, plumbing, and/or mechanical work without changes to the location or quantity of such fixtures and appliances."
+    },
+    {
+      "id": "c5",
+      "code_section": "San Jose Permit Center, Kitchen & Bathroom Minor Remodels (updated 04/13/2026), Definitions",
+      "source_url": "https://web.archive.org/web/20260514003909/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/kitchen-bathroom-minor-remodels",
+      "quote": "A major remodel is defined as changing the configuration of walls or windows; modifying the framing of ceilings, walls, windows, or floors; and/or relocating or increasing the number of fixtures or appliances."
+    },
+    {
+      "id": "c6",
+      "code_section": "San Jose Permit Center, Additions & Remodels, single-family & duplex (updated 04/14/2026)",
+      "source_url": "https://web.archive.org/web/20260514010222/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/additions-remodels",
+      "quote": "To get a building permit for an addition or for a remodel that entails structural changes, you must submit project plans."
+    },
+    {
+      "id": "c7",
+      "code_section": "San Jose Permit Center, When Is a Building Permit Required? (updated 06/12/2025), Projects that require a building permit",
+      "source_url": "https://web.archive.org/web/20260813091205/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/when-is-a-building-permit-required",
+      "quote": "You are legally required to get a building permit and/or a subtrade (plumbing, electrical or mechanical) permit for projects involving:"
+    },
+    {
+      "id": "c8",
+      "code_section": "SJMC Title 24 as amended by Ordinance No. 31256 (2025 codes; council draft dated 10/16/2025, Item 8.2(a), 10/28/2025), §24.02.130(B)",
+      "source_url": "https://sanjose.legistar.com/View.ashx?M=F&ID=14873777&GUID=DD05D7FB-2583-4C0D-BC97-EE5FB907BE34",
+      "quote": "The clearing of stoppages or the repairing of leaks in pipes, valves or fixtures, and the removal and reinstallation of water closets, provided such repairs do not involve or require the replacement or rearrangement of valves, pipes or fixtures."
+    },
+    {
+      "id": "c9",
+      "code_section": "San Jose Permit Center, Kitchen & Bathroom Minor Remodels (updated 04/13/2026)",
+      "source_url": "https://web.archive.org/web/20260514003909/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/kitchen-bathroom-minor-remodels",
+      "quote": "Minor remodels of a kitchen or bathroom may qualify for an easy online permit."
+    },
+    {
+      "id": "c10",
+      "code_section": "San Jose Permit Center, Kitchen & Bathroom Minor Remodels (updated 04/13/2026), Inspections",
+      "source_url": "https://web.archive.org/web/20260514003909/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/kitchen-bathroom-minor-remodels",
+      "quote": "You will be issued a Permit Card that lists required inspections."
+    },
+    {
+      "id": "c11",
+      "code_section": "San Jose Permit Center, Kitchen & Bathroom Minor Remodels (updated 04/13/2026), Requirements for both Kitchens and Bathrooms",
+      "source_url": "https://web.archive.org/web/20260514003909/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/kitchen-bathroom-minor-remodels",
+      "quote": "Both rough and final inspections may be required. Plan to provide inspection of all roughs — such as for tub and shower installments — and then a second time for all finals."
+    },
+    {
+      "id": "c12",
+      "code_section": "San Jose Permit Center, Kitchen & Bathroom Minor Remodels (updated 04/13/2026), Requirements for both Kitchens and Bathrooms",
+      "source_url": "https://web.archive.org/web/20260514003909/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/kitchen-bathroom-minor-remodels",
+      "quote": "Provide a completed Affidavit of Smoke Alarm and Carbon Monoxide Alarm Installation. CRC R315."
+    },
+    {
+      "id": "c13",
+      "code_section": "San Jose Permit Center, When Is a Building Permit Required? (updated 06/12/2025), Projects that require a building permit",
+      "source_url": "https://web.archive.org/web/20260813091205/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/when-is-a-building-permit-required",
+      "quote": "New construction, additions, alteration of walls, or any structural change"
+    },
+    {
+      "id": "c14",
+      "code_section": "San Jose Permit Center, Kitchen & Bathroom Minor Remodels (updated 04/13/2026), Requirements for Bathrooms",
+      "source_url": "https://web.archive.org/web/20260514003909/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/kitchen-bathroom-minor-remodels",
+      "quote": "Ventilation & fan - Bathrooms containing a bathtub or shower must be mechanically ventilated and ducted to the exterior to control humidity. Window operation is not a permissible method of providing humidity control in a bathroom. Fan must be minimum 50 CFM and Energy Star compliant."
+    },
+    {
+      "id": "c15",
+      "code_section": "San Jose Permit Center, Kitchen & Bathroom Minor Remodels (updated 04/13/2026), Requirements for Bathrooms",
+      "source_url": "https://web.archive.org/web/20260514003909/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/kitchen-bathroom-minor-remodels",
+      "quote": "Lighting switching devices and controls - At least one luminaire in the bathroom must be controlled by an occupant or vacancy sensory providing automatic-off functionality."
+    },
+    {
+      "id": "c16",
+      "code_section": "San Jose Permit Center, Kitchen & Bathroom Minor Remodels (updated 04/13/2026), Requirements for Bathrooms",
+      "source_url": "https://web.archive.org/web/20260514003909/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/kitchen-bathroom-minor-remodels",
+      "quote": "Shower pan - Pan dimensions must be a minimum area of 1,024 sq. in. and a minimum finish dimension of 30” in any direction. CPC 408.6"
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "cosmetic_only conflict: the starter definition includes \"fixtures swapped in place\", but San Jose treats fixture and appliance replacements as a minor remodel that needs a permit (c4), and the SJMC 24.02.130 plumbing exemptions cover only leak repairs, stoppages, and removing and resetting water closets without replacing valves, pipes, or fixtures (c8). This record therefore adds replaces_fixtures_in_place (boolean, replaces plumbing fixtures or appliances in their existing locations) and mechanical_work (boolean, installs or replaces an exhaust fan, range hood, or other ducted ventilation), evaluates them before cosmetic_only, and its NOT_REQUIRED outcome means finish work only. Electrical conflict: the When Is a Building Permit Required? page (updated 06/12/2025) still lists outlet and switch replacement in existing boxes and \"Repair or replacement of current-carrying parts of any switch, conductor, or control device\" as exempt. The 2025 ordinance replaces SJMC 24.02.150 item 4 with \"Reserved\" and limits item 1 to minor repairs such as replacing lamps and connecting portable equipment to permanently installed receptacles. Those redlined passages are not quoted. This record follows the 2025 ordinance and treats any electrical_work as REQUIRED; the narrow minor-repair exemptions are not modeled. The same ordinance repeals the 1.28 gpf low-flush toilet retrofit exemption (SJMC 24.02.130 C, now Reserved), which the When page still lists. Major remodels on single-family or duplex properties go to the Additions & Remodels process (c6): Over-the-Counter for qualifying 1-story homes, otherwise Residential Express or Standard Plan Review. Fee: no remodel fee is recorded; the FY 2025-26 schedule prices remodels through valuation tables and an inspection cap, and a newer schedule was not archived. Access: sanjoseca.gov returned HTTP 403 (Akamai \"Access Denied\") to curl and WebFetch, robots.txt included. The robots.txt read from a Wayback snapshot (20260501) disallows only /admin and *.asmx paths for User-agent *, and the City E-Government Policy (Administrative Policy 1.7.5, home/showdocument?id=17869) contains no restriction on automated access or copying. City page quotes therefore come from raw Internet Archive captures (the id_ form of each source_url, same timestamp), not from the live site. SJMC text comes from the 2025 code-adoption ordinance on sanjose.legistar.com (no robots.txt, no terms page found); Municode was not used because its Terms and Conditions of Use say: \"You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.\" Code edition: San Jose adopted the 2025 California codes effective January 1, 2026 (Adopted Building Codes page, Wayback 20260318). The ordinance PDF is the 10/16/2025 council draft with redline. Legistar shows it passed for publication 10/28/2025 as Ordinance No. 31256 and listed for final adoption on the 11/18/2025 agenda (file 25-1187); the signed final ordinance was not retrieved. Only ordinance passages with no redline marks (checked visually on rendered pages 8-12) are quoted. Section number: the When Is a Building Permit Required? page (updated 06/12/2025) says \"Municipal Code Section 24.02.110 lists all exempt projects\", but the ordinance codifies \"24.02.120 Building Permit Exemptions\"; this record cites 24.02.120. San Jose does not adopt CRC Chapter 1, Division II (SJMC 24.09.110 A.6, unchanged in the 2025 ordinance), so CRC R105.2 is not the operative exemption list in San Jose; SJMC 24.02.120-24.02.150 are."
+}

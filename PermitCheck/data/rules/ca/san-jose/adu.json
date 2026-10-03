@@ -1,0 +1,48 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "adu",
+  "summary": "Building an ADU in San Jose requires a building permit; the city publishes an ADU project process and checklist to guide you.",
+  "outcomes": [],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "An ADU is new construction or an alteration, and San Jose describes the ADU process as the steps to getting a building permit.",
+  "default_citations": [
+    "c1",
+    "c2"
+  ],
+  "permit_types": [
+    "Building permit"
+  ],
+  "fee_note": null,
+  "docs_required": [],
+  "inspections": [],
+  "notes": [
+    {
+      "text": "Start with the ADU Universal Checklist to see whether your property qualifies.",
+      "citations": [
+        "c3"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "c1",
+      "code_section": "San Jose Permit Center, Accessory Dwelling Units (ADUs): ADU Project Process",
+      "source_url": "https://web.archive.org/web/20260114101304/https://www.sanjoseca.gov/business/development-services-permit-center/accessory-dwelling-units-adus/adu-plan-review-permit-process",
+      "quote": "Here are the main steps to getting a building permit and completing your project."
+    },
+    {
+      "id": "c2",
+      "code_section": "San Jose Permit Center, When Is a Building Permit Required? (updated 06/12/2025), Projects that require a building permit",
+      "source_url": "https://web.archive.org/web/20260813091205/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/when-is-a-building-permit-required",
+      "quote": "New construction, additions, alteration of walls, or any structural change"
+    },
+    {
+      "id": "c3",
+      "code_section": "San Jose Permit Center, Accessory Dwelling Units (ADUs)",
+      "source_url": "https://web.archive.org/web/20260813090931/https://www.sanjoseca.gov/business/development-services-permit-center/accessory-dwelling-units-adus",
+      "quote": "The ADU Universal Checklist will help you identify if your property qualifies for an ADU."
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Summary only, per scope; no ADU conditions recorded. Access: sanjoseca.gov returned HTTP 403 (Akamai \"Access Denied\") to curl and WebFetch, robots.txt included. The robots.txt read from a Wayback snapshot (20260501) disallows only /admin and *.asmx paths for User-agent *, and the City E-Government Policy (Administrative Policy 1.7.5, home/showdocument?id=17869) contains no restriction on automated access or copying. City page quotes therefore come from raw Internet Archive captures (the id_ form of each source_url, same timestamp), not from the live site. SJMC text comes from the 2025 code-adoption ordinance on sanjose.legistar.com (no robots.txt, no terms page found); Municode was not used because its Terms and Conditions of Use say: \"You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.\" Code edition: San Jose adopted the 2025 California codes effective January 1, 2026 (Adopted Building Codes page, Wayback 20260318). The ordinance PDF is the 10/16/2025 council draft with redline. Legistar shows it passed for publication 10/28/2025 as Ordinance No. 31256 and listed for final adoption on the 11/18/2025 agenda (file 25-1187); the signed final ordinance was not retrieved. Only ordinance passages with no redline marks (checked visually on rendered pages 8-12) are quoted. Section number: the When Is a Building Permit Required? page (updated 06/12/2025) says \"Municipal Code Section 24.02.110 lists all exempt projects\", but the ordinance codifies \"24.02.120 Building Permit Exemptions\"; this record cites 24.02.120. San Jose does not adopt CRC Chapter 1, Division II (SJMC 24.09.110 A.6, unchanged in the 2025 ordinance), so CRC R105.2 is not the operative exemption list in San Jose; SJMC 24.02.120-24.02.150 are."
+}

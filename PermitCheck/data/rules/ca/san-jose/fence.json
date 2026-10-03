@@ -1,0 +1,162 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "fence",
+  "summary": "In San Jose a fence on a single-family or duplex lot needs no permit up to 3 feet high in the front yard (and along the street side of a corner lot) or 7 feet high in side and rear yards; taller fences need a building permit and a planning permit.",
+  "outcomes": [
+    {
+      "when": {
+        "all": [
+          {
+            "param": "location",
+            "op": "eq",
+            "value": "front_setback"
+          },
+          {
+            "param": "height_ft",
+            "op": "lte",
+            "value": 3
+          }
+        ]
+      },
+      "verdict": "NOT_REQUIRED",
+      "explanation": "A front yard fence 3 feet high or lower does not need a permit.",
+      "citations": [
+        "c1",
+        "c2"
+      ]
+    },
+    {
+      "when": {
+        "all": [
+          {
+            "param": "location",
+            "op": "eq",
+            "value": "street_side_yard"
+          },
+          {
+            "param": "height_ft",
+            "op": "lte",
+            "value": 3
+          }
+        ]
+      },
+      "verdict": "NOT_REQUIRED",
+      "explanation": "On a corner lot, a fence in the side yard along the street 3 feet high or lower does not need a permit.",
+      "citations": [
+        "c3"
+      ]
+    },
+    {
+      "when": {
+        "all": [
+          {
+            "param": "location",
+            "op": "eq",
+            "value": "side_or_rear"
+          },
+          {
+            "param": "height_ft",
+            "op": "lte",
+            "value": 7
+          }
+        ]
+      },
+      "verdict": "NOT_REQUIRED",
+      "explanation": "A side or rear yard fence 7 feet high or lower does not need a permit. On a corner lot this applies only to side and rear yards not along the street.",
+      "citations": [
+        "c1",
+        "c2",
+        "c3"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "A fence taller than these limits (over 3 feet in the front yard or along the street side of a corner lot, over 7 feet elsewhere) needs both a building permit and a planning permit.",
+  "default_citations": [
+    "c2",
+    "c4"
+  ],
+  "permit_types": [
+    "Building permit",
+    "Planning permit"
+  ],
+  "fee_note": null,
+  "docs_required": [
+    "Building Permit Application",
+    "Single-Family & Duplex Projects Submittal Checklist (under Project Scope, check \"Other\" and enter \"Fence\" or \"Retaining Wall\")",
+    "Project plans: site plan, fence or retaining wall plan, and elevations"
+  ],
+  "inspections": [],
+  "notes": [
+    {
+      "text": "On a corner lot, rear and side fences must be low enough to keep a view of the street from the driveway.",
+      "citations": [
+        "c3"
+      ]
+    },
+    {
+      "text": "On irregular-shaped lots or in planned development (PD) zones, different height limits may apply. Ask San Jose Planning.",
+      "citations": [
+        "c5"
+      ]
+    },
+    {
+      "text": "San Jose's fence definition includes masonry and concrete, so the same height limits apply to masonry fences. Barbed wire and other harmful materials are not allowed.",
+      "citations": [
+        "c6"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "c1",
+      "code_section": "San Jose Permit Center, When Is a Building Permit Required? (updated 06/12/2025), summarizing SJMC §24.02.110",
+      "source_url": "https://web.archive.org/web/20260813091205/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/when-is-a-building-permit-required",
+      "quote": "Fences on single-family/duplex properties do not need a permit if not higher than 7 feet along rear and side yards and not higher than 3 feet along front yard. For irregular-sized lots, see Fences."
+    },
+    {
+      "id": "c2",
+      "code_section": "San Jose Permit Center, Fences & Retaining Walls (updated 04/15/2026), referencing CBC §105.2 and SJMC Ch. 20.30 Parts 5 and 6, Ch. 17.24",
+      "source_url": "https://web.archive.org/web/20260606170752/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/fences-retaining-walls",
+      "quote": "If the fence is higher than these limits, you must apply for both a building permit and a planning permit. Maximum allowable fence height without a permit: Front yard - 3 feet maximum Side yard - 7 feet maximum Rear yard - 7 feet maximum"
+    },
+    {
+      "id": "c3",
+      "code_section": "San Jose Permit Center, Fences & Retaining Walls (updated 04/15/2026), referencing CBC §105.2 and SJMC Ch. 20.30 Parts 5 and 6, Ch. 17.24",
+      "source_url": "https://web.archive.org/web/20260606170752/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/fences-retaining-walls",
+      "quote": "On corner lots: Front yard along the street - 3 feet maximum Side yard along the street - 3 feet maximum Rear and side yards not along the street - 7 feet maximum* * Rear and side fence heights must be low enough to provide sightlines to the street from the driveway."
+    },
+    {
+      "id": "c4",
+      "code_section": "San Jose Permit Center, Fences & Retaining Walls (updated 04/15/2026), referencing CBC §105.2 and SJMC Ch. 20.30 Parts 5 and 6, Ch. 17.24",
+      "source_url": "https://web.archive.org/web/20260606170752/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/fences-retaining-walls",
+      "quote": "A building permit is not required to construct a fence or retaining wall unless the project exceeds the maximum heights set forth in the municipal code. Exceeding the height limit means the project will also require a Planning permit and, for retaining walls, an additional permit from Public Works."
+    },
+    {
+      "id": "c5",
+      "code_section": "San Jose Permit Center, Fences & Retaining Walls (updated 04/15/2026), referencing CBC §105.2 and SJMC Ch. 20.30 Parts 5 and 6, Ch. 17.24",
+      "source_url": "https://web.archive.org/web/20260606170752/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/fences-retaining-walls",
+      "quote": "On irregular-shaped lots or lots in planned development (PD) zones: Different height restrictions may apply."
+    },
+    {
+      "id": "c6",
+      "code_section": "San Jose Permit Center, Fences & Retaining Walls (updated 04/15/2026), referencing CBC §105.2 and SJMC Ch. 20.30 Parts 5 and 6, Ch. 17.24",
+      "source_url": "https://web.archive.org/web/20260606170752/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/fences-retaining-walls",
+      "quote": "A fence is a barrier, railing, or upright structure that marks a boundary and controls access. It is typically constructed of wood, chain link, wrought iron, decorative steel, masonry, concrete or other similar types of materials. Barbed wire or other harmful materials are not allowed."
+    },
+    {
+      "id": "c7",
+      "code_section": "San Jose Building Bulletin #201, When Is a Building Permit Required? (06/12/2025), summarizing SJMC §24.02.110",
+      "source_url": "https://web.archive.org/web/20260106113350/https://www.sanjoseca.gov/home/showpublisheddocument/25897/638853215612230000",
+      "quote": "5. Fences, on single-family/duplex properties, not higher than 7 feet along rear and side yards and not higher than 3 feet along front yard"
+    },
+    {
+      "id": "c8",
+      "code_section": "San Jose Permit Center, Fences & Retaining Walls (updated 04/15/2026), referencing CBC §105.2 and SJMC Ch. 20.30 Parts 5 and 6, Ch. 17.24",
+      "source_url": "https://web.archive.org/web/20260606170752/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/fences-retaining-walls",
+      "quote": "REQUIRED > Building Permit Application - See instructions. > Single-Family & Duplex Projects Submittal Checklist - Under Project Scope, check \"Other\" and enter \"Fence\" or \"Retaining Wall\""
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "All San Jose sources agree: 3 ft in the front yard and 7 ft in side and rear yards (c1, c2, Bulletin #201 item 5 in c7). The Fences page adds a 3 ft limit for the side yard along the street on corner lots (c3). New value for location: 'street_side_yard' means the side yard along the street on a corner lot. San Jose says 'front yard', not 'front setback'. This record maps location 'front_setback' to the city's 'front yard'; the page does not say whether the 3 ft limit covers the whole front yard or only the required front setback. The param material is not used: San Jose's fence definition (c6) includes masonry and concrete and sets no separate limit. The heights come from zoning (SJMC Ch. 20.30 Part 6 and Ch. 17.24, per the Fences page). I did not read those sections (Municode terms). How fence height is measured is not stated on the city pages. docs_required comes from c8 plus the plan list on the same page (site plan, fence or retaining wall plan, elevations). No inspection list or fence-specific residential fee is published, so inspections is empty and fee_note is null. Access: sanjoseca.gov returned HTTP 403 (Akamai 'Access Denied') to curl and to WebFetch from this machine, robots.txt included. I read robots.txt from a Wayback snapshot (https://web.archive.org/web/20260501010517/https://www.sanjoseca.gov/robots.txt). It disallows only /scripts, /admin and *.asmx for all agents, so content pages are allowed. The city's E-Government Policy (sanjoseca.gov/home/showdocument?id=17869, read from a Wayback snapshot) has no rule against copying or automated access. Every San Jose quote comes from a raw Internet Archive snapshot of the official page (id_ mode, fetched with curl, tags stripped with python3, PDFs read with pdftotext). source_url is that snapshot URL, and the official sanjoseca.gov URL is the part after the timestamp. Internet Archive terms say access 'is granted for scholarship and research purposes only'. Re-check each quote on the live sanjoseca.gov page before marking the rule verified. Quote format: list items and paragraph breaks are joined with single spaces and bullet characters are left out; the words are verbatim. Municode (library.municode.com), host of SJMC Titles 20 and 24, was not fetched. Its archived terms (https://web.archive.org/web/20190411032708/https://www.municode.com/terms-of-use/) say: 'You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.' I could not load the current terms (the page is rendered by JavaScript and municode.com redirects to civicplus.com, which returns 403). So SJMC §24.02.110 (the exempt-work list) and §20.30.500 were not read directly. The city pages are the only source. The city pages cite 'Section 24.02.110', but the Municode link on the When Is a Building Permit Required? page points to node 24.02.120 (BUPEEX). The correct section number is unconfirmed. Code edition: the Adopted Building Codes page (https://web.archive.org/web/20260318183710/https://www.sanjoseca.gov/your-government/departments-offices/planning-building-code-enforcement/building-division/adopted-building-codes) says 'Effective Jan. 1, 2026, the 2025 state building codes have replaced the 2022 codes.' Its 'amended ordinance' link still opens Ordinance No. 30837 (the 2022 adoption, which does not amend Chapter 24.02). The October 28, 2025 Council presentation on adopting the 2025 codes (https://sanjose.legistar.com/View.ashx?M=F&ID=14894029&GUID=229C001D-2EEC-4071-83AE-F1034F198173&G=920296E4-80BE-4CA2-A78F-32C5EFCF78AF) lists the retained Title 24 amendments as 'Special Testing and Inspections', 'Gypsum board shear walls' and 'Braced wall panels', and says 'No (0) additional amendments to 2025 California Building Codes'. That suggests the 2025 adoption left the exempt-work list alone, but I did not read the adopted ordinance. Bulletin #201 and the When Is a Building Permit Required? page are both dated 06/12/2025, before the 2025 codes took effect."
+}

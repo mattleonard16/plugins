@@ -1,0 +1,157 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "deck",
+  "summary": "In San Jose a deck needs a building permit unless it is under 200 square feet, under 30 inches above the ground at every point, freestanding, and not used as an exit-door or door landing.",
+  "outcomes": [
+    {
+      "when": {
+        "all": [
+          {
+            "param": "area_sqft",
+            "op": "lt",
+            "value": 200
+          },
+          {
+            "param": "height_above_grade_in",
+            "op": "lt",
+            "value": 30
+          },
+          {
+            "param": "attached_to_dwelling",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "param": "serves_exit_door",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "param": "serves_door_landing",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "verdict": "NOT_REQUIRED",
+      "explanation": "A freestanding deck under 200 square feet and under 30 inches above the ground at every point, which is not a required exit-door landing or any door landing, does not need a building permit on a single-family or duplex property.",
+      "citations": [
+        "c1",
+        "c3"
+      ]
+    },
+    {
+      "when": {
+        "all": [
+          {
+            "param": "area_sqft",
+            "op": "lte",
+            "value": 200
+          },
+          {
+            "param": "height_above_grade_in",
+            "op": "lte",
+            "value": 30
+          },
+          {
+            "param": "attached_to_dwelling",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "param": "serves_exit_door",
+            "op": "eq",
+            "value": false
+          },
+          {
+            "param": "serves_door_landing",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "verdict": "DEPENDS",
+      "explanation": "At exactly 200 square feet or exactly 30 inches high, San Jose's own pages disagree. The exemption list allows up to 200 square feet and 30 inches, but the newer deck page says 200 square feet or greater, or 30 inches or more, requires a permit. Ask the Permit Center before building.",
+      "citations": [
+        "c1",
+        "c2",
+        "c3"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "A building permit is required if the deck is 200 square feet or larger, is 30 inches or more above the ground at any point, is attached to the house, serves a required exit door, or serves as a door landing.",
+  "default_citations": [
+    "c3"
+  ],
+  "permit_types": [
+    "Building permit"
+  ],
+  "fee_note": "San Jose's FY 2025-26 Building Division fee schedule (effective August 11, 2025) charges residential exterior or site alterations, including decks and accessory structures such as sheds, a base permit issuance fee of $227 and a base plan review fee of $325. The base inspection fee is $367 when only a building permit is needed, or $682 total when a plumbing, mechanical or electrical permit is also needed. The Building Official may adjust fees to fit the scope. This is the latest archived copy; a FY 2026-27 schedule may now apply, so check sanjoseca.gov/buildingfees.",
+  "docs_required": [
+    "Project plans (see the city's Plan Set Instructions)",
+    "Building Permit Application",
+    "Single-Family & Duplex Projects Submittal Checklist (under Project Scope, check \"Other\" and enter \"Deck\")"
+  ],
+  "inspections": [],
+  "notes": [
+    {
+      "text": "The exemption list applies to Group R-3 occupancies, which San Jose defines as single-family and duplex properties, certain child and adult care facilities, and congregate living shelters.",
+      "citations": [
+        "c4"
+      ]
+    },
+    {
+      "text": "Depending on the site, a permitted deck may also need a Geologic Hazard Clearance, a Grading Permit, or a Historic Preservation Permit, Adjustment, or Amendment.",
+      "citations": [
+        "c5"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "c1",
+      "code_section": "San Jose Permit Center, When Is a Building Permit Required? (updated 06/12/2025), summarizing SJMC §24.02.110",
+      "source_url": "https://web.archive.org/web/20260813091205/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/when-is-a-building-permit-required",
+      "quote": "Decks in Group R-3 occupancies that are not attached to a dwelling; do not exceed 200 square feet in area; do not serve a required exit door; and do not exceed 30 inches above adjacent grade at any point."
+    },
+    {
+      "id": "c2",
+      "code_section": "San Jose Building Bulletin #201, When Is a Building Permit Required? (06/12/2025), summarizing SJMC §24.02.110",
+      "source_url": "https://web.archive.org/web/20260106113350/https://www.sanjoseca.gov/home/showpublisheddocument/25897/638853215612230000",
+      "quote": "3. Decks in Group R-3 occupancy that are not attached to a dwelling; do not exceed 200 square feet in area; do not serve a required exit door; and do not exceed 30 inches above adjacent grade at any point."
+    },
+    {
+      "id": "c3",
+      "code_section": "San Jose Permit Center, Decks, single-family & duplex (updated 03/23/2026)",
+      "source_url": "https://web.archive.org/web/20260513141119/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/decks",
+      "quote": "A deck installation, replacement, or repair requires a building permit if any of these conditions apply: Deck is 200 sq. ft. or greater Deck is 30\" or more above ground at any point Deck is attached to a dwelling The deck serves a required exit door The deck serves as a door landing"
+    },
+    {
+      "id": "c4",
+      "code_section": "San Jose Permit Center, When Is a Building Permit Required? (updated 06/12/2025), summarizing SJMC §24.02.110",
+      "source_url": "https://web.archive.org/web/20260813091205/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/when-is-a-building-permit-required",
+      "quote": "Definition: Group R-3 occupancies are single-family and duplex properties; certain child and adult care facilities; and congregate living shelters."
+    },
+    {
+      "id": "c5",
+      "code_section": "San Jose Permit Center, Decks, single-family & duplex (updated 03/23/2026)",
+      "source_url": "https://web.archive.org/web/20260513141119/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/decks",
+      "quote": "IF APPLICABLE per Design Considerations > Geologic Hazard Clearance > Grading Permit Application > Historic Preservation Permit, Adjustment, or Amendment"
+    },
+    {
+      "id": "c6",
+      "code_section": "San Jose Permit Center, Decks, single-family & duplex (updated 03/23/2026)",
+      "source_url": "https://web.archive.org/web/20260513141119/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/decks",
+      "quote": "REQUIRED > Project Plans - See Plan Set Instructions. > Building Permit Application - See instructions. > Single-Family & Duplex Projects Submittal Checklist - Under Project Scope, check \"Other\" and enter \"Deck\""
+    },
+    {
+      "id": "c7",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective 08/11/2025), Building Residential Fees, p. 4",
+      "source_url": "https://web.archive.org/web/20251207120823/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Exterior and/or site alterations, such (but not limited to) an accessory structure (shed, etc.), balconies and decks, porches, windows, pools, etc. will be charged a base permit issuance fee of $227 and a base plan review fee of $325. Exterior and/or site alterations that only require a building permit will be charged a base Inspection fee of $367. If a plumbing, mechanical, or electrical permit is also required, the total base inspection fee will be $682."
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Conflict: the exemption list on the When Is a Building Permit Required? page (c1) and in Bulletin #201 (c2), both dated 06/12/2025, exempts decks that 'do not exceed 200 square feet' and 'do not exceed 30 inches above adjacent grade'. The Decks page (c3, updated 03/23/2026) says a permit is required if the 'Deck is 200 sq. ft. or greater' or 'Deck is 30\" or more above ground at any point'. It also adds 'The deck serves as a door landing', which the exemption list does not mention. Because the Decks page is newer and more specific, this record follows it: anything it lists as needing a permit falls through to REQUIRED, and only the exact 200 sq ft or 30 in boundary is DEPENDS. New param serves_door_landing (boolean) comes from c3. The page does not define 'door landing'; it appears broader than 'required exit door'. The exemption applies to Group R-3 occupancies only (c4). This record assumes a single-family or duplex property. docs_required comes from c6. fee_note comes from c7 and from the schedule cover, which reads 'Effective August 11, 2025'. The Decks page lists no specific inspections; it says only that a Permit Card lists them, so inspections is empty. The CRC baseline (R105.2 Building item 10) was not quoted because the ICC viewer's terms prohibit robots; see ca-baseline research notes. Access: sanjoseca.gov returned HTTP 403 (Akamai 'Access Denied') to curl and to WebFetch from this machine, robots.txt included. I read robots.txt from a Wayback snapshot (https://web.archive.org/web/20260501010517/https://www.sanjoseca.gov/robots.txt). It disallows only /scripts, /admin and *.asmx for all agents, so content pages are allowed. The city's E-Government Policy (sanjoseca.gov/home/showdocument?id=17869, read from a Wayback snapshot) has no rule against copying or automated access. Every San Jose quote comes from a raw Internet Archive snapshot of the official page (id_ mode, fetched with curl, tags stripped with python3, PDFs read with pdftotext). source_url is that snapshot URL, and the official sanjoseca.gov URL is the part after the timestamp. Internet Archive terms say access 'is granted for scholarship and research purposes only'. Re-check each quote on the live sanjoseca.gov page before marking the rule verified. Quote format: list items and paragraph breaks are joined with single spaces and bullet characters are left out; the words are verbatim. Municode (library.municode.com), host of SJMC Titles 20 and 24, was not fetched. Its archived terms (https://web.archive.org/web/20190411032708/https://www.municode.com/terms-of-use/) say: 'You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.' I could not load the current terms (the page is rendered by JavaScript and municode.com redirects to civicplus.com, which returns 403). So SJMC §24.02.110 (the exempt-work list) and §20.30.500 were not read directly. The city pages are the only source. The city pages cite 'Section 24.02.110', but the Municode link on the When Is a Building Permit Required? page points to node 24.02.120 (BUPEEX). The correct section number is unconfirmed. Code edition: the Adopted Building Codes page (https://web.archive.org/web/20260318183710/https://www.sanjoseca.gov/your-government/departments-offices/planning-building-code-enforcement/building-division/adopted-building-codes) says 'Effective Jan. 1, 2026, the 2025 state building codes have replaced the 2022 codes.' Its 'amended ordinance' link still opens Ordinance No. 30837 (the 2022 adoption, which does not amend Chapter 24.02). The October 28, 2025 Council presentation on adopting the 2025 codes (https://sanjose.legistar.com/View.ashx?M=F&ID=14894029&GUID=229C001D-2EEC-4071-83AE-F1034F198173&G=920296E4-80BE-4CA2-A78F-32C5EFCF78AF) lists the retained Title 24 amendments as 'Special Testing and Inspections', 'Gypsum board shear walls' and 'Braced wall panels', and says 'No (0) additional amendments to 2025 California Building Codes'. That suggests the 2025 adoption left the exempt-work list alone, but I did not read the adopted ordinance. Bulletin #201 and the When Is a Building Permit Required? page are both dated 06/12/2025, before the 2025 codes took effect."
+}

@@ -1,0 +1,98 @@
+{
+  "jurisdiction": "ca",
+  "project": "ev-charger",
+  "summary": "In California, cities and counties must approve EV charging station installations through a building permit or similar nondiscretionary permit, using an expedited checklist process.",
+  "outcomes": [],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "State law requires cities and counties to approve applications to install EV charging stations through a building permit or similar nondiscretionary permit, with review limited to health and safety. The statute does not address plugging a portable charger into an existing outlet; local electrical permit exemptions decide that case.",
+  "default_citations": [
+    "g7_b1",
+    "g7_b3",
+    "g7_i3"
+  ],
+  "permit_types": [
+    "Building permit or similar nondiscretionary permit"
+  ],
+  "fee_note": null,
+  "docs_required": [],
+  "inspections": [],
+  "notes": [
+    {
+      "text": "Every city and county had to adopt an expedited, checklist-based permit process for EV charging stations by September 30, 2016 or 2017, depending on population.",
+      "citations": [
+        "g7_g1"
+      ]
+    },
+    {
+      "text": "For 1 to 25 chargers at one site, state law deems an application complete 5 business days after submission, and approved 20 business days after it is deemed complete, when the statute's other conditions are met.",
+      "citations": [
+        "g71_b1",
+        "g71"
+      ]
+    },
+    {
+      "text": "A city or county cannot make permit approval depend on approval by a homeowners association.",
+      "citations": [
+        "g7_h"
+      ]
+    },
+    {
+      "text": "An owner who builds or improves a structure on their own property can be exempt from state contractor licensing under the conditions in B&P Code §7044; this is a licensing exemption, not a permit exemption.",
+      "citations": [
+        "bpc7044"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "g7_b1",
+      "code_section": "Cal. Gov. Code §65850.7(b)(1)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.7.",
+      "quote": "A city, county, or city and county shall administratively approve an application to install electric vehicle charging stations through the issuance of a building permit or similar nondiscretionary permit."
+    },
+    {
+      "id": "g7_b3",
+      "code_section": "Cal. Gov. Code §65850.7(b)(3)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.7.",
+      "quote": "Review of an application to install an electric vehicle charging station or hydrogen-fueling station shall be limited to the building official’s review of whether it meets all health and safety requirements of local, state, and federal law."
+    },
+    {
+      "id": "g7_i3",
+      "code_section": "Cal. Gov. Code §65850.7(i)(3)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.7.",
+      "quote": "“Electric vehicle charging station” or “charging station” means any level of electric vehicle supply equipment station that is designed and built in compliance with Article 625 of the California Electrical Code, as it reads on the effective date of this section, and delivers electricity from a source outside an electric vehicle into a plug-in electric vehicle."
+    },
+    {
+      "id": "g7_g1",
+      "code_section": "Cal. Gov. Code §65850.7(g)(1)(A)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.7.",
+      "quote": "On or before September 30, 2016, every city, county, or city and county with a population of 200,000 or more residents, and, on or before September 30, 2017, every city, county, or city and county with a population of less than 200,000 residents, shall, in consultation with the local fire department or district and the utility director, if the city, county, or city and county operates a utility, adopt an ordinance, consistent with the goals and intent of this section, that creates an expedited, streamlined permitting process for electric vehicle charging stations. In developing an expedited permitting process, the city, county, or city and county shall adopt a checklist of all requirements with which electric vehicle charging stations shall comply to be eligible for expedited review."
+    },
+    {
+      "id": "g71_b1",
+      "code_section": "Cal. Gov. Code §65850.71(b)(1), (c)(1)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.71.",
+      "quote": "An application to install an electric vehicle charging station submitted to the building official of a city, county, or city and county shall be deemed complete if, after the applicable time period described in paragraph (2) has elapsed, both of the following are true: ... An application to install an electric vehicle charging station shall be deemed approved if the applicable time period described in paragraph (2) has elapsed and all of the following are true:"
+    },
+    {
+      "id": "g71",
+      "code_section": "Cal. Gov. Code §65850.71(b)(2)(A), (c)(2)(A)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.71.",
+      "quote": "Five business days after submission of the application to the city, county, or city and county, if the application is for at least 1, but not more than 25 electric vehicle charging stations at a single site. ... Twenty business days after the application was deemed complete, if the application is for at least 1, but not more than 25 electric vehicle charging stations at a single site."
+    },
+    {
+      "id": "g7_h",
+      "code_section": "Cal. Gov. Code §65850.7(h)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.7.",
+      "quote": "A city, county, or city and county shall not condition approval for any electric vehicle charging station or hydrogen-fueling station permit on the approval of the station by an association, as that term is defined in Section 4080 of the Civil Code."
+    },
+    {
+      "id": "bpc7044",
+      "code_section": "Cal. Bus. & Prof. Code §7044(a)(1), (a)(3)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7044.",
+      "quote": "This chapter does not apply to any of the following: (1)An owner who builds or improves a structure on his or her property, provided that both of the following conditions are met: (A)None of the improvements are intended or offered for sale. (B)The property owner personally performs all of the work or any work not performed by the owner is performed by the owner’s employees with wages as their sole compensation. ... (3)A homeowner improving his or her principal place of residence or appurtenances thereto, provided that all of the following conditions exist: (A)The work is performed prior to sale. (B)The homeowner has actually resided in the residence for the 12 months prior to completion of the work. (C)The homeowner has not availed himself or herself of the exemption in this paragraph on more than two structures more than once during any three-year period."
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Code text not retrieved: CRC §R105.2, the CPC and CMC Chapter 1 exempt-work sections, and the CEC permit provisions. ICC (codes.iccsafe.org) was not fetched. ICC's terms (https://www.iccsafe.org/terms-of-use/) prohibit 'use of data mining, robots, or similar data gathering and extraction tools with any Service or E-Content'. https://www.dgs.ca.gov/BSC/Codes returned HTTP 403. IAPMO's epubs reader is a JavaScript app and was not used, so no CPC or CMC text was pulled from it. energy.ca.gov Conditions of Use (https://www.energy.ca.gov/conditions-of-use) say 'No material or information from this site may be copied, reproduced, republished, uploaded, posted, transmitted, or distributed except as authorized' and 'Use or modification of these materials or information for commercial or profit-making purposes is prohibited', so Energy Code material was not used. For that reason no ca-baseline file was written for water-heater, hvac, or electrical-panel. Statutes: leginfo.legislature.ca.gov robots.txt is 'User-agent: * / Disallow: /', so statute text came from the Legislative Counsel's official bulk database, https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip (listed 2026-09-27; LAW_SECTION_TBL files read with HTTP range requests). source_url points to each section's leginfo display page, which was not fetched. Quotes collapse whitespace, and subdivision labels run into the text as the database stores them, for example '(A)A solar'. B&P Code §7044 exempts qualifying owners from contractor licensing; it does not exempt the work from permits. Default verdict: REQUIRED is the conservative reading for both install types. Gov. Code §65850.7 covers applications 'to install' charging stations and defines a charging station as equipment built to CEC Article 625; it says nothing about a portable cord set plugged into an existing receptacle. The model-code exemption for connecting portable equipment could not be read (see above). San Jose's Level 1 rule is in data/rules/san-jose/ev-charger.json. Version: the quoted §65850.7 is the version effective January 1, 2025 (Stats. 2024, Ch. 607), which 'shall remain in effect only until January 1, 2030'; the database notes a later operative version, which was not reviewed."
+}

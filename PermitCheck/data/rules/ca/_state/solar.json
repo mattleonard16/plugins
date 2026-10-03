@@ -1,0 +1,149 @@
+{
+  "jurisdiction": "ca",
+  "project": "solar",
+  "summary": "In California, solar installations need a building permit or similar nondiscretionary permit, and cities and counties must offer faster review for small home systems.",
+  "outcomes": [
+    {
+      "when": {
+        "all": [
+          {
+            "param": "battery_storage",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "param": "system_size_kw",
+            "op": "lte",
+            "value": 38.4
+          }
+        ]
+      },
+      "verdict": "REQUIRED",
+      "explanation": "A home solar system up to 38.4 kW AC with a paired battery still needs a permit. Most cities and counties must offer an online, automated platform such as SolarAPP+ that issues permits in real time to a licensed contractor, unless the system configuration is not eligible for SolarAPP+.",
+      "citations": [
+        "g52_b1",
+        "g52_b2",
+        "g52_c"
+      ]
+    },
+    {
+      "when": {
+        "param": "system_size_kw",
+        "op": "lte",
+        "value": 10
+      },
+      "verdict": "REQUIRED",
+      "explanation": "A system no larger than 10 kW AC on a single-family home or duplex, within the local height limit, is a small residential rooftop solar energy system. It still needs a permit, but every city and county must offer an expedited process for it with only one inspection.",
+      "citations": [
+        "g5_b",
+        "g5_j3",
+        "g5_g1",
+        "g5_h"
+      ]
+    },
+    {
+      "when": {
+        "param": "system_size_kw",
+        "op": "lte",
+        "value": 38.4
+      },
+      "verdict": "REQUIRED",
+      "explanation": "A home solar system up to 38.4 kW AC needs a permit. Most cities and counties must offer an online, automated platform such as SolarAPP+ that issues permits in real time to a licensed contractor, unless the system configuration is not eligible for SolarAPP+.",
+      "citations": [
+        "g5_b",
+        "g52_b1",
+        "g52_b2",
+        "g52_c"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "Cities and counties must approve solar installations through a building permit or similar nondiscretionary permit, with review limited to health and safety requirements.",
+  "default_citations": [
+    "g5_b"
+  ],
+  "permit_types": [
+    "Building permit or similar nondiscretionary permit"
+  ],
+  "fee_note": null,
+  "docs_required": [],
+  "inspections": [],
+  "notes": [
+    {
+      "text": "A city or county cannot make solar permit approval depend on approval by a homeowners association.",
+      "citations": [
+        "g5_i"
+      ]
+    },
+    {
+      "text": "The automated platform rule does not apply in cities under 5,000 people or in counties under 150,000 people, including each city in those counties.",
+      "citations": [
+        "g52_c"
+      ]
+    },
+    {
+      "text": "An owner who builds or improves a structure on their own property can be exempt from state contractor licensing under the conditions in B&P Code §7044; this is a licensing exemption, not a permit exemption.",
+      "citations": [
+        "bpc7044"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "g52_b1",
+      "code_section": "Cal. Gov. Code §65850.52(b)(1)(A)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.52.",
+      "quote": "Pursuant to the compliance schedule in subdivision (c), a city, county, or city and county, in consultation with the local fire department, district, or authority, shall implement an online, automated permitting platform, such as SolarAPP+, that meets both of the following requirements: (A)The platform verifies code compliance and issues permits in real time or allows the city, county, or city and county to issue permits in real time to a licensed contractor for a residential solar energy system that is no larger than 38.4 kilowatts alternating current nameplate rating and a residential energy storage system paired with a residential solar energy system that is no larger than 38.4 kilowatts alternating current nameplate rating."
+    },
+    {
+      "id": "g52_b2",
+      "code_section": "Cal. Gov. Code §65850.52(b)(2)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.52.",
+      "quote": "A city, county, or city and county is not required to permit an application for a residential solar energy system or a residential energy storage system paired with a residential solar energy system through the online automated permitting platform pursuant to this section if the system configuration is not eligible for SolarAPP+ at the time the application is submitted to the jurisdiction."
+    },
+    {
+      "id": "g52_c",
+      "code_section": "Cal. Gov. Code §65850.52(c)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.52.",
+      "quote": "A city with a population of fewer than 5,000 and a county with a population of fewer than 150,000, including each city within that county, is exempt from subdivision (b). (2)A city with a population of 50,000 or fewer that is not exempt pursuant to paragraph (1) shall satisfy the requirements of subdivision (b) by September 30, 2024. (3)A city, county, or city and county with a population of greater than 50,000 that is not exempt pursuant to paragraph (1) shall satisfy the requirements of subdivision (b) by September 30, 2023."
+    },
+    {
+      "id": "g5_b",
+      "code_section": "Cal. Gov. Code §65850.5(b)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.5.",
+      "quote": "A city or county shall administratively approve applications to install solar energy systems through the issuance of a building permit or similar nondiscretionary permit. Review of the application to install a solar energy system shall be limited to the building official’s review of whether it meets all health and safety requirements of local, state, and federal law."
+    },
+    {
+      "id": "g5_j3",
+      "code_section": "Cal. Gov. Code §65850.5(j)(3)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.5.",
+      "quote": "“Small residential rooftop solar energy system” means all of the following: (A)A solar energy system that is no larger than 10 kilowatts alternating current nameplate rating or 30 kilowatts thermal. (B)A solar energy system that conforms to all applicable state fire, structural, electrical, and other building codes as adopted or amended by the city, county, or city and county and paragraph (3) of subdivision (c) of Section 714 of the Civil Code. (C)A solar energy system that is installed on a single or duplex family dwelling. (D)A solar panel or module array that does not exceed the maximum legal building height as defined by the authority having jurisdiction."
+    },
+    {
+      "id": "g5_g1",
+      "code_section": "Cal. Gov. Code §65850.5(g)(1)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.5.",
+      "quote": "On or before September 30, 2015, every city, county, or city and county, in consultation with the local fire department or district and the utility director, if the city, county, or city and county operates a utility, shall adopt an ordinance, consistent with the goals and intent of subdivision (a), that creates an expedited, streamlined permitting process for small residential rooftop solar energy systems."
+    },
+    {
+      "id": "g5_h",
+      "code_section": "Cal. Gov. Code §65850.5(h)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.5.",
+      "quote": "For a small residential rooftop solar energy system eligible for expedited review, only one inspection shall be required, which shall be done in a timely manner and may include a consolidated inspection, except that a separate fire safety inspection may be performed in a city, county, or city and county that does not have an agreement with a local fire authority to conduct a fire safety inspection on behalf of the fire authority."
+    },
+    {
+      "id": "g5_i",
+      "code_section": "Cal. Gov. Code §65850.5(i)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=65850.5.",
+      "quote": "A city, county, or city and county shall not condition approval for any solar energy system permit on the approval of a solar energy system by an association, as that term is defined in Section 4080 of the Civil Code."
+    },
+    {
+      "id": "bpc7044",
+      "code_section": "Cal. Bus. & Prof. Code §7044(a)(1), (a)(3)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7044.",
+      "quote": "This chapter does not apply to any of the following: (1)An owner who builds or improves a structure on his or her property, provided that both of the following conditions are met: (A)None of the improvements are intended or offered for sale. (B)The property owner personally performs all of the work or any work not performed by the owner is performed by the owner’s employees with wages as their sole compensation. ... (3)A homeowner improving his or her principal place of residence or appurtenances thereto, provided that all of the following conditions exist: (A)The work is performed prior to sale. (B)The homeowner has actually resided in the residence for the 12 months prior to completion of the work. (C)The homeowner has not availed himself or herself of the exemption in this paragraph on more than two structures more than once during any three-year period."
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Code text not retrieved: CRC §R105.2, the CPC and CMC Chapter 1 exempt-work sections, and the CEC permit provisions. ICC (codes.iccsafe.org) was not fetched. ICC's terms (https://www.iccsafe.org/terms-of-use/) prohibit 'use of data mining, robots, or similar data gathering and extraction tools with any Service or E-Content'. https://www.dgs.ca.gov/BSC/Codes returned HTTP 403. IAPMO's epubs reader is a JavaScript app and was not used, so no CPC or CMC text was pulled from it. energy.ca.gov Conditions of Use (https://www.energy.ca.gov/conditions-of-use) say 'No material or information from this site may be copied, reproduced, republished, uploaded, posted, transmitted, or distributed except as authorized' and 'Use or modification of these materials or information for commercial or profit-making purposes is prohibited', so Energy Code material was not used. For that reason no ca-baseline file was written for water-heater, hvac, or electrical-panel. Statutes: leginfo.legislature.ca.gov robots.txt is 'User-agent: * / Disallow: /', so statute text came from the Legislative Counsel's official bulk database, https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip (listed 2026-09-27; LAW_SECTION_TBL files read with HTTP range requests). source_url points to each section's leginfo display page, which was not fetched. Quotes collapse whitespace, and subdivision labels run into the text as the database stores them, for example '(A)A solar'. B&P Code §7044 exempts qualifying owners from contractor licensing; it does not exempt the work from permits. Units: Gov. Code §§65850.5 and 65850.52 measure size in 'kilowatts alternating current nameplate rating'. The system_size_kw param does not say AC or DC; the tool should ask for the AC rating, because a DC array rating is usually higher. The 10 kW outcome also requires a single-family or duplex dwelling, code conformance, and an array within the local height limit (§65850.5(j)(3)); the explanation states these, but they are not params. Battery: §65850.52 covers 'a residential energy storage system paired with a residential solar energy system'. No statute found sets a separate battery permit threshold; stand-alone batteries are not covered here. Real-time permits under §65850.52 go 'to a licensed contractor'; an owner-builder may need the jurisdiction's standard process. All outcomes are REQUIRED; no state source found exempts any solar installation from a permit."
+}

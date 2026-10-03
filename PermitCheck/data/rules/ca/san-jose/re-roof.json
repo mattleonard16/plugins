@@ -1,0 +1,242 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "re-roof",
+  "summary": "In San Jose, reroofing 25% or more of a roof within any 12 months needs a building permit; smaller repairs that do not touch the roof framing do not.",
+  "outcomes": [
+    {
+      "when": {
+        "param": "involves_framing",
+        "op": "eq",
+        "value": true
+      },
+      "verdict": "REQUIRED",
+      "explanation": "The roof exemption only covers work that does not involve the underlying framing, so framing work needs a permit.",
+      "citations": [
+        "c3"
+      ]
+    },
+    {
+      "when": {
+        "param": "scope",
+        "op": "eq",
+        "value": "full_replacement"
+      },
+      "verdict": "REQUIRED",
+      "explanation": "A full roof replacement is 25% or more of the roof, so a building permit is required.",
+      "citations": [
+        "c1",
+        "c2"
+      ]
+    },
+    {
+      "when": {
+        "param": "percent_of_roof",
+        "op": "gte",
+        "value": 25
+      },
+      "verdict": "REQUIRED",
+      "explanation": "Reroofing 25% or more of the roof in any 12-month period requires a building permit.",
+      "citations": [
+        "c1",
+        "c3"
+      ]
+    },
+    {
+      "when": {
+        "all": [
+          {
+            "param": "percent_of_roof",
+            "op": "lt",
+            "value": 25
+          },
+          {
+            "param": "involves_framing",
+            "op": "eq",
+            "value": false
+          }
+        ]
+      },
+      "verdict": "NOT_REQUIRED",
+      "explanation": "Repairing, replacing, or overlaying less than 25% of the roof in any 12-month period, without touching the framing, is treated as a repair and needs no building permit.",
+      "citations": [
+        "c1",
+        "c2",
+        "c3"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "Unless you can confirm the work covers less than 25% of the roof within 12 months and leaves the framing alone, plan on a reroof building permit.",
+  "default_citations": [
+    "c1"
+  ],
+  "permit_types": [
+    "Building permit (reroof)",
+    "Electrical or mechanical permit if rooftop equipment such as solar is replaced, altered, or removed"
+  ],
+  "fee_note": "The FY 2025-26 fee schedule (effective August 11, 2025) lists a residential reroof at $113 permit issuance, plan review only if required, and $236 for up to 2 inspections plus $157 per half hour for each additional inspection. This is the latest archived copy; a FY 2026-27 schedule may now apply, so check sanjoseca.gov/buildingfees.",
+  "docs_required": [
+    "Reroof Project Worksheet, for projects that do not qualify for an online permit"
+  ],
+  "inspections": [
+    "Required inspections are listed on the Permit Card issued with the permit"
+  ],
+  "notes": [
+    {
+      "text": "Most reroof permits can be issued online through SJPermits.org.",
+      "citations": [
+        "c14"
+      ]
+    },
+    {
+      "text": "Replacing, altering, or removing solar panels or other rooftop equipment also needs electrical or mechanical permits.",
+      "citations": [
+        "c4"
+      ]
+    },
+    {
+      "text": "Properties on the Historical Resources Inventory need a Planning Division clearance or permit before the reroof permit is issued.",
+      "citations": [
+        "c5"
+      ]
+    },
+    {
+      "text": "The city lists the Title 24 Energy Code as the reference for cool roof standards; the city page does not state the cool roof thresholds.",
+      "citations": [
+        "c6"
+      ]
+    },
+    {
+      "text": "Roof coverings must be at least Class C fire rated.",
+      "citations": [
+        "c7"
+      ]
+    },
+    {
+      "text": "At most 2 composition roof layers are allowed, and an engineering analysis is required if all roof coverings together weigh more than 7 pounds per square foot.",
+      "citations": [
+        "c8",
+        "c15"
+      ]
+    },
+    {
+      "text": "Adding a skylight needs its own building permit, and cutting or altering a flue needs a separate mechanical permit.",
+      "citations": [
+        "c9",
+        "c10"
+      ]
+    },
+    {
+      "text": "Inspections are listed on the Permit Card.",
+      "citations": [
+        "c12"
+      ]
+    },
+    {
+      "text": "Fee details come from the FY 2025-26 schedule and may have changed.",
+      "citations": [
+        "c13"
+      ]
+    },
+    {
+      "text": "A Reroof Project Worksheet is required when the project does not qualify for an online permit.",
+      "citations": [
+        "c11"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "c1",
+      "code_section": "San Jose Permit Center, Reroof Projects (updated 04/12/2026)",
+      "source_url": "https://web.archive.org/web/20260514004111/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/reroof-projects",
+      "quote": "A building permit is required when 25 percent or more of the roof is to be reroofed in any 12-month period. Less than 25 percent is considered a repair and does not require a permit."
+    },
+    {
+      "id": "c2",
+      "code_section": "SJMC Title 24 as amended by Ordinance No. 31256 (2025 codes; council draft dated 10/16/2025, Item 8.2(a), 10/28/2025), §24.02.120(A)(13)",
+      "source_url": "https://sanjose.legistar.com/View.ashx?M=F&ID=14873777&GUID=DD05D7FB-2583-4C0D-BC97-EE5FB907BE34",
+      "quote": "Replacement, repair or overlay of less than twenty-five percent of an existing roof within any twelve-month period."
+    },
+    {
+      "id": "c3",
+      "code_section": "San Jose Permit Center, When Is a Building Permit Required? (updated 06/12/2025), Other exemptions, roof bullet",
+      "source_url": "https://web.archive.org/web/20260813091205/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/when-is-a-building-permit-required",
+      "quote": "Roof repairs or replacements that are less than 25% of existing roof; do not involve the underlying framing; and occur no more than once in a 12-month period. If 25% or more of the roof is being replaced/repaired, a building permit is required."
+    },
+    {
+      "id": "c4",
+      "code_section": "San Jose Permit Center, Reroof Projects (updated 04/12/2026)",
+      "source_url": "https://web.archive.org/web/20260514004111/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/reroof-projects",
+      "quote": "Alterations to rooftop equipment - If replacing, altering, or removing solar installations or other rooftop equipment, then electrical or mechanical permits are also required."
+    },
+    {
+      "id": "c5",
+      "code_section": "San Jose Permit Center, Reroof Projects (updated 04/12/2026)",
+      "source_url": "https://web.archive.org/web/20260514004111/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/reroof-projects",
+      "quote": "Historical properties - If the property is listed on the Historical Resources Inventory, a clearance or permit from the Planning Division is required before a reroof permit will be issued"
+    },
+    {
+      "id": "c6",
+      "code_section": "San Jose Permit Center, Reroof Projects (updated 04/12/2026), Reroofing Specifications & Requirements, Code References",
+      "source_url": "https://web.archive.org/web/20260514004111/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/reroof-projects",
+      "quote": "Title 24 Energy Code for cool roof standards"
+    },
+    {
+      "id": "c7",
+      "code_section": "San Jose Permit Center, Reroof Projects (updated 04/12/2026), Reroofing Specifications & Requirements, 3. Fire Rating",
+      "source_url": "https://web.archive.org/web/20260514004111/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/reroof-projects",
+      "quote": "Class C minimum rating is required by California law, whether new or re-roof."
+    },
+    {
+      "id": "c8",
+      "code_section": "San Jose Permit Center, Reroof Projects (updated 04/12/2026), Reroofing Specifications & Requirements, 6. Overlays",
+      "source_url": "https://web.archive.org/web/20260514004111/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/reroof-projects",
+      "quote": "An engineering analysis of the roof supporting structure is required if the total weight of all roof coverings exceeds 7 pounds per square foot."
+    },
+    {
+      "id": "c9",
+      "code_section": "San Jose Permit Center, Reroof Projects (updated 04/12/2026), Reroofing Specifications & Requirements, 8. Skylights",
+      "source_url": "https://web.archive.org/web/20260514004111/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/reroof-projects",
+      "quote": "Skylight installations require a separate building permit and inspection."
+    },
+    {
+      "id": "c10",
+      "code_section": "San Jose Permit Center, Reroof Projects (updated 04/12/2026), Reroofing Specifications & Requirements, 2. Flues",
+      "source_url": "https://web.archive.org/web/20260514004111/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/reroof-projects",
+      "quote": "A separate mechanical permit and inspection are required if the flue is cut or altered in any way."
+    },
+    {
+      "id": "c11",
+      "code_section": "San Jose Permit Center, Reroof Projects (updated 04/12/2026), How to Apply",
+      "source_url": "https://web.archive.org/web/20260514004111/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/reroof-projects",
+      "quote": "A completed Reroof Project Worksheet must be submitted with the building permit application for all projects that do not qualify for an online permit."
+    },
+    {
+      "id": "c12",
+      "code_section": "San Jose Permit Center, Reroof Projects (updated 04/12/2026), Inspections",
+      "source_url": "https://web.archive.org/web/20260514004111/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/reroof-projects",
+      "quote": "You will be issued a Permit Card that lists required inspections."
+    },
+    {
+      "id": "c13",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective 08/11/2025), Special Inspection and Permit Fees, Re-Roof, Residential",
+      "source_url": "https://web.archive.org/web/20251019175438/https://www.sanjoseca.gov/home/showpublisheddocument?id=26047",
+      "quote": "Re-Roof, Residential Permit Issuance = $113 Plan Review = If Required Inspections = $236 for up to 2 inspections plus $157 per ½ hour for each additional inspection"
+    },
+    {
+      "id": "c14",
+      "code_section": "San Jose Permit Center, Reroof Projects (updated 04/12/2026)",
+      "source_url": "https://web.archive.org/web/20260514004111/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/reroof-projects",
+      "quote": "For most projects, it is easy to get the permit online."
+    },
+    {
+      "id": "c15",
+      "code_section": "San Jose Permit Center, Reroof Projects (updated 04/12/2026), Reroofing Specifications & Requirements, 6. Overlays",
+      "source_url": "https://web.archive.org/web/20260514004111/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/single-family-duplex-properties/reroof-projects",
+      "quote": "Maximum number of composition roof covers allowed: 2"
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Threshold is a percentage of the existing roof, not square feet, so this record adds percent_of_roof (number, percent of the existing roof area repaired, replaced, or overlaid, counted cumulatively over any 12-month period) and involves_framing (boolean, work touches the roof framing under the sheathing). area_sqft is not used because no San Jose source states a square-foot threshold; to use it, a caller must convert to a percentage of total roof area. replaces_sheathing is not used: no San Jose source makes sheathing replacement alone a permit trigger. The When Is a Building Permit Required? page (c3) conditions the exemption on not involving \"the underlying framing\"; SJMC 24.02.120(A)(13) (c2) states only the 25%/12-month rule. Treating framing work as REQUIRED follows the city page. The When page also says the exempt work must \"occur no more than once in a 12-month period\"; percent_of_roof is defined cumulatively to cover this. Cool roof: the Reroof page cites the Title 24 Energy Code for cool roof standards but gives no thresholds; the Energy Code text itself was not quoted. Fee: the Building Permit Fees page (Wayback 20260801) links a newer schedule version (showpublisheddocument/26047/639180865996470000) that has no archived copy, so the fee note uses the FY 2025-26 schedule. Access: sanjoseca.gov returned HTTP 403 (Akamai \"Access Denied\") to curl and WebFetch, robots.txt included. The robots.txt read from a Wayback snapshot (20260501) disallows only /admin and *.asmx paths for User-agent *, and the City E-Government Policy (Administrative Policy 1.7.5, home/showdocument?id=17869) contains no restriction on automated access or copying. City page quotes therefore come from raw Internet Archive captures (the id_ form of each source_url, same timestamp), not from the live site. SJMC text comes from the 2025 code-adoption ordinance on sanjose.legistar.com (no robots.txt, no terms page found); Municode was not used because its Terms and Conditions of Use say: \"You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.\" Code edition: San Jose adopted the 2025 California codes effective January 1, 2026 (Adopted Building Codes page, Wayback 20260318). The ordinance PDF is the 10/16/2025 council draft with redline. Legistar shows it passed for publication 10/28/2025 as Ordinance No. 31256 and listed for final adoption on the 11/18/2025 agenda (file 25-1187); the signed final ordinance was not retrieved. Only ordinance passages with no redline marks (checked visually on rendered pages 8-12) are quoted. Section number: the When Is a Building Permit Required? page (updated 06/12/2025) says \"Municipal Code Section 24.02.110 lists all exempt projects\", but the ordinance codifies \"24.02.120 Building Permit Exemptions\"; this record cites 24.02.120. San Jose does not adopt CRC Chapter 1, Division II (SJMC 24.09.110 A.6, unchanged in the 2025 ordinance), so CRC R105.2 is not the operative exemption list in San Jose; SJMC 24.02.120-24.02.150 are."
+}

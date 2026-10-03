@@ -1,0 +1,87 @@
+{
+  "county": "Napa",
+  "retrieved_at": "2026-09-30",
+  "jurisdictions": [
+    {
+      "slug": "american-canyon",
+      "name": "American Canyon",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.americancanyon.gov/Work/Community-Infrastructure-Development/Community-Development/Building-Division",
+      "permit_portal_url": "https://americancanyonca.portal.opengov.com/",
+      "phone": "(707) 647-4581",
+      "adu_page_url": null,
+      "parcel_lookup_url": null,
+      "source_url": "https://www.americancanyon.gov/Work/Community-Infrastructure-Development/Community-Development/Building-Division",
+      "notes": "The OpenGov portal is linked from https://www.americancanyon.gov/Work/City-Fees/Permit-Portal. No city ADU page: the Planning & Zoning and Housing Resources pages link 'Accessory Dwelling Units (ADUs)' to the external ADU Center site https://napasonomaadu.org/. cityofamericancanyon.org redirects to americancanyon.gov."
+    },
+    {
+      "slug": "calistoga",
+      "name": "Calistoga",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.calistogaca.gov/Planning-Building-Department/Building-Division",
+      "permit_portal_url": "https://www4.citizenserve.com/Portal/PortalController?Action=showHomePage&ctzPagePrefix=Portal_&installationID=207&original_iid=0&original_contactID=0",
+      "phone": "(707) 942-2827",
+      "adu_page_url": "https://www.calistogaca.gov/Planning-Building-Department/Planning-Division/Accessory-Dwelling-Units",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.calistogaca.gov/Planning-Building-Department/Building-Division",
+      "notes": "Phone is the 'For Building Assistance' number. The Citizenserve portal is linked as 'Online Permit Portal' on the Building Division page. The official domain is calistogaca.gov (page title 'City of Calistoga, CA'). I found no county page linking to it, and ci.calistoga.ca.us and calistoga.gov did not resolve."
+    },
+    {
+      "slug": "napa",
+      "name": "Napa",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.cityofnapa.org/228/Building-Division",
+      "permit_portal_url": null,
+      "phone": "(707) 257-9540",
+      "adu_page_url": "https://www.cityofnapa.org/876/Accessory-Dwelling-Units",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.cityofnapa.org/228/Building-Division",
+      "notes": "City of Napa. The city's permit page says 'THE CITY DOES NOT HAVE AN ONLINE PORTAL FOR SUBMITTALS' (https://www.cityofnapa.org/758/Permits-and-Plan-Review-Information). eTRAKiT (https://etrakit.cityofnapa.org/etrakit/) is linked only for online inspection scheduling. Automated inspection line: (707) 257-1063."
+    },
+    {
+      "slug": "st-helena",
+      "name": "St. Helena",
+      "type": "city",
+      "aliases": [
+        "Saint Helena",
+        "St Helena"
+      ],
+      "building_dept_url": "https://www.cityofsthelena.gov/245/Building-Division",
+      "permit_portal_url": "https://sthln-trk.aspgov.com/eTRAKiT/",
+      "phone": "(707) 967-2779",
+      "adu_page_url": "https://www.cityofsthelena.gov/227/Accessory-Dwelling-Units-ADU",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.cityofsthelena.gov/245/Building-Division",
+      "notes": "The page says 'call the Building Division at 707-967-2779'. eTRAKiT is linked from the Building Division page and https://www.cityofsthelena.gov/889/City-of-St-Helenas-Online-Permit-Center-. cityofsthelena.org redirects to cityofsthelena.gov."
+    },
+    {
+      "slug": "yountville",
+      "name": "Yountville",
+      "type": "town",
+      "aliases": [],
+      "building_dept_url": "https://www.townofyountville.gov/284/Building-Permits-Inspections",
+      "permit_portal_url": "https://yountvilleca.portal.opengov.com/",
+      "phone": "(707) 944-8851",
+      "adu_page_url": "https://www.townofyountville.gov/282/Accessory-Dwelling-Units-ADUs",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.townofyountville.gov/281/Planning-Building",
+      "notes": "Combined Planning & Building department; the phone is labeled 'Planning & Building Phone' and is also the Town Hall number. The town links the portal as https://yountvilleca.viewpointcloud.com/, which redirects to the recorded OpenGov URL. townofyountville.com redirects to townofyountville.gov."
+    },
+    {
+      "slug": "napa-county",
+      "name": "Napa County",
+      "type": "county",
+      "aliases": [],
+      "building_dept_url": "https://www.napacounty.gov/3492/Building-Division",
+      "permit_portal_url": "https://aca-prod.accela.com/NAPACO/Default.aspx",
+      "phone": "(707) 253-4417",
+      "adu_page_url": "https://www.napacounty.gov/2750/Accessory-Dwelling-Units-ADUs",
+      "parcel_lookup_url": "https://www.napacounty.gov/1717/Property-Map-Information",
+      "source_url": "https://www.napacounty.gov/3492/Building-Division",
+      "notes": "Planning, Building & Environmental Services (PBES), Building Division (issues permits for unincorporated Napa County). The county's Online Permit Center link (https://www.napacounty.gov/2265/) redirects to the Accela portal. The parcel lookup page explains how to use the county GIS map (https://gis.napacounty.gov/portal/apps/webappviewer/index.html?id=0bbafe490c58430da719ff851c78b7fa). There you search a property and download a report that, per the page, includes 'boundary and jurisdiction data' and county permit data. The county's GIS Resources page (https://www.napacounty.gov/3391/GIS-Resources-from-the-PBES-Department) also links a Parcel Data Report app. countyofnapa.org redirects to napacounty.gov. 707-253-4417 is also the PBES front desk number."
+    }
+  ]
+}

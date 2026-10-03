@@ -1,0 +1,142 @@
+{
+  "county": "Sonoma",
+  "retrieved_at": "2026-09-30",
+  "jurisdictions": [
+    {
+      "slug": "cloverdale",
+      "name": "Cloverdale",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.cloverdale.net/64/Building-Division",
+      "permit_portal_url": "https://cloverdaleca.portal.opengov.com/",
+      "phone": "(707) 894-1725",
+      "adu_page_url": "https://www.cloverdale.net/272/Housing",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.cloverdale.net/m/directory/department?did=31",
+      "notes": "Directory lists Building Department phone 707-894-1725, alternate 707-894-1701, counter hours Mon-Thu 1-2 pm. source_url returns 405 to a HEAD request but 200 to GET (directory.aspx?did=31 redirects to it). Portal is OpenGov; building permit category at https://cloverdaleca.portal.opengov.com/categories/1076. adu_page_url is the Housing page, which has an 'Accessory Dwelling Units (ADUs)' section; the Building page also links an ADU submittal checklist PDF."
+    },
+    {
+      "slug": "cotati",
+      "name": "Cotati",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.cotaticity.gov/202/Building",
+      "permit_portal_url": "https://us.cloudpermit.com/cotaticity/",
+      "phone": "(707) 665-3636",
+      "adu_page_url": "https://www.cotaticity.gov/212/Accessory-Dwelling-Units-ADUs",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.cotaticity.gov/202/Building",
+      "notes": "Phone is the Community Development contact on the Building page; inspections 707-665-3632. Email permits@cotaticity.gov. Portal is Cloudpermit."
+    },
+    {
+      "slug": "healdsburg",
+      "name": "Healdsburg",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://healdsburg.gov/376/Building",
+      "permit_portal_url": "https://healdsburgca-energovpub.tylerhost.net/apps/selfservice",
+      "phone": "(707) 431-3346",
+      "adu_page_url": "https://healdsburg.gov/853/Accessory-Dwelling-Units---ADUs",
+      "parcel_lookup_url": null,
+      "source_url": "https://healdsburg.gov/376/Building",
+      "notes": "Building page gives 707-431-3346 for the Building Division (fees, inspection scheduling); the page's contact block lists the Planning & Building Department at (707) 431-3348. Portal is Civic Access (Tyler EnerGov)."
+    },
+    {
+      "slug": "petaluma",
+      "name": "Petaluma",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": null,
+      "permit_portal_url": null,
+      "phone": null,
+      "adu_page_url": null,
+      "parcel_lookup_url": null,
+      "source_url": null,
+      "notes": "cityofpetaluma.org served robots.txt (no relevant disallows) but every page, including https://cityofpetaluma.org/departments/building/, returned HTTP 403 to curl and WebFetch on 2026-09-30 (bot protection). No values recorded. Collect by hand in a browser."
+    },
+    {
+      "slug": "rohnert-park",
+      "name": "Rohnert Park",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.rpcity.ca.gov/217/Building",
+      "permit_portal_url": "https://rpccrw.rpcity.org/etrakit3/",
+      "phone": "(707) 588-2240",
+      "adu_page_url": "https://www.rpcity.ca.gov/218/Accessory-Dwelling-Units",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.rpcity.ca.gov/217/Building",
+      "notes": "Building Division, 130 Avram Avenue 2nd Floor; Building@rpcity.org. Portal is eTRAKiT (permit intake and inspection requests). Pre-approved ADU program page: https://www.rpcity.ca.gov/219/Pre-Approved-ADU-Program."
+    },
+    {
+      "slug": "santa-rosa",
+      "name": "Santa Rosa",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.srcity.org/262/Building-Division",
+      "permit_portal_url": "https://aca-prod.accela.com/SANTAROSA/AngularUI/CommunityView/fa-login-panel?inLegacyUI=true",
+      "phone": "(707) 543-3200",
+      "adu_page_url": "https://www.srcity.org/2280/Accessory-Dwelling-Units",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.srcity.org/262/Building-Division",
+      "notes": "The city links the Accela portal as https://aca-prod.accela.com/SANTAROSA, which redirects to the recorded login URL; the shorter link may be more stable. Automated inspection line 707-543-3006 (text 'MENU' to 833-692-5526). Building Division, 100 Santa Rosa Avenue, Room 3."
+    },
+    {
+      "slug": "sebastopol",
+      "name": "Sebastopol",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.cityofsebastopol.gov/departments/building-safety/",
+      "permit_portal_url": "https://ci-sebastopol-ca.smartgovcommunity.com/Public/Home",
+      "phone": "(707) 823-8597",
+      "adu_page_url": "https://www.cityofsebastopol.gov/our-community/housing-homelessness/#advgb-tabs-tab0",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.cityofsebastopol.gov/departments/building-safety/",
+      "notes": "Building & Safety, 7120 Bodega Avenue; building@cityofsebastopol.gov. Portal is SmartGov ('e-permitting Public Portal' on https://www.cityofsebastopol.gov/city-services/permits/). adu_page_url is the ADU tab of the Housing & Homelessness page. The Planning page's 'ADU Information' link goes to Permit Sonoma's county ADU page instead."
+    },
+    {
+      "slug": "sonoma",
+      "name": "Sonoma",
+      "type": "city",
+      "aliases": [
+        "City of Sonoma"
+      ],
+      "building_dept_url": "https://www.sonomacity.org/departments/building/",
+      "permit_portal_url": "https://sonomaca.viewpointcloud.com/categories/1084",
+      "phone": "(707) 938-3681",
+      "adu_page_url": "https://www.sonomacity.org/accessory-dwelling-units/",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.sonomacity.org/departments/building/",
+      "notes": "(707) 938-3681 is listed on the Building page and is also the City Hall main number in the site footer. Building@sonomacity.org. Portal is OpenGov (viewpointcloud). Not the same as unincorporated Sonoma County; see slug sonoma-county."
+    },
+    {
+      "slug": "windsor",
+      "name": "Windsor",
+      "type": "town",
+      "aliases": [
+        "Town of Windsor"
+      ],
+      "building_dept_url": "https://www.townofwindsor.ca.gov/163/Building-Division",
+      "permit_portal_url": "https://wsca.csqrcloud.com/community-etrakit/",
+      "phone": "(707) 836-2304",
+      "adu_page_url": "https://www.townofwindsor.ca.gov/1675/Accessory-Dwelling-Units",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.townofwindsor.ca.gov/163/Building-Division",
+      "notes": "buildingpermits@townofwindsor.ca.gov; counter hours Mon-Thu 8-11 a.m. or by appointment. Portal is eTRAKiT; inspections can be requested by text at 877-813-1904."
+    },
+    {
+      "slug": "sonoma-county",
+      "name": "Sonoma County (unincorporated)",
+      "type": "county",
+      "aliases": [
+        "Permit Sonoma"
+      ],
+      "building_dept_url": "https://permitsonoma.org/building",
+      "permit_portal_url": "https://aca-prod.accela.com/SONOMACO/Default.aspx",
+      "phone": "(707) 565-1900",
+      "adu_page_url": "https://permitsonoma.org/regulationsandlongrangeplans/regulationsandinitiatives/housingtypes/accessoryunitsandjuniorunits",
+      "parcel_lookup_url": "https://parcelsearch.permitsonoma.org/ParcelSearch",
+      "source_url": "https://permitsonoma.org/aboutus/contactpermitsonoma",
+      "notes": "Permit Sonoma issues building permits for unincorporated Sonoma County; 2550 Ventura Avenue, Santa Rosa. (707) 565-1900 is the Permit Sonoma operator line; the Building Division page lists Building Inspection (707) 565-1679 and Building Plan Check (707) 565-2095. parcel_lookup_url is the Zoning and Parcel Report, which the Permit Tools page (https://permitsonoma.org/permitservices/permittools) describes as: 'Find out your Zoning and Land Use, if your property is within county or city jurisdiction, etc.' Permits Online (Accela) is linked from the same page as https://aca-prod.accela.com/SONOMACO/."
+    }
+  ]
+}

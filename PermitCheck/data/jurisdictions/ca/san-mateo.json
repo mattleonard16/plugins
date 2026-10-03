@@ -1,0 +1,290 @@
+{
+  "county": "San Mateo",
+  "retrieved_at": "2026-09-30",
+  "jurisdictions": [
+    {
+      "slug": "atherton",
+      "name": "Atherton",
+      "type": "town",
+      "aliases": [],
+      "building_dept_url": "https://www.athertonca.gov/147/Building",
+      "permit_portal_url": "https://athr-trk.aspgov.com/eTRAKiT/",
+      "phone": "(650) 752-0560",
+      "adu_page_url": "https://www.athertonca.gov/696/Accessory-Dwelling-Units-ADUS",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.athertonca.gov/147/Building",
+      "notes": "Town site moved from ci.atherton.ca.us to athertonca.gov (old URLs redirect). Inspection request line (650) 752-0542."
+    },
+    {
+      "slug": "belmont",
+      "name": "Belmont",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.belmont.gov/departments/community-development/permit-center",
+      "permit_portal_url": "https://belm-trk.aspgov.com/eTRAKiT/",
+      "phone": "(650) 595-7422",
+      "adu_page_url": "https://www.belmont.gov/departments/community-development/planning-and-zoning/accessory-dwelling-units-adu-s",
+      "parcel_lookup_url": null,
+      "source_url": "http://web.archive.org/web/20260830223039/https://www.belmont.gov/departments/community-development/permit-center-2399",
+      "notes": "belmont.gov returns HTTP 403 (Akamai) to automated requests, so belmont.gov URLs could not be checked live. Values read from the Wayback Machine snapshot of the Permit Center page dated 2026-08-30 (source_url) and matched search-engine excerpts of belmont.gov. Building Department is run as the Permit Center. eTRAKiT supports express permits only; additions, ADUs, and new buildings are emailed to plansubmittal@belmont.gov."
+    },
+    {
+      "slug": "brisbane",
+      "name": "Brisbane",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.brisbaneca.gov/227/Building",
+      "permit_portal_url": "https://brisbane.my.site.com/s/",
+      "phone": "(415) 508-2120",
+      "adu_page_url": "https://www.brisbaneca.gov/280/Accessory-Dwelling-Units",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.brisbaneca.gov/227/Building",
+      "notes": "Brisbane uses the 415 area code. Site moved from brisbaneca.org to brisbaneca.gov. Portal is Clariti, linked from the city as https://www.brisbaneca.gov/clariti."
+    },
+    {
+      "slug": "burlingame",
+      "name": "Burlingame",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.burlingame.org/157/Building",
+      "permit_portal_url": "https://burlg.csqrcloud.com/community-etrakit/",
+      "phone": "(650) 558-7260",
+      "adu_page_url": "https://www.burlingame.org/213/Accessory-Dwelling-Units-ADU",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.burlingame.org/157/Building",
+      "notes": "Same number is used for inspection requests. Separate AB 1332 pre-approved ADU page: https://www.burlingame.org/1367/AB-1332-Pre-approved-Accessory-Dwelling-"
+    },
+    {
+      "slug": "colma",
+      "name": "Colma",
+      "type": "town",
+      "aliases": [],
+      "building_dept_url": "https://www.colma.ca.gov/departments/building/",
+      "permit_portal_url": null,
+      "phone": "(650) 757-8888",
+      "adu_page_url": "https://www.colma.ca.gov/accessory-dwelling-units-adu/",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.colma.ca.gov/departments/building/",
+      "notes": "No online permit portal found. Building Permit Services page says applications are accepted by email at building@colma.ca.gov."
+    },
+    {
+      "slug": "daly-city",
+      "name": "Daly City",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.dalycity.org/164/Building",
+      "permit_portal_url": "https://dalycityca-energovpub.tylerhost.net/apps/selfservice#/home",
+      "phone": "(650) 991-8061",
+      "adu_page_url": "https://www.dalycity.org/1249/Preapproved-Accessory-Dwelling-Units-ADU",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.dalycity.org/164/Building",
+      "notes": "Portal is Tyler EnerGov self-service. The ADU URL is the pre-approved ADU page; its 'Accessory Dwelling Unit Regulations' link (/1021/) redirects to a PDF that returns 404."
+    },
+    {
+      "slug": "east-palo-alto",
+      "name": "East Palo Alto",
+      "type": "city",
+      "aliases": [
+        "EPA"
+      ],
+      "building_dept_url": "https://www.cityofepa.org/building",
+      "permit_portal_url": null,
+      "phone": "(650) 853-3189",
+      "adu_page_url": "https://www.cityofepa.org/planning/page/accessory-dwelling-units-adus",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.cityofepa.org/building",
+      "notes": "No online permit portal link found on the Building Services Division or Permit Center pages. A search-engine excerpt of cityofepa.org says applications are emailed to building@cityofepa.org; not confirmed on a page read directly."
+    },
+    {
+      "slug": "foster-city",
+      "name": "Foster City",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.fostercity.org/436/Building-Division",
+      "permit_portal_url": "https://permit.fostercity.org/etrakit/",
+      "phone": "(650) 286-3227",
+      "adu_page_url": "https://www.fostercity.org/1189/Accessory-Dwelling-Unit-ADU",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.fostercity.org/436/Building-Division",
+      "notes": "Phone is listed as 'General Inquiries'; Permit Center inquiries (650) 286-3231. Old /commdev/page/ URLs redirect to the new CivicPlus pages."
+    },
+    {
+      "slug": "half-moon-bay",
+      "name": "Half Moon Bay",
+      "type": "city",
+      "aliases": [
+        "HMB"
+      ],
+      "building_dept_url": "https://www.halfmoonbay.gov/180/Building",
+      "permit_portal_url": "https://us.cloudpermit.com/hmbcity/",
+      "phone": "(650) 726-8270",
+      "adu_page_url": "https://www.halfmoonbay.gov/816/Accessory-Dwelling-Units",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.halfmoonbay.gov/181/Applying-for-a-Building-Permit",
+      "notes": "Phone is labeled 'Building Services' on the Applying for a Building Permit page and is also the Planning appointment line. The Building page lists only a technician line (650) 712-6660 and City Hall (650) 726-8910. Site moved from half-moon-bay.ca.us to halfmoonbay.gov. Portal is Cloudpermit."
+    },
+    {
+      "slug": "hillsborough",
+      "name": "Hillsborough",
+      "type": "town",
+      "aliases": [],
+      "building_dept_url": "https://www.hillsborough.net/130/Building-Division",
+      "permit_portal_url": "https://hills-trk.aspgov.com/eTRAKiT/default.aspx",
+      "phone": "(650) 375-7411",
+      "adu_page_url": "https://www.hillsborough.net/532/Accessory-Dwelling-Units-ADUs",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.hillsborough.net/130/Building-Division",
+      "notes": "Same number for inspections. All applications are electronic via eTRAKiT; users must register with the Town first."
+    },
+    {
+      "slug": "menlo-park",
+      "name": "Menlo Park",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.menlopark.gov/Government/Departments/Community-Development/Building",
+      "permit_portal_url": "https://aca-prod.accela.com/MENLOPARK/Welcome.aspx",
+      "phone": "(650) 330-6704",
+      "adu_page_url": "https://www.menlopark.gov/Government/Departments/Community-Development/Planning/Accessory-dwelling-units",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.menlopark.gov/Government/Departments/Community-Development/Building",
+      "notes": "Phone is labeled 'Building permits and general questions'; inspections (650) 330-6767. Portal is Accela Citizen Access, linked from the Online services page (also via https://www.menlopark.gov/permitcenter). The site returns 403 to requests with a generic browser user agent but 200 to plain curl."
+    },
+    {
+      "slug": "millbrae",
+      "name": "Millbrae",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.ci.millbrae.ca.us/176/Building-Division",
+      "permit_portal_url": "https://millbrae.ca.eprocess360.com/login/link/dashboard",
+      "phone": "(650) 259-2330",
+      "adu_page_url": "https://www.ci.millbrae.ca.us/214/Accessory-Dwelling-Units",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.ci.millbrae.ca.us/176/Building-Division",
+      "notes": "Portal is eProcess360. It returns HTTP 500 to a HEAD request but 200 to GET."
+    },
+    {
+      "slug": "pacifica",
+      "name": "Pacifica",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.cityofpacifica.org/departments/community-development/building-division",
+      "permit_portal_url": "https://greenvue.csgengr.com/pacifica2/public/PermitLogin.aspx?From=PR",
+      "phone": "(650) 738-7341",
+      "adu_page_url": "https://www.cityofpacifica.org/departments/community-development/accessory-dwelling-units",
+      "parcel_lookup_url": null,
+      "source_url": "http://web.archive.org/web/20260521072131/https://www.cityofpacifica.org/departments/community-development/building-division",
+      "notes": "cityofpacifica.org returns HTTP 403 (Akamai) to all automated requests, including robots.txt, so city URLs could not be checked live. Values read from the Wayback Machine snapshot of the Building Division page dated 2026-05-21 (source_url); confirm against the live site. Inspection hotline (650) 737-1000. Staff email uses pacifica.gov."
+    },
+    {
+      "slug": "portola-valley",
+      "name": "Portola Valley",
+      "type": "town",
+      "aliases": [],
+      "building_dept_url": "https://www.portolavalley.net/departments/planning-building-department",
+      "permit_portal_url": null,
+      "phone": "(650) 851-1700",
+      "adu_page_url": "https://www.portolavalley.net/departments/planning-building-department/adu-jadu-information",
+      "parcel_lookup_url": null,
+      "source_url": "http://web.archive.org/web/20260920085013/https://www.portolavalley.net/departments/planning-building-department",
+      "notes": "portolavalley.net returns HTTP 403 (Akamai) to all automated requests, so town URLs could not be checked live. Values read from the Wayback Machine snapshot dated 2026-09-20 (source_url). The phone is the Town Hall number shown on the Planning & Building Department page; no separate building line was published. No online portal: the Applications & Checklists page says to email building applications to planbuild@portolavalley.net."
+    },
+    {
+      "slug": "redwood-city",
+      "name": "Redwood City",
+      "type": "city",
+      "aliases": [
+        "RWC"
+      ],
+      "building_dept_url": "https://www.redwoodcity.org/departments/community-development-department/building-inspection-code-enforcement",
+      "permit_portal_url": "https://permits.redwoodcity.org/eTRAKiT/",
+      "phone": "(650) 780-7350",
+      "adu_page_url": "https://www.redwoodcity.org/departments/community-development-department/planning-housing/planning-services/planning-codes-development-standards/accessory-dwelling-unit-ordinance",
+      "parcel_lookup_url": null,
+      "source_url": "http://web.archive.org/web/20260831223322/https://www.redwoodcity.org/departments/community-development-department/building-inspection-code-enforcement",
+      "notes": "redwoodcity.org returns HTTP 403 (Akamai) to all automated requests, so city URLs could not be checked live. Values read from Wayback Machine snapshots dated 2026-06-12 to 2026-09-20 (source_url is the 2026-08-31 Building Division snapshot). The city accepts only online permit submittals through eTRAKiT. Inspection request line (650) 780-7361."
+    },
+    {
+      "slug": "san-bruno",
+      "name": "San Bruno",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.sanbruno.ca.gov/272/Building-Division",
+      "permit_portal_url": "https://www.mgoconnect.org/cp?JID=403",
+      "phone": "(650) 616-7074",
+      "adu_page_url": "https://www.sanbruno.ca.gov/247/Accessory-Dwelling-Units-ADUs-and-Junior",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.sanbruno.ca.gov/1118/Online-Permits",
+      "notes": "Online Permits page says to call 650-616-7074, option 2 for the Building Division. Portal is MyGovernmentOnline; the city link http://sanbruno.ca.gov/sbpermits redirects to it. The Building Division page itself shows only the City Hall number (650) 616-7058."
+    },
+    {
+      "slug": "san-carlos",
+      "name": "San Carlos",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.cityofsancarlos.org/city_hall/departments_and_divisions/community_development/building/index.php",
+      "permit_portal_url": "https://sancarlosca-energovweb.tylerhost.net/apps/selfservice#/home",
+      "phone": "(650) 802-4261",
+      "adu_page_url": "https://www.cityofsancarlos.org/city_hall/departments_and_divisions/community_development/planning/building_an_accessory_dwelling_unit.php",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.cityofsancarlos.org/city_hall/departments_and_divisions/community_development/building/index.php",
+      "notes": "Portal is Tyler EnerGov Customer Self-Service."
+    },
+    {
+      "slug": "san-mateo",
+      "name": "San Mateo",
+      "type": "city",
+      "aliases": [],
+      "building_dept_url": "https://www.cityofsanmateo.org/477/Building",
+      "permit_portal_url": "https://cityofsanmateoca-energovweb.tylerhost.net/apps/selfservice#/home",
+      "phone": "(650) 522-7172",
+      "adu_page_url": "https://www.cityofsanmateo.org/3907/Accessory-Dwelling-Unit-ADU",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.cityofsanmateo.org/477/Building",
+      "notes": "City of San Mateo, not the county. Portal is Tyler EnerGov Customer Self-Service (CSS)."
+    },
+    {
+      "slug": "south-san-francisco",
+      "name": "South San Francisco",
+      "type": "city",
+      "aliases": [
+        "South SF",
+        "SSF"
+      ],
+      "building_dept_url": "https://www.ssfca.gov/Departments/Economic-and-Community-Development/Divisions/Building-Division",
+      "permit_portal_url": "https://ssfca.my.site.com/s/",
+      "phone": "(650) 829-6670",
+      "adu_page_url": "https://www.ssfca.gov/Departments/Economic-and-Community-Development/Divisions/Planning-Division/Accessory-Dwelling-Units",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.ssfca.gov/Departments/Economic-and-Community-Development/Divisions/Building-Division",
+      "notes": "Phone is the Building Division main line, option 1. The page links the portal as https://permits.ssf.net/, which redirects to the URL given. Site moved from ssf.net to ssfca.gov."
+    },
+    {
+      "slug": "woodside",
+      "name": "Woodside",
+      "type": "town",
+      "aliases": [],
+      "building_dept_url": "https://www.woodsideca.gov/157/Building",
+      "permit_portal_url": "https://wood.csqrcloud.com/community-etrakit/",
+      "phone": "(650) 851-6796",
+      "adu_page_url": "https://www.woodsideca.gov/353/Accessory-Dwelling-Units-ADUs",
+      "parcel_lookup_url": null,
+      "source_url": "https://www.woodsideca.gov/157/Building",
+      "notes": "eTRAKiT accepts only some building permit types online (see https://www.woodsideca.gov/473/Apply-for-Permits-Online). Town main line (650) 851-6790."
+    },
+    {
+      "slug": "san-mateo-county",
+      "name": "San Mateo County (unincorporated)",
+      "type": "county",
+      "aliases": [
+        "Unincorporated San Mateo County"
+      ],
+      "building_dept_url": "https://www.smcgov.org/planning/building",
+      "permit_portal_url": "https://aca-prod.accela.com/smcgov/Welcome.aspx",
+      "phone": "(650) 599-7310",
+      "adu_page_url": "https://www.smcgov.org/planning/accessory-dwelling-units-adus",
+      "parcel_lookup_url": "https://gis.smcgov.org/apps2/publicviewer/",
+      "source_url": "https://www.smcgov.org/planning/contact-info-0",
+      "notes": "County Planning and Building Department, Building Section; issues building permits for unincorporated areas only. Inspections (650) 599-7311; general information (650) 363-1827. parcel_lookup_url is the Planning and Building Map Viewer, linked from https://www.smcgov.org/planning/get-zoning-information. The county says to search by 9-digit APN because address search may not work; turning on the 'Unincorporated SMC Zoning' layer shows county zoning, which applies only to unincorporated parcels. No county page offers a direct 'city or unincorporated?' address check. The county open data portal also has a 2013 boundary map: https://data.smcgov.org/Government/City-and-Unincorporated-Areas/qi92-3tzq"
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "jurisdiction": "ca/san-jose",
+  "project": "water-heater",
+  "summary": "In San Jose, installing or replacing any water heater needs a plumbing permit; heat pump models also need an electrical permit, and other electric models need one for new electrical work.",
+  "outcomes": [
+    {
+      "when": {
+        "param": "fuel",
+        "op": "eq",
+        "value": "heat_pump"
+      },
+      "verdict": "REQUIRED",
+      "explanation": "A heat pump water heater needs both a plumbing permit and an electrical permit. For a single-family home or duplex you can get them online at SJPermits.org.",
+      "citations": [
+        "sj_wh_page",
+        "sj_wh_hp",
+        "sj_online_wh"
+      ]
+    },
+    {
+      "when": {
+        "param": "fuel",
+        "op": "eq",
+        "value": "electric"
+      },
+      "verdict": "REQUIRED",
+      "explanation": "An electric water heater needs a plumbing permit, and an electrical permit for any new electrical work such as a new circuit. For a single-family home or duplex you can apply for both online in one session.",
+      "citations": [
+        "sj_wh_page",
+        "sj_wh_elec",
+        "sj_online_wh"
+      ]
+    }
+  ],
+  "default_verdict": "REQUIRED",
+  "default_explanation": "Installing or replacing a water heater needs a plumbing permit in San Jose. San Jose's plumbing exemptions cover only stopping leaks, clearing stoppages, and repairs that do not replace or rearrange valves, pipes, or fixtures.",
+  "default_citations": [
+    "sj_wh_page",
+    "sj_130"
+  ],
+  "permit_types": [
+    "Plumbing permit",
+    "Electrical permit (heat pump models, or any new electrical work)"
+  ],
+  "fee_note": "San Jose's FY 2025-26 fee schedule bills plumbing permit inspection at a minimum of $315 per hour, with a 30-minute default minimum per item, in addition to the permit issuance fee. For a water heater replacement pulled through Online Permits, the minimum permit issuance fee is $0.",
+  "docs_required": [],
+  "inspections": [
+    "Inspection after the water heater is installed"
+  ],
+  "notes": [
+    {
+      "text": "Single-family homes and duplexes can get the permit online at SJPermits.org. If the property does not qualify, the city's Standard Plan Review Service applies.",
+      "citations": [
+        "sj_wh_online",
+        "sj_online_wh"
+      ]
+    },
+    {
+      "text": "On the plan review path, an electric water heater application must include electrical load calculations showing the existing service is adequate.",
+      "citations": [
+        "sj_wh_load"
+      ]
+    },
+    {
+      "text": "Schedule an inspection after the water heater is installed.",
+      "citations": [
+        "sj_wh_insp"
+      ]
+    },
+    {
+      "text": "Every new or replacement water heater, and every existing residential water heater, must be braced, anchored, or strapped against earthquake motion.",
+      "citations": [
+        "sj_wh_strap",
+        "hsc19211"
+      ]
+    },
+    {
+      "text": "Fees: plumbing inspection is a minimum of $315 per hour with a 30-minute default minimum per item, plus a permit issuance fee; water heater replacements pulled online have a $0 minimum issuance fee.",
+      "citations": [
+        "fee_plumb",
+        "fee_issue",
+        "fee_wh"
+      ]
+    },
+    {
+      "text": "Online permits can be pulled only by the property owner or a qualified contractor. The city recommends that a licensed contractor pull the permit; an owner-builder must also submit the Owner Acknowledgement and Information Verification Form, show ID at issuance, and be the owner of record.",
+      "citations": [
+        "sj_online_intro",
+        "sj_who_ob"
+      ]
+    },
+    {
+      "text": "San Jose adopted the 2025 California Plumbing Code; the 2025 codes apply to permit applications made on or after January 1, 2026.",
+      "citations": [
+        "sj_cpc",
+        "sj_eff"
+      ]
+    },
+    {
+      "text": "With the 2025 code adoption, San Jose repealed its earlier local reach code amendments to the Energy Code and green building code.",
+      "citations": [
+        "sj_repeal",
+        "sj_reach_memo"
+      ]
+    },
+    {
+      "text": "A July 2025 city staff memo says Bay Area Air District rules will require new water heaters to meet a zero-NOx standard in phases beginning in 2027. Confirm the dates with the Air District.",
+      "citations": [
+        "sj_nox"
+      ]
+    }
+  ],
+  "citations": [
+    {
+      "id": "sj_wh_page",
+      "code_section": "San Jose Permit Center, Water Heaters (updated 04/14/2026)",
+      "source_url": "https://web.archive.org/web/20260514020002id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/water-heaters",
+      "quote": "Installing or replacing a water heater requires a plumbing permit. Depending on the type of water heater, an electrical permit may also be required."
+    },
+    {
+      "id": "sj_wh_hp",
+      "code_section": "San Jose Permit Center, Water Heaters (updated 04/14/2026), Heat Pump Water Heaters",
+      "source_url": "https://web.archive.org/web/20260514020002id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/water-heaters",
+      "quote": "Permits. Heat pumps require both plumbing and electrical permits."
+    },
+    {
+      "id": "sj_online_wh",
+      "code_section": "San Jose, Online Building Permits at SJPermits.org, Plumbing Permit table",
+      "source_url": "https://web.archive.org/web/20260801184719id_/https://www.sanjoseca.gov/business/development-services-permit-center/online-permits-at-sjpermits-org/building-online-permits",
+      "quote": "Plumbing Permit Single-family / Duplex Multifamily Commercial / Industrial ... Water Heater - New Electric Heat Pump Yes No No Water Heater - New Tankless Gas Yes No No Water Heaters Yes Yes Yes"
+    },
+    {
+      "id": "sj_wh_elec",
+      "code_section": "San Jose Permit Center, Water Heaters (updated 04/14/2026), Tankless Water Heaters",
+      "source_url": "https://web.archive.org/web/20260514020002id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/water-heaters",
+      "quote": "All new electrical work requires an electrical permit. For single-family/duplex projects, the plumbing and electrical permits can be applied for in one session at SJPermits.org."
+    },
+    {
+      "id": "sj_130",
+      "code_section": "SJMC §24.02.130 (Ord. No. 31256)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37111/file",
+      "quote": "A plumbing permit shall not be required for the following: A. The stopping of leaks in drains, soil, waste or vent pipe, provided, however, that should any concealed trap, drainpipe, soil, waste or vent pipe become defective and it becomes necessary to remove and replace the same with new material, such work shall be considered as new work and a permit shall be obtained and inspection made as provided in this title. B. The clearing of stoppages or the repairing of leaks in pipes, valves or fixtures, and the removal and reinstallation of water closets, provided such repairs do not involve or require the replacement or rearrangement of valves, pipes or fixtures. C. Reserved."
+    },
+    {
+      "id": "sj_wh_online",
+      "code_section": "San Jose Permit Center, Water Heaters (updated 04/14/2026), How to Apply",
+      "source_url": "https://web.archive.org/web/20260514020002id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/water-heaters",
+      "quote": "Single-family/duplex properties - Use SJPermits.org to obtain an online permit. If the property does not qualify, use the Standard Plan Review Service."
+    },
+    {
+      "id": "sj_wh_load",
+      "code_section": "San Jose Permit Center, Water Heaters (updated 04/14/2026), Standard Plan Review Service",
+      "source_url": "https://web.archive.org/web/20260514020002id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/water-heaters",
+      "quote": "If installing an electric water heater, provide electrical load calculations to confirm existing electrical service is adequate."
+    },
+    {
+      "id": "sj_wh_insp",
+      "code_section": "San Jose Permit Center, Water Heaters (updated 04/14/2026), Installation Requirements",
+      "source_url": "https://web.archive.org/web/20260514020002id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/water-heaters",
+      "quote": "After installing the water heater, schedule an inspection."
+    },
+    {
+      "id": "sj_wh_strap",
+      "code_section": "San Jose Permit Center, Water Heaters (updated 04/14/2026), Strapping & Bracing",
+      "source_url": "https://web.archive.org/web/20260514020002id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/water-heaters",
+      "quote": "The California Plumbing Code mandates that all types of water heaters are required to be braced and strapped to resist moving or tipping during an earthquake. This applies to new and replacement water heaters and existing water heaters."
+    },
+    {
+      "id": "hsc19211",
+      "code_section": "Cal. Health & Safety Code §19211(a)",
+      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=HSC&sectionNum=19211.",
+      "quote": "Notwithstanding Section 19100, all new and replacement water heaters, and all existing residential water heaters, shall be braced, anchored, or strapped to resist falling or horizontal displacement due to earthquake motion. At a minimum, any water heater shall be secured in accordance with the California Plumbing Code, or modifications made thereto by a city, county, or city and county pursuant to Section 17958.5."
+    },
+    {
+      "id": "fee_plumb",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective August 11, 2025), Residential Sub-Trade Permits, Plumbing Permits, p. 5",
+      "source_url": "https://web.archive.org/web/20251207120823id_/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Plumbing Permit Fees (site construction and other miscellaneous plumbing permits) not involving the addition of new building footage shall be the greater of (a) a minimum of $315 per hour of actual inspection time, or (b) calculated on an itemized basis as listed below. These Plumbing Permit Fees are in addition to the Permit Issuance Fees. All items default to a minimum time allocation of 30 minutes of inspection time (20 minutes minimum per unit if more than 1) except for the following:"
+    },
+    {
+      "id": "fee_issue",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective August 11, 2025), Building Residential Fees, p. 3",
+      "source_url": "https://web.archive.org/web/20251207120823id_/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Permit Issuance Fees shall be $227 per hour for processing and coordination time expended or the amounts set forth below, whichever is greater. Minimum permit issuance fee for all permits using Online Permits service is 50% of the specified processing fee."
+    },
+    {
+      "id": "fee_wh",
+      "code_section": "San Jose Building Division Fee Schedule FY 2025-26 (effective August 11, 2025), Building Special and Miscellaneous Fees, p. 9",
+      "source_url": "https://web.archive.org/web/20251207120823id_/https://www.sanjoseca.gov/home/showpublisheddocument/26047/637922894017900000",
+      "quote": "Minimum permit issuance fee for all permits using Online Permits service is 50% of the specified processing fee with the exception of water heater replacements which costs $0."
+    },
+    {
+      "id": "sj_online_intro",
+      "code_section": "San Jose, Online Building Permits at SJPermits.org",
+      "source_url": "https://web.archive.org/web/20260801184719id_/https://www.sanjoseca.gov/business/development-services-permit-center/online-permits-at-sjpermits-org/building-online-permits",
+      "quote": "You can download a building permit for 56 types of simple projects at SJPermits.org. ... Only property owners and qualified contractors may apply for an online building permit."
+    },
+    {
+      "id": "sj_who_ob",
+      "code_section": "San Jose Permit Center, Who Can Apply for a Building Permit? (updated 01-13-2026)",
+      "source_url": "https://web.archive.org/web/20260517000302id_/https://www.sanjoseca.gov/businesses/development-services-permit-center/start-your-project/who-can-apply-for-a-permit",
+      "quote": "We highly recommend that the licensed contractor rather than the property owner pull the permit. ... If you wish to proceed as an Owner-Builder, your permit application package will need to include: Owner-Builder Requirements to Sign a Permit Owner Acknowledgement and Information Verification Form - In addition to submitting a building permit application, you must complete and submit this form. At time of permit issuance, be ready to provide a Driver’s License or other proof of identification. You must be the Property Owner as recorded by the County Tax Assessor."
+    },
+    {
+      "id": "sj_cpc",
+      "code_section": "SJMC §24.04.100 (Ord. No. 31256)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37111/file",
+      "quote": "Except as otherwise provided for in this chapter, the California Plumbing Code, 2025 edition together with those omissions, amendments, exceptions and additions thereto as amended in Title 24 of the California Code of Regulations are approved and adopted"
+    },
+    {
+      "id": "sj_eff",
+      "code_section": "San Jose staff memo, Council file 25-1131 (Oct. 6, 2025)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37104/file",
+      "quote": "The 2025 California Building Standards Code will apply to any building or structure for which an application for a building permit is made on or after January 1, 2026."
+    },
+    {
+      "id": "sj_repeal",
+      "code_section": "Ord. No. 31257, Sections 2 and 6",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37110/file",
+      "quote": "Sections 24.10.110, 24.10.120, and 24.10.130, and Parts 2 and 3 of Chapter 24.10 of Title 24 of the San José Municipal Code are hereby repealed. ... Sections 24.12.110, 24.12.120, and 24.12.130, and Parts 2 through 8 of Chapter 24.12 of Title 24 of the San José Municipal Code are hereby repealed."
+    },
+    {
+      "id": "sj_reach_memo",
+      "code_section": "San Jose staff memo, Council file 25-1131 (Oct. 6, 2025)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/15178/attachments/37104/file",
+      "quote": "However, staff proposes to remove the current reach code amendments and one currently adopted local technical amendment as those amendments are now part of the 2025 codes."
+    },
+    {
+      "id": "sj_nox",
+      "code_section": "San Jose staff memo, Council file 25-803 (July 21, 2025)",
+      "source_url": "https://webapi.legistar.com/v1/sanjose/matters/14973/attachments/36521/file",
+      "quote": "In March 2023, the Bay Area Air District adopted rule amendments, with the goal of reducing Nitrogen Oxide (NOx) emissions, that will affect the sale and installation of water and space heating appliances in the greater San Francisco Bay Region. In a phased approach beginning in 2027, new water heaters must meet the zero-NOx standard. Beginning in 2029, new furnaces must meet the zero-NOx standards."
+    }
+  ],
+  "retrieved_at": "2026-09-30",
+  "research_notes": "Access: every live sanjoseca.gov URL tried, robots.txt included, returned HTTP 403 'Access Denied' (Akamai) to curl and to WebFetch. City pages were read from raw Internet Archive captures (id_ mode, fetched with curl, tags stripped with python3, the fee schedule PDF read with pdftotext). source_url is the capture URL; the official sanjoseca.gov URL is the part after the timestamp. The captured robots.txt (https://web.archive.org/web/20260501010517/https://www.sanjoseca.gov/robots.txt) disallows only /scripts, /admin and *.asmx for all agents. The city's E-Government Policy (sanjoseca.gov/home/showdocument?id=17869, capture 20260904222013) has no rule against copying or automated access. Internet Archive terms say access 'is granted for scholarship and research purposes only'. Re-check each city quote on the live page before marking a rule verified. Quote format: list items and paragraph breaks are joined with single spaces and bullet characters are left out; ' ... ' marks omitted text; the words are verbatim. sjpermits.org robots.txt is 'User-agent: * / Disallow: /', so the SJPermits portal was not fetched; online-permit availability comes from the city's Online Building Permits page. Municode (host of the San Jose Municipal Code) was not fetched. Its archived terms (https://web.archive.org/web/20190411032708/https://www.municode.com/terms-of-use/) say: 'You may not copy, modify, reproduce, republish, distribute, display, or transmit for commercial, non-profit or public purposes all or any portion of this Website, except to the extent permitted by these Terms and Conditions of Use.' The current terms page could not be loaded. SJMC text: quotes marked 'Ord. No. 31256' come from the council-agenda redline of that ordinance (draft dated 10/16/2025, Council Agenda 10/28/2025 Item 8.2(a), file 25-1131), downloaded through the Legistar Web API (webapi.legistar.com); sanjose.granicus.com robots.txt has 'User-agent: * / Disallow: /'. Each such quote is the enacted wording: struck-through text removed and underlined additions kept, checked against the rendered PDF page. Legistar matter 25-1187 (Final Adoption of Ordinances, dated 2025-10-30) lists 'Ordinance No. 31256' as passed for publication on 10/28/2025; the signed ordinance and the final vote were not retrieved. Code edition: San Jose adopted the 2025 California codes (not 2022) for permit applications made on or after January 1, 2026. SJMC 24.09.110(A)(6) does not adopt CRC Chapter 1, Division II, so CRC §R105.2 does not apply in San Jose; the city's exemption lists are SJMC 24.02.120 to 24.02.150. Section numbering: the When Is a Building Permit Required? page (updated 06/12/2025) cites 'Section 24.02.110' for the exempt list, but Ord. No. 31256 amends the exemption lists as 24.02.120 (building), 24.02.130 (plumbing), 24.02.140 (mechanical) and 24.02.150 (electrical). Fees: the fee schedule capture is the FY 2025-26 schedule ('Effective August 11, 2025', document 26047 version 637922894017900000, captured 2025-12-07). The Building Permit Fees page captured 2026-08-01 still says the schedule shows fees in effect as of August 11, 2025, but links a newer upload (version 639180865996470000) with no capture, so the current PDF could not be compared. A draft FY 2026-27 fee resolution (Council Agenda 06-09-2026 Item 3.4(b), Legistar file 26-683) sets different amounts ('Water Heater Replacement – Permit Center 0.25 x # of units $52'); its adoption was not confirmed, so it is not cited. Reach codes: Ord. No. 31257 (Council Agenda 10/28/2025 Item 8.2(b)) repealed SJMC 24.10 Parts 2 and 3 and 24.12 Parts 2 through 8, the city's earlier local green building and Energy Code amendments. A proposed Existing Single-Family Building Reach Code (Legistar files 25-803 and 25-942) would have required a heat pump when an air conditioner is replaced or added, and electric-ready wiring near gas appliances. An unofficial meeting summary (citizenportal.ai) reports 'The motion failed after a 5–4 recorded vote and did not take effect.' It is not cited, and its adoption status was not confirmed from an official record. The July 21, 2025 staff memo (file 25-803) says AB 130 prohibits new residential building standards, including reach codes, 'from October 1, 2025, through June 1, 2031.' Inferred, not quoted: no San Jose rule found requires a heat pump or all-electric replacement in an existing home. Params: like_for_like does not change the verdict for a single-family home or duplex. The Water Heaters page uses like-for-like only for its multifamily and commercial online path, which this record does not model. Electric water heaters: the page says an electrical permit 'may also be required' depending on the type and that 'All new electrical work requires an electrical permit'. It does not say whether a plug-for-plug electric replacement on an existing circuit needs one, so the electric outcome ties the electrical permit to new electrical work. Fee quote fee_wh comes from the Special and Miscellaneous Fees section; whether it also applies to the plumbing sub-trade issuance fee was not confirmed. docs_required is empty because the city lists documents only for the Standard Plan Review path."
+}
